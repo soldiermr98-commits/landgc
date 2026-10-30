@@ -1,0 +1,806 @@
+/* ==========================================================================
+   Motion system
+   - Animates transform / opacity / clip-path and SVG dash offsets only,
+     so nothing causes layout shifts.
+   - Separate properties never fight: reveals use `transform` on wrappers,
+     parallax uses `translate`, hover lifts use `translate`, tilt uses
+     `transform` on the card itself.
+   - Scroll reveals run once (assets/js/motion.js → reveal).
+   - Continuous animations pause while their section is off-screen
+     (`.is-offscreen`, set by motion.js → visibility).
+   - prefers-reduced-motion: everything becomes static (bottom of file).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Scroll reveal variants  ([data-reveal="up|fade|scale|start|end|clip"])
+   [data-stagger] on a parent numbers its revealing children automatically.
+   -------------------------------------------------------------------------- */
+
+.js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition:
+    opacity 0.85s var(--ease-out),
+    transform 1s var(--ease-out);
+  transition-delay: calc(var(--reveal-i, 0) * var(--stagger));
+}
+
+.js [data-reveal='fade'] {
+  transform: none;
+}
+
+.js [data-reveal='scale'] {
+  transform: scale(0.94);
+}
+
+/* «start» enters from the right (reading start in RTL), «end» from the left */
+.js [data-reveal='start'] {
+  transform: translate3d(48px, 0, 0);
+}
+
+.js [data-reveal='end'] {
+  transform: translate3d(-48px, 0, 0);
+}
+
+/* «clip»: the wrapper stays put and is what gets observed; its child is
+   wiped in (see .g-tile in sections.css). A clip-path on the observed
+   element itself would hide it from IntersectionObserver in Chrome. */
+.js [data-reveal='clip'] {
+  opacity: 1;
+  transform: none;
+}
+
+.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* the inline safety net in index.html adds .reveal-fallback if scripts fail */
+.reveal-fallback [data-reveal],
+.reveal-fallback [data-reveal='clip'] > * {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Split headings ([data-split]) — words rise out of a mask one by one.
+   The accent phrase stays one unit so its gradient is preserved.
+   -------------------------------------------------------------------------- */
+
+/* a split heading reveals word by word, so the heading itself doesn't fade */
+.js [data-split][data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+/* hidden for the instant between first paint and the split (no flash) */
+.js [data-split]:not(.is-split) {
+  opacity: 0;
+}
+
+.reveal-fallback [data-split] {
+  opacity: 1 !important;
+}
+
+.reveal-fallback .w__i {
+  transform: none !important;
+}
+
+.w {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  padding-bottom: 0.26em;
+  margin-bottom: -0.26em;
+}
+
+.w__i {
+  display: inline-block;
+  transform: translate3d(0, 130%, 0);
+  transition: transform 1.05s var(--ease-out);
+  transition-delay: calc(var(--wi, 0) * 60ms + var(--split-delay, 0ms));
+}
+
+.is-revealed .w__i,
+.is-split-in .w__i {
+  transform: none;
+}
+
+/* once played, drop the masks so descenders and dots are never clipped */
+.is-split-done .w {
+  overflow: visible;
+}
+
+/* --------------------------------------------------------------------------
+   Section heading seam (see components.css → .sh__seam)
+   -------------------------------------------------------------------------- */
+
+.js .sh__seam {
+  transform: scaleY(0);
+  transition: transform 0.8s var(--ease-out);
+}
+
+.js .sh__node::before {
+  transform: scale(0);
+  transition: transform 0.5s var(--ease-spring) 0.55s;
+}
+
+.js .sh__node::after {
+  transform: scaleX(0);
+  transition: transform 0.7s var(--ease-out) 0.75s;
+}
+
+.js .is-revealed .sh__seam,
+.js .is-revealed .sh__node::before,
+.js .is-revealed .sh__node::after,
+.reveal-fallback .sh__seam,
+.reveal-fallback .sh__node::before,
+.reveal-fallback .sh__node::after {
+  transform: none;
+}
+
+/* --------------------------------------------------------------------------
+   Keyframes
+   -------------------------------------------------------------------------- */
+
+@keyframes gc-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gc-fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gc-panel-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gc-card-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gc-header-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gc-drawer-item {
+  from {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gc-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, var(--float-y, -8px), 0);
+  }
+}
+
+/* A short dash travelling along a trace (pathLength="1"), then resting
+   off-path. 62% matches TRAVEL_SHARE in assets/js/circuits.js. */
+@keyframes gc-pulse-travel {
+  0% {
+    stroke-dashoffset: var(--pulse-len, 0.06);
+  }
+  62%,
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+/* ring flash at the end of a trace when its pulse arrives (≈55% of the cycle) */
+@keyframes gc-arrive {
+  0%,
+  50% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  56% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  74%,
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+
+@keyframes gc-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes gc-breathe {
+  0%,
+  100% {
+    opacity: var(--breathe-min, 0.45);
+  }
+  50% {
+    opacity: var(--breathe-max, 1);
+  }
+}
+
+@keyframes gc-led {
+  0%,
+  72% {
+    opacity: 0;
+  }
+  74%,
+  80% {
+    opacity: 1;
+  }
+  82%,
+  86% {
+    opacity: 0.2;
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gc-pin {
+  0%,
+  100% {
+    fill: rgb(25 197 139 / 0.7);
+  }
+  40% {
+    fill: rgb(163 244 81 / 1);
+  }
+}
+
+@keyframes gc-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(var(--drift-x, -14px), var(--drift-y, 8px), 0);
+  }
+}
+
+@keyframes gc-aurora {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(4vmax, 3vmax, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-3vmax, 5vmax, 0) scale(0.95);
+  }
+}
+
+@keyframes gc-rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  12% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--dx, 0px), -72vh, 0);
+  }
+}
+
+@keyframes gc-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gc-shimmer {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes gc-sweep {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(-110%);
+  }
+}
+
+@keyframes gc-glass {
+  0% {
+    transform: translateX(-120%);
+  }
+  30%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes gc-gradient-pan {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: -220% 0;
+  }
+}
+
+@keyframes gc-text-sweep {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+
+@keyframes gc-scale-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes gc-pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes gc-ping {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+@keyframes gc-ripple {
+  to {
+    opacity: 0;
+    transform: scale(42);
+  }
+}
+
+@keyframes gc-angle {
+  to {
+    --gc-angle: 360deg;
+  }
+}
+
+@keyframes gc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gc-spin-centered {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes gc-wiggle {
+  0%,
+  100% {
+    transform: none;
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  55% {
+    transform: rotate(9deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes gc-twinkle {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(12deg);
+  }
+}
+
+@keyframes gc-typing {
+  0%,
+  60%,
+  100% {
+    opacity: 0.35;
+    transform: none;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes gc-scroll-cue {
+  0% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  30% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+}
+
+@keyframes gc-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes gc-marquee-rtl {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+@keyframes gc-cell {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  45%,
+  55% {
+    opacity: 1;
+  }
+}
+
+@keyframes gc-scan-x {
+  0% {
+    transform: translateX(-180px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes gc-scan-y {
+  from {
+    background-position: 0 -120%;
+  }
+  to {
+    background-position: 0 220%;
+  }
+}
+
+@keyframes gc-march {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 13px;
+  }
+}
+
+@keyframes gc-signal {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes gc-beam-x {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-720%);
+  }
+}
+
+/* hero visual — typing, pipeline, chat and toggle */
+@keyframes hv-type {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes hv-step-1 {
+  0%,
+  4% {
+    background: rgb(25 197 139 / 0.2);
+    color: rgb(25 197 139 / 0.2);
+  }
+  10%,
+  100% {
+    background: rgb(25 197 139 / 0.22);
+    color: var(--c-green);
+  }
+}
+
+@keyframes hv-line-1 {
+  0%,
+  10% {
+    transform: scaleX(0);
+  }
+  26%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes hv-step-2 {
+  0%,
+  26% {
+    background: rgb(25 197 139 / 0.08);
+    color: rgb(25 197 139 / 0.2);
+  }
+  32%,
+  100% {
+    background: rgb(25 197 139 / 0.22);
+    color: var(--c-green);
+  }
+}
+
+@keyframes hv-line-2 {
+  0%,
+  32% {
+    transform: scaleX(0);
+  }
+  48%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes hv-step-3 {
+  0%,
+  48% {
+    color: rgb(233 247 240 / 0.45);
+  }
+  54%,
+  100% {
+    color: var(--c-lime);
+  }
+}
+
+@keyframes hv-msg {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  4%,
+  30% {
+    opacity: 1;
+    transform: none;
+  }
+  34%,
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hv-toggle-track {
+  from {
+    background: rgb(23 43 37 / 0.18);
+    box-shadow: none;
+  }
+}
+
+@keyframes hv-toggle-knob {
+  from {
+    transform: translateX(0);
+    background: var(--c-white);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Pause continuous animations inside off-screen sections
+   -------------------------------------------------------------------------- */
+
+.is-offscreen *,
+.is-offscreen *::before,
+.is-offscreen *::after {
+  animation-play-state: paused !important;
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion — fully static: no animations, no transitions, no
+   parallax; everything shown in its final state.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .js .guide__tile .g-tile {
+    clip-path: none;
+  }
+
+  .js [data-split] {
+    opacity: 1 !important;
+  }
+
+  .w__i,
+  .js .sh__seam,
+  .js .sh__node::before,
+  .js .sh__node::after {
+    transform: none;
+  }
+
+  .js .hv__lines li {
+    clip-path: none;
+  }
+
+  .js .hv__msg:first-child {
+    opacity: 1;
+  }
+
+  .js .cf__trace--load,
+  .js .cf__trace--reveal,
+  .js .hv__wire,
+  .js .logo__trace {
+    stroke-dashoffset: 0;
+  }
+
+  .cf--scroll,
+  .cc {
+    --draw: 1;
+    --tags: 1;
+  }
+
+  .cf__pulses,
+  .hv__pulses,
+  .cc__pulses,
+  .cf__arrivals,
+  .hv__arrivals,
+  .cc__arrivals,
+  .hero__particles,
+  .cta-panel__particles,
+  .roadmap__signal,
+  .benefits__beam,
+  .cursor-aura,
+  .p-card__scan,
+  .services__decor i,
+  .roadmap__blueprint::after {
+    display: none !important;
+  }
+
+  .hero,
+  .hero__content,
+  .hero__visual,
+  .hv,
+  .hv__layer,
+  .cf__svg,
+  .g-tile__img {
+    translate: none !important;
+    scale: none !important;
+  }
+
+  .hero__content {
+    opacity: 1 !important;
+  }
+
+  .hv,
+  .cf--parallax .cf__svg,
+  .g-tile__img {
+    transform: none !important;
+  }
+
+  .cf--flip .cf__svg {
+    scale: -1 1 !important;
+  }
+
+  .process__packet {
+    display: none;
+  }
+
+  .sw {
+    opacity: 1;
+  }
+}
