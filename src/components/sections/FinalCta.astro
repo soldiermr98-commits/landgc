@@ -1,0 +1,110 @@
+---
+import Button from '../ui/Button.astro';
+import CircuitField from '../circuits/CircuitField.astro';
+import { finalCta } from '../../data/cta';
+---
+
+<section class="section section--light final-cta" id="start" aria-labelledby="cta-title" data-visibility>
+  <div class="container">
+    <div class="cta-panel" data-reveal="scale">
+      <div class="cta-panel__bg" aria-hidden="true"></div>
+      <CircuitField variant="cta" tone="dark" mobile drift />
+      <div class="cta-panel__content">
+        <span class="cta-panel__node" aria-hidden="true"></span>
+        <h2 class="cta-panel__title" id="cta-title">{finalCta.title}</h2>
+        <p class="cta-panel__text">{finalCta.description}</p>
+        <div class="cta-panel__actions">
+          <Button href={finalCta.primary.href} variant="primary" size="lg">{finalCta.primary.label}</Button>
+          <Button href={finalCta.secondary.href} variant="secondary" size="lg">{finalCta.secondary.label}</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .final-cta {
+    padding-top: clamp(1rem, 2vw, 2rem);
+  }
+
+  .cta-panel {
+    --focus-ring: var(--c-lime);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-radius: var(--r-lg);
+    padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.5rem, 6vw, 5rem);
+    color: var(--c-on-dark);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .cta-panel__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(50% 80% at 50% 115%, rgb(163 244 81 / 0.22), transparent 65%),
+      radial-gradient(45% 70% at 0% 0%, rgb(25 197 139 / 0.28), transparent 65%),
+      radial-gradient(40% 60% at 100% 10%, rgb(25 197 139 / 0.16), transparent 65%),
+      linear-gradient(160deg, var(--c-ink-900), var(--c-ink-950) 60%);
+  }
+
+  .cta-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px rgb(163 244 81 / 0.16);
+    pointer-events: none;
+  }
+
+  .cta-panel__content {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 1.25rem;
+    max-width: 44rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .cta-panel__node {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--c-lime);
+    box-shadow:
+      0 0 0 6px rgb(163 244 81 / 0.12),
+      0 0 24px 4px rgb(163 244 81 / 0.5);
+    animation: gc-breathe 3s ease-in-out infinite;
+  }
+
+  .cta-panel__title {
+    font-size: var(--fs-h2);
+    color: var(--c-white);
+  }
+
+  .cta-panel__text {
+    font-size: var(--fs-md);
+    line-height: 2;
+    color: var(--c-on-dark-muted);
+  }
+
+  .cta-panel__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  @media (max-width: 559.98px) {
+    .cta-panel {
+      padding-bottom: 6.5rem; /* keeps the bottom circuit band clear of the buttons */
+    }
+
+    .cta-panel__actions :global(.btn) {
+      width: 100%;
+    }
+  }
+</style>

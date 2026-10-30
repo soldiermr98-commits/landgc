@@ -1,0 +1,324 @@
+---
+/**
+ * Site footer. Contact details and social profiles are rendered only when they are set in
+ * src/config/site.ts — nothing is invented when the information is not public yet.
+ */
+import Logo from '../brand/Logo.astro';
+import Icon from '../ui/Icon.astro';
+import { contact, links, social } from '../../config/site';
+import { footerColumns } from '../../config/navigation';
+import { footerIntro } from '../../data/footer';
+import { brandIcons } from '../../lib/brand-icons';
+
+const persianYear = new Intl.DateTimeFormat('fa-IR-u-ca-persian', { year: 'numeric' })
+  .format(new Date())
+  .replace(/[^۰-۹0-9]/g, '');
+---
+
+<footer class="site-footer" aria-labelledby="footer-title">
+  <h2 id="footer-title" class="visually-hidden">اطلاعات و پیوندهای گیلاکلیک</h2>
+  <div class="site-footer__decor" aria-hidden="true">
+    <svg viewBox="0 0 1440 40" preserveAspectRatio="none" focusable="false">
+      <path d="M0 20 H520 L540 4 H900 L920 20 H1440" class="site-footer__trace"></path>
+    </svg>
+  </div>
+
+  <div class="container site-footer__top">
+    <div class="site-footer__brand">
+      <a href={links.home} class="site-footer__logo">
+        <Logo tone="dark" />
+        <span class="visually-hidden">صفحه اصلی</span>
+      </a>
+      <p class="site-footer__intro">{footerIntro}</p>
+
+      <div class="site-footer__contact">
+        <h3 class="site-footer__title">ارتباط با گیلاکلیک</h3>
+        <ul class="site-footer__contact-list">
+          <li>
+            <a href={contact.formUrl}>
+              <Icon name="message-square-text" size={18} />
+              فرم تماس و ثبت پروژه
+            </a>
+          </li>
+          {
+            contact.email && (
+              <li>
+                <a href={`mailto:${contact.email}`}>
+                  <Icon name="mail" size={18} />
+                  <span class="ltr">{contact.email}</span>
+                </a>
+              </li>
+            )
+          }
+          {
+            contact.phone && (
+              <li>
+                <a href={`tel:${contact.phone}`}>
+                  <Icon name="phone" size={18} />
+                  <span>{contact.phoneLabel || contact.phone}</span>
+                </a>
+              </li>
+            )
+          }
+          {
+            contact.address && (
+              <li>
+                <span class="site-footer__address">
+                  <Icon name="map-pin" size={18} />
+                  {contact.address}
+                </span>
+              </li>
+            )
+          }
+          <li>
+            <a href={links.faq}>
+              <Icon name="circle-question-mark" size={18} />
+              پرسش‌های متداول
+            </a>
+          </li>
+        </ul>
+
+        {
+          social.length > 0 && (
+            <ul class="site-footer__social" aria-label="شبکه‌های اجتماعی گیلاکلیک">
+              {social.map((s) => (
+                <li>
+                  <a href={s.url} aria-label={s.label} rel="noopener" target="_blank">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                      <path d={brandIcons[s.network].path} fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+    </div>
+
+    <div class="site-footer__cols">
+      {
+        footerColumns.map((col) => (
+          <div class="site-footer__col">
+            <h3 class="site-footer__title">{col.title}</h3>
+            <ul class="site-footer__links">
+              {col.links.map((l) => (
+                <li>
+                  <a href={l.href}>{l.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>
+      © <span data-year>{persianYear}</span> گیلاکلیک — تمامی حقوق محفوظ است.
+    </p>
+    <a class="site-footer__up" href="#top">
+      بازگشت به بالا
+      <Icon name="arrow-up" size={16} />
+    </a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    --focus-ring: var(--c-lime);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+      radial-gradient(60% 80% at 100% 0%, rgb(25 197 139 / 0.1), transparent 60%),
+      radial-gradient(50% 70% at 0% 100%, rgb(11 68 53 / 0.75), transparent 70%),
+      var(--c-ink-1000);
+    color: var(--c-on-dark-muted);
+    padding-top: clamp(3.5rem, 2.5rem + 4vw, 5.5rem);
+  }
+
+  .site-footer__decor {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 40px;
+    pointer-events: none;
+  }
+
+  .site-footer__decor svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .site-footer__trace {
+    fill: none;
+    stroke: rgb(25 197 139 / 0.28);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .site-footer__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
+    padding-bottom: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .site-footer__logo {
+    display: inline-flex;
+  }
+
+  .site-footer__intro {
+    margin-top: 1.25rem;
+    max-width: 26rem;
+    font-size: var(--fs-sm);
+    line-height: 2;
+  }
+
+  .site-footer__contact {
+    margin-top: 2rem;
+  }
+
+  .site-footer__title {
+    margin-bottom: 1rem;
+    font-size: var(--fs-base);
+    font-weight: 700;
+    color: var(--c-white);
+  }
+
+  .site-footer__contact-list {
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .site-footer__contact-list a,
+  .site-footer__address {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--fs-sm);
+    transition: color var(--dur-2);
+  }
+
+  .site-footer__contact-list :global(svg) {
+    color: var(--c-green);
+    transition: transform var(--dur-3) var(--ease-out);
+  }
+
+  .site-footer__contact-list a:hover {
+    color: var(--c-white);
+  }
+
+  .site-footer__contact-list a:hover :global(svg) {
+    transform: translateX(-3px);
+    color: var(--c-lime);
+  }
+
+  .site-footer__social {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .site-footer__social a {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--r-md);
+    border: 1px solid var(--c-line-dark);
+    color: var(--c-on-dark);
+    transition:
+      border-color var(--dur-2),
+      color var(--dur-2),
+      box-shadow var(--dur-3);
+  }
+
+  .site-footer__social a:hover {
+    border-color: rgb(163 244 81 / 0.5);
+    color: var(--c-lime);
+    box-shadow: 0 0 22px -8px rgb(163 244 81 / 0.6);
+  }
+
+  .site-footer__cols {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .site-footer__links {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .site-footer__links a {
+    position: relative;
+    font-size: var(--fs-sm);
+    transition: color var(--dur-2);
+  }
+
+  .site-footer__links a::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: -0.9rem;
+    top: 50%;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background: var(--c-lime);
+    opacity: 0;
+    transform: translate(4px, -50%);
+    transition:
+      opacity var(--dur-2),
+      transform var(--dur-3) var(--ease-out);
+  }
+
+  .site-footer__links a:hover {
+    color: var(--c-white);
+  }
+
+  .site-footer__links a:hover::before {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+
+  .site-footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--c-line-dark);
+    font-size: var(--fs-xs);
+    color: var(--c-on-dark-faint);
+  }
+
+  .site-footer__up {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--c-on-dark-muted);
+    transition: color var(--dur-2);
+  }
+
+  .site-footer__up:hover {
+    color: var(--c-lime);
+  }
+
+  @media (max-width: 1023.98px) {
+    .site-footer__top {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 639.98px) {
+    .site-footer__cols {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 2.25rem;
+    }
+  }
+</style>
