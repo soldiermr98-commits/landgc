@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "source": "https://gilaclick.ir/wp-json/wc/store/v1/products",
+    "capturedAt": "2026-10-30",
+    "purpose": "Local development and preview only. Production always calls the live Store API.",
+    "notes": "Every field is copied from the live API response. The only change: long `description` HTML is abbreviated to its opening paragraph and feature headings. No product in the live store is flagged as featured, so `featuredIds` is empty."
+  },
+  "featuredIds": [],
+  "products": [
+    {
+      "id": 5290,
+      "name": "پلاگین دستیار هوشمند Hami",
+      "slug": "%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d8%af%d8%b3%d8%aa%db%8c%d8%a7%d8%b1-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-hami",
+      "type": "simple",
+      "permalink": "https://gilaclick.ir/product/%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d8%af%d8%b3%d8%aa%db%8c%d8%a7%d8%b1-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-hami/",
+      "short_description": "",
+      "description": "<h2>افزونه دستیار هوشمند حامی (Hami AI Assistant)</h2>\n<p><strong>یک دستیار هوشمند برای تولید محتوا، بهبود سئو و افزایش فروش سایت وردپرسی شما!</strong></p>\n<p><strong>افزونه Hami AI Assistant</strong> یک ابزار چندمنظوره مبتنی بر هوش مصنوعی برای وردپرس است که به شما کمک می‌کند فرایند تولید محتوا، بهینه‌سازی صفحات، مدیریت ارتباط با کاربران و توسعه فروشگاه اینترنتی خود را هوشمندانه‌تر مدیریت کنید.</p>\n<h3>قابلیت‌های کلیدی افزونه Hami AI Assistant</h3>\n<p><strong>۱. تولید محتوای هوشمند</strong></p>\n<p><strong>۲. بهینه‌سازی محتوا برای سئو</strong></p>\n<p><strong>۳. تولید محتوای محصولات ووکامرس</strong></p>\n<p><strong>۴. چت هوشمند و جذب مشتری</strong></p>",
+      "on_sale": false,
+      "prices": {
+        "price": "1940000",
+        "regular_price": "1940000",
+        "sale_price": "1940000",
+        "price_range": null,
+        "currency_code": "IRT",
+        "currency_symbol": "تومان",
+        "currency_minor_unit": 0,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "",
+        "currency_suffix": " تومان"
+      },
+      "images": [
+        {
+          "id": 5291,
+          "src": "https://gilaclick.ir/wp-content/uploads/2026/10/Hami-AI-Assistant-Banner.webp",
+          "thumbnail": "https://gilaclick.ir/wp-content/uploads/2026/10/Hami-AI-Assistant-Banner-300x300.webp",
+          "srcset": "https://gilaclick.ir/wp-content/uploads/2026/10/Hami-AI-Assistant-Banner.webp 750w, https://gilaclick.ir/wp-content/uploads/2026/10/Hami-AI-Assistant-Banner-600x400.webp 600w",
+          "sizes": "(max-width: 750px) 100vw, 750px",
+          "name": "Hami AI Assistant Banner",
+          "alt": ""
+        }
+      ],
+      "categories": [
+        {
+          "id": 1472,
+          "name": "افزونه و ماژول",
+          "slug": "plugins",
+          "link": "https://gilaclick.ir/product-category/plugins/"
+        }
+      ],
+      "is_purchasable": true,
+      "is_in_stock": true
+    },
+    {
+      "id": 5289,
+      "name": "پلاگین تماس برای قیمت",
+      "slug": "%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%b1%d8%a7%db%8c-%d9%82%db%8c%d9%85%d8%aa",
+      "type": "simple",
+      "permalink": "https://gilaclick.ir/product/%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%b1%d8%a7%db%8c-%d9%82%db%8c%d9%85%d8%aa/",
+      "short_description": "",
+      "description": "<p>اگر به دلیل نوسانات نرخ ارز، طلا، آهن‌آلات یا خدمات، امکان درج قیمت ثابت در فروشگاه ووکامرسی خود را ندارید، افزونه تماس برای قیمت ووکامرس «حامی» پایدارترین راه‌حل بازار ایران است.</p>\n<h2>چرا فروشگاه‌های ایرانی به افزونه تماس برای قیمت نیاز دارند؟</h2>\n<h2>مزایای کلیدی افزونه تماس برای قیمت ووکامرس (پلاگین حامی)</h2>\n<h3>۱. اتصال دکمه استعلام به پیام‌رسان‌های داخلی و خارجی</h3>\n<h3>۲. مکانیزم هوشمند «عدم سوختن لید» (Safe Fallback)</h3>\n<h3>۳. پنل اختصاصی ویرایش سریع (شیت قیمت شبیه اکسل)</h3>\n<h3>۴. تغییر قیمت گروهی و درصدی با جدول پشتیبان اختصاصی</h3>\n<h3>۵. امنیت در برابر رقبا و حفظ سئوی فروشگاه</h3>",
+      "on_sale": false,
+      "prices": {
+        "price": "1480000",
+        "regular_price": "1480000",
+        "sale_price": "1480000",
+        "price_range": null,
+        "currency_code": "IRT",
+        "currency_symbol": "تومان",
+        "currency_minor_unit": 0,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "",
+        "currency_suffix": " تومان"
+      },
+      "images": [
+        {
+          "id": 5258,
+          "src": "https://gilaclick.ir/wp-content/uploads/2026/09/افزونه-تماس-برای-قیمت-ووکامرس.webp",
+          "thumbnail": "https://gilaclick.ir/wp-content/uploads/2026/09/افزونه-تماس-برای-قیمت-ووکامرس-300x300.webp",
+          "srcset": "",
+          "sizes": "(max-width: 750px) 100vw, 750px",
+          "name": "افزونه تماس برای قیمت ووکامرس",
+          "alt": "افزونه تماس برای قیمت ووکامرس"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1472,
+          "name": "افزونه و ماژول",
+          "slug": "plugins",
+          "link": "https://gilaclick.ir/product-category/plugins/"
+        }
+      ],
+      "is_purchasable": true,
+      "is_in_stock": true
+    }
+  ]
+}

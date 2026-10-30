@@ -1,0 +1,293 @@
+---
+/**
+ * Capabilities illustration: a core chip (with the GilaClick «G» trace) wired to the
+ * technologies named in the brief. Traces are drawn with the section's scroll progress
+ * (--p, set by scripts/modules/progress.ts); without JS they are simply fully drawn.
+ */
+import { bus, trace, type Trace } from '../../lib/circuit';
+import { stack } from '../../data/capabilities';
+
+// viewBox 520 × 460, chip body 194–326 × 164–296
+const corner = [
+  bus([[230, 154], [230, 122], [196, 88], [120, 88]], { count: 2, gap: 20, stagger: 20 }),
+  bus([[290, 154], [290, 122], [324, 88], [400, 88]], { count: 2, gap: 20, stagger: 20, reverseStagger: true }),
+  bus([[230, 306], [230, 338], [196, 372], [120, 372]], { count: 2, gap: 20, stagger: 20, reverseStagger: true }),
+  bus([[290, 306], [290, 338], [324, 372], [400, 372]], { count: 2, gap: 20, stagger: 20 }),
+];
+const side: Trace[] = [
+  ...bus([[184, 230], [112, 230], [84, 202], [84, 150]], { count: 3, gap: 20, stagger: 18 }),
+  ...bus([[336, 230], [408, 230], [436, 258], [436, 310]], { count: 3, gap: 20, stagger: 18 }),
+  trace([[260, 154], [260, 54]]),
+  trace([[260, 306], [260, 410]]),
+];
+
+const all = [...corner.flat(), ...side];
+const pulsed = [corner[0][0], corner[1][1], corner[2][1], corner[3][0]];
+const pulseStyle = (t: Trace, delay: number) =>
+  `--pulse-dur:${Math.round((t.length / 70 / 0.62) * 10) / 10}s;--pulse-delay:${delay}s;--pulse-len:${Math.round((16 / t.length) * 1000) / 1000}`;
+
+/** Labels sit just beyond the end of each corner bus (positions in % of the viewBox). */
+const labels = [
+  { text: stack[0], x: 110, y: 88, side: 'left' },
+  { text: stack[1], x: 410, y: 88, side: 'right' },
+  { text: stack[2], x: 110, y: 372, side: 'left' },
+  { text: stack[3], x: 410, y: 372, side: 'right' },
+] as const;
+
+const pins = [220, 240, 260, 280, 300];
+const sidePins = [190, 210, 230, 250, 270];
+---
+
+<div class="cc" aria-hidden="true">
+  <div class="cc__glow"></div>
+  <svg class="cc__svg" viewBox="0 0 520 460" focusable="false">
+    <defs>
+      <linearGradient id="cc-body" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0d5240"></stop>
+        <stop offset="1" stop-color="#06271f"></stop>
+      </linearGradient>
+      <radialGradient id="cc-node-glow">
+        <stop offset="0" stop-color="#a3f451" stop-opacity="0.8"></stop>
+        <stop offset="1" stop-color="#a3f451" stop-opacity="0"></stop>
+      </radialGradient>
+      <pattern id="cc-grid" width="12" height="12" patternUnits="userSpaceOnUse">
+        <path d="M12 0H0V12" fill="none" stroke="rgb(163 244 81 / 0.08)" stroke-width="0.6"></path>
+      </pattern>
+    </defs>
+
+    <g class="cc__traces">
+      {all.map((t, i) => <path d={t.d} pathLength="1" class="cc__trace" style={`--i:${i % 6}`} />)}
+    </g>
+
+    <g class="cc__pulses">
+      {
+        pulsed.map((t, i) => (
+          <g class="cc__pulse" style={pulseStyle(t, i * 1.4)}>
+            <path d={t.d} pathLength="1" class="cc__pulse-halo" />
+            <path d={t.d} pathLength="1" class="cc__pulse-core" />
+          </g>
+        ))
+      }
+    </g>
+
+    <g class="cc__vias">
+      {
+        side.slice(0, 6).map((t) => (
+          <g>
+            <circle cx={t.end[0]} cy={t.end[1]} r="5" class="cc__via-ring" />
+            <circle cx={t.end[0]} cy={t.end[1]} r="2.2" class="cc__via-dot" />
+          </g>
+        ))
+      }
+      <circle cx="260" cy="54" r="20" fill="url(#cc-node-glow)" class="cc__antenna-glow"></circle>
+      <circle cx="260" cy="54" r="4" class="cc__antenna"></circle>
+      <circle cx="260" cy="410" r="5" class="cc__via-ring"></circle>
+      <circle cx="260" cy="410" r="2.2" class="cc__via-dot"></circle>
+      {corner.flat().map((t) => <circle cx={t.end[0]} cy={t.end[1]} r="2.6" class="cc__end" />)}
+    </g>
+
+    <!-- chip -->
+    <g class="cc__chip">
+      {pins.map((x) => <rect x={x - 3} y="154" width="6" height="10" rx="1.5" class="cc__pin" />)}
+      {pins.map((x) => <rect x={x - 3} y="296" width="6" height="10" rx="1.5" class="cc__pin" />)}
+      {sidePins.map((y) => <rect x="184" y={y - 3} width="10" height="6" rx="1.5" class="cc__pin" />)}
+      {sidePins.map((y) => <rect x="326" y={y - 3} width="10" height="6" rx="1.5" class="cc__pin" />)}
+      <rect x="194" y="164" width="132" height="132" rx="18" fill="url(#cc-body)" class="cc__body"></rect>
+      <rect x="206" y="176" width="108" height="108" rx="11" fill="url(#cc-grid)" class="cc__inner"></rect>
+      <path d="M206 186 L216 176" class="cc__notch"></path>
+      <g transform="translate(212 178) scale(2.4)">
+        <path d="M26.7 13.3A9.5 9.5 0 1 0 29.4 21.3H23.2" class="cc__mark"></path>
+        <circle cx="21" cy="21.3" r="2.4" class="cc__mark-node"></circle>
+      </g>
+      <text x="260" y="276" text-anchor="middle" class="cc__label">GILACLICK · CORE</text>
+    </g>
+  </svg>
+
+  {
+    labels.map((l) => (
+      <span
+        class:list={['cc__tag', `cc__tag--${l.side}`]}
+        style={`--x:${((l.x / 520) * 100).toFixed(2)}%;--y:${((l.y / 460) * 100).toFixed(2)}%`}
+        lang="en"
+      >
+        <span class="cc__tag-dot" />
+        {l.text}
+      </span>
+    ))
+  }
+</div>
+
+<style>
+  .cc {
+    --draw: clamp(0, calc((var(--p, 1) - 0.12) * 3), 1);
+    --tags: clamp(0, calc((var(--draw) - 0.72) * 4), 1);
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 520 / 460;
+    margin-inline: auto;
+    direction: ltr;
+    container-type: inline-size;
+  }
+
+  .cc__svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .cc__glow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 62%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgb(25 197 139 / 0.35), rgb(163 244 81 / 0.08) 55%, transparent 72%);
+    transform: translate(-50%, -50%) scale(calc(0.75 + var(--draw) * 0.25));
+    opacity: calc(0.25 + var(--draw) * 0.75);
+  }
+
+  .cc__trace {
+    fill: none;
+    stroke: rgb(25 197 139 / 0.5);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: calc(1 - var(--draw));
+  }
+
+  .cc__pulse path {
+    fill: none;
+    stroke: var(--c-lime);
+    stroke-linecap: round;
+    stroke-dasharray: var(--pulse-len) 3;
+    stroke-dashoffset: var(--pulse-len);
+    opacity: var(--tags);
+    animation: gc-pulse-travel var(--pulse-dur) cubic-bezier(0.45, 0.05, 0.55, 0.95) var(--pulse-delay) infinite;
+  }
+
+  .cc__pulse-core {
+    stroke-width: 2.4;
+  }
+
+  .cc__pulse-halo {
+    stroke-width: 7;
+    opacity: 0.25;
+  }
+
+  .cc__vias,
+  .cc__end {
+    opacity: var(--draw);
+  }
+
+  .cc__via-ring {
+    fill: none;
+    stroke: rgb(25 197 139 / 0.5);
+    stroke-width: 1;
+  }
+
+  .cc__via-dot,
+  .cc__end {
+    fill: rgb(25 197 139 / 0.85);
+  }
+
+  .cc__antenna {
+    fill: var(--c-lime);
+  }
+
+  .cc__antenna-glow {
+    --breathe-min: 0.4;
+    animation: gc-breathe 4s ease-in-out infinite;
+  }
+
+  .cc__pin {
+    fill: rgb(25 197 139 / 0.7);
+  }
+
+  .cc__body {
+    stroke: rgb(25 197 139 / 0.55);
+    stroke-width: 1.5;
+  }
+
+  .cc__inner {
+    stroke: rgb(163 244 81 / 0.12);
+    stroke-width: 1;
+  }
+
+  .cc__notch {
+    stroke: var(--c-lime);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+  }
+
+  .cc__mark {
+    fill: none;
+    stroke: var(--c-green);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .cc__mark-node {
+    fill: var(--c-lime);
+  }
+
+  .cc__label {
+    font-family: var(--font-mono);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    fill: rgb(233 247 240 / 0.55);
+  }
+
+  .cc__tag {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.45em 0.8em;
+    border-radius: var(--r-sm);
+    border: 1px solid rgb(25 197 139 / 0.4);
+    background: rgb(6 39 31 / 0.88);
+    color: var(--c-on-dark);
+    font-family: var(--font-mono);
+    font-size: clamp(8.5px, 2.4cqw, 13px);
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: var(--tags);
+    box-shadow: 0 10px 24px -14px rgb(0 0 0 / 0.8);
+  }
+
+  .cc__tag--left {
+    transform: translate(-100%, calc(-50% + (1 - var(--tags)) * 8px));
+  }
+
+  .cc__tag--right {
+    transform: translate(0, calc(-50% + (1 - var(--tags)) * 8px));
+  }
+
+  .cc__tag-dot {
+    width: 0.45em;
+    height: 0.45em;
+    border-radius: 50%;
+    background: var(--c-lime);
+    box-shadow: 0 0 8px rgb(163 244 81 / 0.8);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cc {
+      --draw: 1;
+      --tags: 1;
+    }
+
+    .cc__pulse {
+      display: none;
+    }
+  }
+</style>

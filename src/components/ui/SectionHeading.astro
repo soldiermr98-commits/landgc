@@ -1,0 +1,135 @@
+---
+/**
+ * Section heading: eyebrow label (with a small circuit node) + h2 + optional description.
+ * Use the `title` slot to emphasise part of the heading.
+ */
+interface Props {
+  id: string;
+  title?: string;
+  eyebrow?: string;
+  description?: string;
+  align?: 'start' | 'center';
+  tone?: 'light' | 'dark';
+  class?: string;
+}
+
+const { id, title, eyebrow, description, align = 'start', tone = 'light', class: className } = Astro.props;
+---
+
+<div class:list={['sh', `sh--${align}`, `sh--${tone}`, className]}>
+  {
+    eyebrow && (
+      <p class="sh__eyebrow" data-reveal>
+        <span class="sh__node" aria-hidden="true" />
+        {eyebrow}
+      </p>
+    )
+  }
+  <h2 class="sh__title" id={id} data-reveal style="--reveal-i: 1">
+    {title ? title : <slot name="title" />}
+  </h2>
+  {
+    description && (
+      <p class="sh__desc" data-reveal style="--reveal-i: 2">
+        {description}
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .sh {
+    display: grid;
+    gap: 1rem;
+    max-width: 46rem;
+  }
+
+  .sh--center {
+    margin-inline: auto;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .sh__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    width: fit-content;
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--c-green-ink);
+    line-height: 1.6;
+  }
+
+  /* node + short trace, drawn with CSS */
+  .sh__node {
+    position: relative;
+    width: 1.9rem;
+    height: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .sh__node::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--c-green);
+    box-shadow: 0 0 0 3px rgb(25 197 139 / 0.18);
+    transform: translateY(-50%);
+  }
+
+  .sh__node::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0.75rem 0;
+    top: 50%;
+    height: 1px;
+    background: linear-gradient(to left, rgb(25 197 139 / 0.7), rgb(25 197 139 / 0));
+  }
+
+  .sh__title {
+    font-size: var(--fs-h2);
+    color: var(--c-text);
+  }
+
+  .sh__desc {
+    font-size: var(--fs-md);
+    line-height: var(--lh-body);
+    color: var(--c-text-muted);
+    max-width: 40rem;
+  }
+
+  .sh--dark .sh__eyebrow {
+    color: var(--c-lime);
+  }
+
+  .sh--dark .sh__node::before {
+    background: var(--c-lime);
+    box-shadow: 0 0 10px 1px rgb(163 244 81 / 0.55);
+  }
+
+  .sh--dark .sh__node::after {
+    background: linear-gradient(to left, rgb(163 244 81 / 0.7), rgb(163 244 81 / 0));
+  }
+
+  .sh--dark .sh__title {
+    color: var(--c-white);
+  }
+
+  .sh--dark .sh__desc {
+    color: var(--c-on-dark-muted);
+  }
+
+  :global(.sh__title em) {
+    font-style: normal;
+    color: var(--c-green-ink);
+  }
+
+  .sh--dark :global(.sh__title em) {
+    color: var(--c-lime);
+  }
+</style>

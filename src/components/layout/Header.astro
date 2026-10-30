@@ -1,0 +1,702 @@
+---
+/**
+ * Site header.
+ * - Starts as a light, floating bar over the dark hero; once the page scrolls it docks to
+ *   the top as a full-width translucent white bar with a soft blur (.is-scrolled).
+ * - Desktop: disclosure panels for «فروشگاه محصولات» and «خدمات وب».
+ * - Mobile: off-canvas drawer (dialog) with accordion sub-menus.
+ * Behaviour lives in scripts/modules/header.ts and scripts/modules/navigation.ts.
+ */
+import Logo from '../brand/Logo.astro';
+import Icon from '../ui/Icon.astro';
+import { links } from '../../config/site';
+import { mainNav, isGroup } from '../../config/navigation';
+---
+
+<header class="site-header" data-header>
+  <div class="site-header__bg" aria-hidden="true"></div>
+  <div class="site-header__inner container">
+    <a class="site-header__brand" href={links.home}>
+      <Logo />
+      <span class="visually-hidden">صفحه اصلی</span>
+    </a>
+
+    <nav class="site-nav" aria-label="منوی اصلی">
+      <ul class="site-nav__list">
+        {
+          mainNav.map((item) =>
+            isGroup(item) ? (
+              <li class="site-nav__item has-panel" data-nav-item>
+                <button
+                  class="site-nav__link site-nav__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls={item.id}
+                  data-nav-toggle
+                >
+                  {item.label}
+                  <Icon name="chevron-down" size={16} class="site-nav__chevron" />
+                </button>
+                <div class="nav-panel" id={item.id} data-nav-panel>
+                  <ul class="nav-panel__list">
+                    {item.children.map((child) => (
+                      <li>
+                        <a class="nav-panel__link" href={child.href}>
+                          {child.icon && (
+                            <span class="nav-panel__icon">
+                              <Icon name={child.icon} size={18} />
+                            </span>
+                          )}
+                          <span class="nav-panel__text">
+                            <span class="nav-panel__title">{child.label}</span>
+                            {child.description && <span class="nav-panel__desc">{child.description}</span>}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <a class="nav-panel__footer" href={item.footer.href}>
+                    {item.footer.label}
+                    <Icon name="arrow-left" size={16} />
+                  </a>
+                </div>
+              </li>
+            ) : (
+              <li class="site-nav__item">
+                <a class="site-nav__link" href={item.href} aria-current={item.current ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ),
+          )
+        }
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="icon-btn" href={links.cart} aria-label="سبد خرید" data-cart-link>
+        <Icon name="shopping-cart" size={20} />
+        <span class="icon-btn__badge" data-cart-count hidden></span>
+      </a>
+      <a class="header-cta" href={links.account}>
+        <Icon name="user-round" size={18} />
+        <span class="header-cta__label">ورود / حساب کاربری</span>
+      </a>
+      <button
+        class="icon-btn menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="باز کردن منو"
+        data-menu-open
+      >
+        <Icon name="menu" size={22} />
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="منوی سایت" hidden data-mobile-nav>
+  <div class="mobile-nav__backdrop" data-menu-close></div>
+  <div class="mobile-nav__panel" data-mobile-panel>
+    <div class="mobile-nav__head">
+      <Logo />
+      <button class="icon-btn" type="button" aria-label="بستن منو" data-menu-close>
+        <Icon name="x" size={22} />
+      </button>
+    </div>
+
+    <nav class="mobile-nav__nav" aria-label="منوی موبایل">
+      <ul class="mobile-nav__list">
+        {
+          mainNav.map((item) =>
+            isGroup(item) ? (
+              <li class="mobile-nav__item">
+                <details class="mobile-nav__group">
+                  <summary class="mobile-nav__link">
+                    {item.label}
+                    <Icon name="chevron-down" size={18} class="mobile-nav__chevron" />
+                  </summary>
+                  <ul class="mobile-nav__sub">
+                    {item.children.map((child) => (
+                      <li>
+                        <a class="mobile-nav__sublink" href={child.href} data-menu-link>
+                          {child.icon && <Icon name={child.icon} size={18} />}
+                          {child.label}
+                        </a>
+                      </li>
+                    ))}
+                    <li>
+                      <a class="mobile-nav__sublink mobile-nav__sublink--accent" href={item.footer.href} data-menu-link>
+                        <Icon name="arrow-left" size={18} />
+                        {item.footer.label}
+                      </a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            ) : (
+              <li class="mobile-nav__item">
+                <a
+                  class="mobile-nav__link"
+                  href={item.href}
+                  aria-current={item.current ? 'page' : undefined}
+                  data-menu-link
+                >
+                  {item.label}
+                </a>
+              </li>
+            ),
+          )
+        }
+      </ul>
+    </nav>
+
+    <div class="mobile-nav__actions">
+      <a class="mobile-nav__btn mobile-nav__btn--dark" href={links.account}>
+        <Icon name="user-round" size={18} />
+        ورود / حساب کاربری
+      </a>
+      <a class="mobile-nav__btn" href={links.cart}>
+        <Icon name="shopping-cart" size={18} />
+        سبد خرید
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ---------- bar ---------- */
+  .site-header {
+    --bar-inset: max(8px, calc((100% - var(--container)) / 2 - 14px));
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 100;
+    padding-block-start: var(--header-gap);
+    transition: padding var(--dur-3) var(--ease-out);
+  }
+
+  .site-header__bg {
+    position: absolute;
+    inset-block: var(--header-gap) 0;
+    inset-inline: var(--bar-inset);
+    border-radius: 12px;
+    background: rgb(255 255 255 / 0.97);
+    border: 1px solid rgb(255 255 255 / 0.65);
+    box-shadow:
+      0 18px 40px -22px rgb(0 0 0 / 0.55),
+      0 0 0 1px rgb(6 39 31 / 0.04);
+    transition:
+      inset var(--dur-3) var(--ease-out),
+      border-radius var(--dur-3) var(--ease-out),
+      background-color var(--dur-3) var(--ease-out),
+      box-shadow var(--dur-3) var(--ease-out);
+  }
+
+  .site-header.is-scrolled {
+    padding-block-start: 0;
+  }
+
+  .site-header.is-scrolled .site-header__bg {
+    inset: 0;
+    border-radius: 0;
+    background: rgb(255 255 255 / 0.8);
+    border-color: transparent;
+    border-bottom-color: var(--c-line);
+    box-shadow: 0 10px 30px -22px rgb(6 39 31 / 0.45);
+    -webkit-backdrop-filter: blur(14px) saturate(1.6);
+    backdrop-filter: blur(14px) saturate(1.6);
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .site-header.is-scrolled .site-header__bg {
+      background: rgb(255 255 255 / 0.96);
+    }
+  }
+
+  .site-header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: var(--header-h);
+  }
+
+  .site-header__brand {
+    display: inline-flex;
+    flex-shrink: 0;
+    border-radius: var(--r-sm);
+  }
+
+  /* ---------- desktop nav ---------- */
+  .site-nav {
+    margin-inline: auto;
+  }
+
+  .site-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .site-nav__item {
+    position: relative;
+  }
+
+  .site-nav__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: var(--r-sm);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: rgb(23 43 37 / 0.82);
+    white-space: nowrap;
+    transition:
+      color var(--dur-2),
+      background-color var(--dur-2);
+  }
+
+  .site-nav__link::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0.8rem;
+    bottom: 0.3rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--c-green);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--dur-3) var(--ease-out);
+  }
+
+  .site-nav__link:hover,
+  .has-panel.is-open > .site-nav__link {
+    color: var(--c-ink-950);
+    background: rgb(25 197 139 / 0.07);
+  }
+
+  .site-nav__link:hover::after,
+  .site-nav__link[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+
+  .site-nav__link[aria-current='page'] {
+    color: var(--c-ink-950);
+  }
+
+  .site-nav__toggle::after {
+    inset-inline-end: 1.9rem;
+  }
+
+  .site-nav__chevron {
+    transition: transform var(--dur-3) var(--ease-out);
+    opacity: 0.7;
+  }
+
+  .has-panel.is-open .site-nav__chevron {
+    transform: rotate(180deg);
+  }
+
+  /* ---------- dropdown panels ---------- */
+  .nav-panel {
+    position: absolute;
+    inset-block-start: calc(100% + 14px);
+    inset-inline-start: 50%;
+    width: 22.5rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background: var(--c-white);
+    border: 1px solid var(--c-line);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(50%, 8px);
+    transition:
+      opacity var(--dur-2) var(--ease-out),
+      transform var(--dur-3) var(--ease-out),
+      visibility 0s linear var(--dur-3);
+  }
+
+  /* hover bridge between the trigger and the panel */
+  .nav-panel::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: -16px;
+    height: 16px;
+  }
+
+  .has-panel.is-open > .nav-panel,
+  :global(html:not(.js)) .has-panel:hover > .nav-panel,
+  :global(html:not(.js)) .has-panel:focus-within > .nav-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(50%, 0);
+    transition-delay: 0s;
+  }
+
+  .nav-panel__list {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .nav-panel__link {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.65rem 0.7rem;
+    border-radius: var(--r-md);
+    transition: background-color var(--dur-2);
+  }
+
+  .nav-panel__link:hover {
+    background: var(--c-mint-50);
+  }
+
+  .nav-panel__icon {
+    display: grid;
+    place-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+    border-radius: var(--r-md);
+    background: var(--c-mint-50);
+    color: var(--c-green-ink);
+    border: 1px solid rgb(25 197 139 / 0.18);
+    transition:
+      background-color var(--dur-2),
+      color var(--dur-2),
+      transform var(--dur-3) var(--ease-out);
+  }
+
+  .nav-panel__link:hover .nav-panel__icon {
+    background: var(--c-ink-950);
+    color: var(--c-lime);
+    transform: translateY(-2px);
+  }
+
+  .nav-panel__text {
+    display: grid;
+    gap: 0.1rem;
+    line-height: 1.55;
+  }
+
+  .nav-panel__title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--c-text);
+  }
+
+  .nav-panel__desc {
+    font-size: var(--fs-xs);
+    color: var(--c-text-muted);
+  }
+
+  .nav-panel__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    padding: 0.75rem 0.8rem 0.4rem;
+    border-top: 1px solid var(--c-line);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--c-green-ink);
+  }
+
+  .nav-panel__footer :global(svg) {
+    transition: transform var(--dur-2) var(--ease-out);
+  }
+
+  .nav-panel__footer:hover :global(svg) {
+    transform: translateX(-4px);
+  }
+
+  /* ---------- actions ---------- */
+  .site-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .icon-btn {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--r-md);
+    border: 1px solid var(--c-line);
+    background: var(--c-white);
+    color: var(--c-text);
+    transition:
+      border-color var(--dur-2),
+      box-shadow var(--dur-3),
+      color var(--dur-2);
+  }
+
+  .icon-btn:hover {
+    border-color: rgb(25 197 139 / 0.6);
+    color: var(--c-ink-900);
+    box-shadow: 0 8px 20px -12px rgb(25 197 139 / 0.8);
+  }
+
+  .icon-btn :global(svg) {
+    transition: transform var(--dur-3) var(--ease-out);
+  }
+
+  .icon-btn:hover :global(svg) {
+    transform: translateY(-1px) rotate(-6deg);
+  }
+
+  .icon-btn__badge {
+    position: absolute;
+    inset-block-start: -6px;
+    inset-inline-end: -6px;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding-inline: 0.3rem;
+    border-radius: 0.7rem;
+    background: var(--c-lime);
+    color: var(--c-ink-950);
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 0 2px var(--c-white);
+  }
+
+  .header-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.75rem;
+    padding-inline: 1rem;
+    border-radius: var(--r-md);
+    background: var(--c-ink-950);
+    color: var(--c-white);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    white-space: nowrap;
+    transition:
+      background-color var(--dur-2),
+      box-shadow var(--dur-3);
+  }
+
+  .header-cta :global(svg) {
+    color: var(--c-lime);
+  }
+
+  .header-cta:hover {
+    background: var(--c-ink-900);
+    box-shadow:
+      0 0 0 1px rgb(163 244 81 / 0.35),
+      0 10px 26px -12px rgb(25 197 139 / 0.9);
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 1279.98px) {
+    .site-nav__link {
+      padding-inline: 0.6rem;
+    }
+
+    .site-nav__link::after {
+      inset-inline: 0.6rem;
+    }
+
+    .header-cta {
+      width: 2.75rem;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .header-cta__label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 1099.98px) {
+    .site-nav {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: grid;
+    }
+
+    .site-header__actions {
+      margin-inline-start: auto;
+    }
+  }
+
+  @media (max-width: 559.98px) {
+    .header-cta {
+      display: none;
+    }
+  }
+
+  /* ---------- mobile drawer ---------- */
+  .mobile-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 150;
+  }
+
+  .mobile-nav__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgb(4 28 22 / 0.55);
+    opacity: 0;
+    transition: opacity var(--dur-3) var(--ease-out);
+  }
+
+  .mobile-nav__panel {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    width: min(88vw, 400px);
+    background: var(--c-white);
+    box-shadow: var(--shadow-lg);
+    transform: translateX(105%);
+    transition: transform var(--dur-3) var(--ease-out);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .mobile-nav.is-open .mobile-nav__backdrop {
+    opacity: 1;
+  }
+
+  .mobile-nav.is-open .mobile-nav__panel {
+    transform: none;
+  }
+
+  .mobile-nav__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .mobile-nav__nav {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .mobile-nav__item {
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .mobile-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0.25rem;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--c-text);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .mobile-nav__link::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav__link[aria-current='page'] {
+    color: var(--c-green-ink);
+  }
+
+  .mobile-nav__chevron {
+    color: var(--c-text-muted);
+    transition: transform var(--dur-3) var(--ease-out);
+  }
+
+  .mobile-nav__group[open] .mobile-nav__chevron {
+    transform: rotate(180deg);
+  }
+
+  .mobile-nav__sub {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0 0 0.85rem;
+  }
+
+  .mobile-nav__sublink {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--r-md);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: rgb(23 43 37 / 0.85);
+    background: var(--c-mint-50);
+  }
+
+  .mobile-nav__sublink :global(svg) {
+    color: var(--c-green-ink);
+  }
+
+  .mobile-nav__sublink--accent {
+    background: transparent;
+    color: var(--c-green-ink);
+    font-weight: 700;
+  }
+
+  .mobile-nav__actions {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: auto;
+    padding: 1.25rem;
+    background:
+      radial-gradient(120% 100% at 100% 100%, rgb(25 197 139 / 0.12), transparent 60%),
+      var(--c-mint-50);
+    border-top: 1px solid var(--c-line);
+  }
+
+  .mobile-nav__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    border-radius: var(--r-md);
+    border: 1px solid var(--c-line-strong);
+    background: var(--c-white);
+    font-weight: 700;
+  }
+
+  .mobile-nav__btn--dark {
+    background: var(--c-ink-950);
+    border-color: var(--c-ink-950);
+    color: var(--c-white);
+  }
+
+  .mobile-nav__btn--dark :global(svg) {
+    color: var(--c-lime);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-header,
+    .site-header__bg {
+      transition: none;
+    }
+  }
+</style>
