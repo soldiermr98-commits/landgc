@@ -1,0 +1,491 @@
+/* ==========================================================================
+   Components — buttons, section headings, shared card effects
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Buttons (always <a> links — every button points to a real destination)
+   variants: primary (lime, dark surfaces) · dark (ink, light surfaces)
+             secondary (glass outline, dark surfaces) · outline (light surfaces) · link
+   The trailing arrow points left: «forward» in a right-to-left layout.
+   -------------------------------------------------------------------------- */
+
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: currentColor;
+  --btn-border: transparent;
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 3rem;
+  padding: 0.7rem 1.35rem;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--r-sm);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  /* magnetic offset (set by motion.js on fine pointers) */
+  translate: var(--mag-x, 0px) var(--mag-y, 0px);
+  transition:
+    background-color var(--dur-2) var(--ease-out),
+    border-color var(--dur-2) var(--ease-out),
+    box-shadow var(--dur-3) var(--ease-out),
+    color var(--dur-2) var(--ease-out),
+    translate 0.6s var(--ease-out),
+    transform var(--dur-2) var(--ease-out);
+}
+
+.btn.is-magnetized {
+  transition-duration: var(--dur-2), var(--dur-2), var(--dur-3), var(--dur-2), 0.15s, var(--dur-2);
+}
+
+.btn--sm {
+  min-height: 2.5rem;
+  padding: 0.45rem 1rem;
+  font-size: var(--fs-sm);
+}
+
+.btn--lg {
+  min-height: 3.375rem;
+  padding: 0.85rem 1.6rem;
+  font-size: var(--fs-md);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn__label {
+  position: relative;
+  translate: calc(var(--mag-x, 0px) * 0.35) calc(var(--mag-y, 0px) * 0.35);
+  transition: translate 0.6s var(--ease-out);
+}
+
+.btn__icon {
+  position: relative;
+  transition: transform var(--dur-3) var(--ease-spring);
+}
+
+.btn:hover .btn__icon--end,
+.btn:focus-visible .btn__icon--end {
+  transform: translateX(-5px);
+}
+
+/* light sheen sweeping right → left on hover */
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(100deg, transparent 30%, var(--btn-sheen, rgb(255 255 255 / 0.45)) 50%, transparent 70%);
+  transform: translateX(110%);
+  transition: transform 0.75s var(--ease-out);
+  pointer-events: none;
+}
+
+.btn:hover::after {
+  transform: translateX(-110%);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.985);
+}
+
+/* click ripple (span injected by motion.js) */
+.btn__ripple {
+  position: absolute;
+  z-index: -1;
+  left: var(--rx, 50%);
+  top: var(--ry, 50%);
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.28;
+  pointer-events: none;
+  animation: gc-ripple 0.75s var(--ease-out) forwards;
+}
+
+/* rotating light beam around the border (primary CTAs) */
+.btn--beam::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--gc-angle),
+    transparent 0 62%,
+    var(--beam-color, rgb(255 255 255 / 0.95)) 78%,
+    transparent 92%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: gc-angle 3.6s linear infinite;
+  pointer-events: none;
+}
+
+/* primary — lime, on dark surfaces */
+.btn--primary {
+  --btn-bg: var(--c-lime);
+  --btn-fg: var(--c-ink-950);
+  --btn-border: rgb(163 244 81 / 0.8);
+  box-shadow: 0 10px 30px -14px rgb(163 244 81 / 0.55);
+}
+
+.btn--primary:hover {
+  --btn-bg: var(--c-lime-hover);
+  box-shadow:
+    var(--glow-lime),
+    0 0 46px -8px rgb(163 244 81 / 0.55);
+}
+
+/* dark — solid ink, on light surfaces */
+.btn--dark {
+  --btn-bg: var(--c-ink-950);
+  --btn-fg: var(--c-white);
+  --btn-border: var(--c-ink-950);
+  --btn-sheen: rgb(163 244 81 / 0.18);
+  --beam-color: rgb(163 244 81 / 0.95);
+}
+
+.btn--dark .btn__icon--end {
+  color: var(--c-lime);
+}
+
+.btn--dark:hover {
+  --btn-bg: var(--c-ink-900);
+  box-shadow:
+    0 0 0 1px rgb(25 197 139 / 0.4),
+    var(--glow-green);
+}
+
+/* secondary — glass outline, on dark surfaces */
+.btn--secondary {
+  --btn-bg: rgb(233 247 240 / 0.04);
+  --btn-fg: var(--c-on-dark);
+  --btn-border: rgb(233 247 240 / 0.22);
+  --btn-sheen: rgb(163 244 81 / 0.14);
+  --beam-color: rgb(163 244 81 / 0.9);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.btn--secondary:hover {
+  --btn-bg: rgb(163 244 81 / 0.08);
+  --btn-border: rgb(163 244 81 / 0.55);
+  box-shadow: 0 0 30px -10px rgb(163 244 81 / 0.6);
+}
+
+/* outline — on light surfaces */
+.btn--outline {
+  --btn-bg: var(--c-white);
+  --btn-fg: var(--c-text);
+  --btn-border: var(--c-line-strong);
+  --btn-sheen: rgb(25 197 139 / 0.14);
+}
+
+.btn--outline .btn__icon--end {
+  color: var(--c-green-ink);
+}
+
+.btn--outline:hover {
+  --btn-border: var(--c-green);
+  --btn-bg: rgb(25 197 139 / 0.05);
+  box-shadow: 0 10px 26px -14px rgb(25 197 139 / 0.7);
+}
+
+/* link — text button with an animated underline */
+.btn--link {
+  min-height: auto;
+  padding: 0.35rem 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  font-weight: 700;
+  color: var(--btn-link-color, var(--c-green-ink));
+}
+
+.btn--link::after {
+  inset: auto 0 0 0;
+  height: 1px;
+  z-index: 0;
+  background: currentColor;
+  opacity: 0.35;
+  transform: scaleX(0.25);
+  transform-origin: right;
+  transition:
+    transform var(--dur-3) var(--ease-out),
+    opacity var(--dur-2);
+}
+
+.btn--link:hover::after {
+  transform: scaleX(1);
+  opacity: 0.8;
+}
+
+/* --------------------------------------------------------------------------
+   Section heading: eyebrow (signal trace + node) · h2 · description
+   The vertical «seam» trace plugs every heading into the page-wide circuit:
+   on reveal it draws down into the node, then the node lights and the label
+   slides in.
+   -------------------------------------------------------------------------- */
+
+.sh {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+}
+
+.sh--center {
+  margin-inline: auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.sh__eyebrow {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: fit-content;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--c-green-ink);
+  line-height: 1.6;
+}
+
+.sh__seam {
+  position: absolute;
+  inset-inline-start: calc(0.25rem - 0.5px);
+  bottom: 50%;
+  width: 1px;
+  height: clamp(2.5rem, 5vw, 5rem);
+  background: linear-gradient(to bottom, rgb(25 197 139 / 0), rgb(25 197 139 / 0.75));
+  transform-origin: top;
+  pointer-events: none;
+}
+
+.sh__node {
+  position: relative;
+  width: 1.9rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+}
+
+.sh__node::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: -0.25rem;
+  border-radius: 50%;
+  background: var(--c-green);
+  box-shadow: 0 0 0 3px rgb(25 197 139 / 0.18);
+}
+
+.sh__node::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0.75rem 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(to left, rgb(25 197 139 / 0.7), rgb(25 197 139 / 0));
+  transform-origin: right;
+}
+
+.sh__title {
+  font-size: var(--fs-h2);
+  color: var(--c-text);
+}
+
+/* accent phrase: a lime marker sweeps in behind it (right → left) */
+.sh__title em,
+.roadmap__title em {
+  font-style: normal;
+  color: var(--c-green-ink);
+  background-image: linear-gradient(rgb(163 244 81 / 0.55), rgb(163 244 81 / 0.55));
+  background-repeat: no-repeat;
+  background-position: 100% 86%;
+  background-size: 100% 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 1.1s var(--ease-out) 0.55s;
+}
+
+.js .sh__title:not(.is-revealed) em,
+.js .roadmap__title:not(.is-revealed) em {
+  background-size: 0% 0.3em;
+}
+
+.sh__desc {
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--c-text-muted);
+  max-width: 40rem;
+}
+
+.sh--dark .sh__eyebrow {
+  color: var(--c-lime);
+}
+
+.sh--dark .sh__seam {
+  background: linear-gradient(to bottom, rgb(163 244 81 / 0), rgb(163 244 81 / 0.7));
+}
+
+.sh--dark .sh__node::before {
+  background: var(--c-lime);
+  box-shadow: 0 0 10px 1px rgb(163 244 81 / 0.55);
+}
+
+.sh--dark .sh__node::after {
+  background: linear-gradient(to left, rgb(163 244 81 / 0.7), rgb(163 244 81 / 0));
+}
+
+.sh--dark .sh__title {
+  color: var(--c-white);
+}
+
+.sh--dark .sh__title em,
+.cta-panel__title em {
+  font-style: normal;
+  color: var(--c-lime);
+  background-image: none;
+}
+
+.sh--dark .sh__desc {
+  color: var(--c-on-dark-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Shared card effects
+   [data-spotlight] → motion.js writes --mx / --my (pointer position, px)
+   [data-tilt]      → motion.js writes --rx / --ry (3D tilt, deg)
+   -------------------------------------------------------------------------- */
+
+.fx-tilt {
+  transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.7s var(--ease-out);
+}
+
+.fx-tilt.is-tilting {
+  transition: transform 0.12s linear;
+}
+
+/* lit ring that follows the pointer */
+.fx-ring::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: 3;
+  padding: 1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 0%),
+    var(--ring-a, rgb(25 197 139 / 0.95)),
+    var(--ring-b, rgb(163 244 81 / 0.35)) 35%,
+    transparent 65%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--dur-3);
+  pointer-events: none;
+}
+
+/* soft light under the pointer */
+.fx-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  background: radial-gradient(
+    440px circle at var(--mx, 50%) var(--my, 0%),
+    var(--glow-color, rgb(25 197 139 / 0.08)),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity var(--dur-3);
+  pointer-events: none;
+}
+
+.fx-ring:hover::before,
+.fx-ring:focus-within::before,
+.fx-glow:hover::after {
+  opacity: 1;
+}
+
+/* small pill/tag */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--r-xs);
+  background: rgb(25 197 139 / 0.1);
+  color: var(--c-green-ink);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.tag:empty {
+  display: none;
+}
+
+.tag--dark {
+  background: rgb(163 244 81 / 0.1);
+  color: var(--c-lime);
+}
+
+/* status dot (blinking LED) */
+.led {
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--c-lime);
+  box-shadow: 0 0 10px 1px rgb(163 244 81 / 0.7);
+}
+
+.led::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgb(163 244 81 / 0.7);
+  animation: gc-ping 2.4s var(--ease-out) infinite;
+}
+
+.led--green {
+  background: var(--c-green);
+  box-shadow: 0 0 10px 1px rgb(25 197 139 / 0.6);
+}
+
+.led--green::after {
+  border-color: rgb(25 197 139 / 0.7);
+}

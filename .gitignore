@@ -1,8 +1,4 @@
-# build output
-dist/
-.astro/
-
-# dependencies
+# dependencies (only needed for the dev helpers: icons, validate)
 node_modules/
 
 # logs
@@ -11,7 +7,6 @@ npm-debug.log*
 # environment
 .env
 .env.*
-!.env.example
 
 # OS / editor
 .DS_Store
