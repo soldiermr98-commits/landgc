@@ -186,6 +186,78 @@
  .gp-page.gp-motion-ready .gp-reveal{opacity:0;transform:translateY(16px);transition:opacity .48s var(--gp-ease),transform .48s var(--gp-ease)}
  .gp-page.gp-motion-ready .gp-reveal.gp-in-view{opacity:1;transform:none}
 }
+/* Technology-led hero: all artwork is decorative and content remains native. */
+.gp-page .gp-hero{background:radial-gradient(ellipse at 24% 44%,rgba(12,91,65,.42),transparent 48%),var(--gp-ink)}
+.gp-page .gp-hero::before{background-image:radial-gradient(rgba(81,200,146,.17) .8px,transparent 1px);background-size:25px 25px;mask-image:linear-gradient(to left,transparent 4%,#000 65%);opacity:.8}
+.gp-page .gp-hero-inner{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:clamp(35px,5vw,76px);padding-block:clamp(76px,8vw,112px) 80px}
+.gp-page .gp-hero-copy .gp-kicker .elementor-heading-title{display:inline-flex;gap:9px;padding:8px 12px;border:1px solid rgba(163,244,81,.22);border-radius:4px;background:rgba(163,244,81,.045);font-size:12px}
+.gp-page .gp-hero-copy .gp-kicker .elementor-heading-title::before{width:7px;height:7px;border-radius:50%;box-shadow:0 0 10px rgba(163,244,81,.55)}
+.gp-page .gp-hero-copy .gp-h1::after{content:"";display:block;width:min(280px,70%);height:1px;margin-top:15px;background:linear-gradient(to left,var(--gp-lime),rgba(25,197,139,.12));box-shadow:0 0 9px rgba(163,244,81,.26)}
+.gp-page .gp-hero-art{width:min(100%,540px);max-width:540px}
+.gp-page .gp-engineering-art{overflow:visible}
+.gp-page .gp-art-float-main,.gp-page .gp-art-float-ui,.gp-page .gp-art-float-chip,.gp-page .gp-art-float-mini{transform-box:fill-box;transform-origin:center}
+/* Quick links remain native anchors when JavaScript is disabled. */
+html.gp-smooth-scroll{scroll-behavior:smooth}
+.gp-page .gp-quickbar{position:sticky;top:var(--gp-quick-top,0px);z-index:24;width:100%;background:#fff;border-bottom:1px solid rgba(6,39,31,.12);box-shadow:0 8px 25px rgba(6,39,31,.045)}
+.gp-page .gp-quick-inner{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:25px}
+.gp-page .gp-quick-label{width:auto;flex:0 0 auto;display:flex;align-items:center;padding-inline-end:24px;border-inline-end:1px solid rgba(6,39,31,.12)}
+.gp-page .gp-quick-label .elementor-heading-title{display:flex;align-items:center;gap:9px;color:var(--gp-green);font-size:12px;font-weight:800;line-height:1.4;white-space:nowrap}
+.gp-page .gp-quick-label .elementor-heading-title::before{content:"";width:12px;height:12px;border:1px solid var(--gp-emerald);border-radius:2px;background:linear-gradient(90deg,transparent 46%,var(--gp-emerald) 46% 54%,transparent 54%),linear-gradient(transparent 46%,var(--gp-emerald) 46% 54%,transparent 54%)}
+.gp-page .gp-quick-scroll{width:0;min-width:0;flex:1 1 0;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:clamp(4px,1.5vw,20px);overflow-x:auto;overflow-y:hidden;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#afcdbd transparent}
+.gp-page .gp-quick-scroll::-webkit-scrollbar{height:3px}
+.gp-page .gp-quick-scroll::-webkit-scrollbar-thumb{background:#afcdbd;border-radius:2px}
+.gp-page .gp-quick-link{width:auto;flex:0 0 auto}
+.gp-page .gp-quick-link .elementor-button{position:relative;display:flex;align-items:center;justify-content:center;min-height:65px;padding:12px 9px;border:0;border-radius:0;background:transparent;color:#526a5e;font-family:inherit;font-size:13px;font-weight:700;line-height:1.5;white-space:nowrap;transition:color .2s var(--gp-ease)}
+.gp-page .gp-quick-link .elementor-button::after{content:"";position:absolute;right:9px;left:9px;bottom:0;height:2px;background:var(--gp-emerald);transform:scaleX(0);transform-origin:center;transition:transform .24s var(--gp-ease)}
+.gp-page .gp-quickbar .gp-quick-link .elementor-button:hover,.gp-page .gp-quickbar .gp-quick-link .elementor-button:focus-visible,.gp-page .gp-quickbar .gp-quick-link .elementor-button[aria-current="location"]{background:transparent;color:var(--gp-green)}
+.gp-page .gp-quick-link .elementor-button:hover::after,.gp-page .gp-quick-link .elementor-button:focus-visible::after,.gp-page .gp-quick-link .elementor-button[aria-current="location"]::after{transform:scaleX(1)}
+.gp-page .gp-quick-link .elementor-button:focus-visible{outline-offset:-4px}
+.gp-page :is(#web-design,#support,#seo,#custom-development,#faq,#consult){scroll-margin-top:var(--gp-scroll-offset,90px)}
+/* Match native widget width and icon borders even with Elementor global styles. */
+.gp-page .gp-section-head .gp-body.elementor-widget{max-width:710px}
+.gp-page .gp-price-grid .gp-price-card .gp-card-icon .elementor-icon{border-color:rgba(11,68,53,.24)}
+.gp-page .gp-price-grid .gp-price-card:hover .gp-card-icon .elementor-icon{border-color:var(--gp-emerald)}
+/* A coherent, service-specific card system with native editable icons. */
+.gp-page .gp-price-grid{grid-auto-rows:1fr}
+.gp-page .gp-price-card{isolation:isolate;overflow:hidden;border-color:rgba(11,68,53,.15);background:linear-gradient(160deg,#fff 65%,#f5fcf8);box-shadow:0 6px 22px rgba(6,39,31,.035);transition:border-color .25s var(--gp-ease),box-shadow .25s var(--gp-ease),transform .25s var(--gp-ease)}
+.gp-page .gp-price-card::before{content:"";position:absolute;top:0;right:25px;left:25px;height:2px;background:linear-gradient(to left,var(--gp-emerald),var(--gp-lime),transparent);transform:scaleX(.2);transform-origin:right;opacity:.8;transition:transform .3s var(--gp-ease)}
+.gp-page .gp-price-card::after{content:"";position:absolute;top:0;left:0;width:32px;height:32px;border-top:1px solid rgba(25,197,139,.35);border-left:1px solid rgba(25,197,139,.35);border-top-left-radius:8px;pointer-events:none}
+.gp-page .gp-price-card:hover{border-color:rgba(25,197,139,.55);box-shadow:0 15px 35px rgba(6,39,31,.09);transform:translateY(-4px)}
+.gp-page .gp-price-card:hover::before{transform:scaleX(1)}
+.gp-page .gp-card-icon .elementor-icon{width:48px;height:48px;border-color:rgba(11,68,53,.24);background:linear-gradient(145deg,#effbf5,#ddf5e8);font-size:19px;transition:transform .25s var(--gp-ease),border-color .25s var(--gp-ease),background-color .25s var(--gp-ease)}
+.gp-page .gp-card-icon svg{width:19px;height:19px}
+.gp-page .gp-price-card:hover .gp-card-icon .elementor-icon{transform:translateY(-2px);border-color:var(--gp-emerald)}
+.gp-page .gp-price-card .gp-price-row{gap:7px}
+.gp-page .gp-price-card .gp-price-value .elementor-heading-title{font-size:40px;transition:color .25s var(--gp-ease)}
+.gp-page .gp-price-card:hover .gp-price-value .elementor-heading-title{color:var(--gp-green)}
+.gp-page .gp-seo-card{transition:border-color .25s var(--gp-ease),box-shadow .25s var(--gp-ease),transform .25s var(--gp-ease)}
+.gp-page .gp-seo-card:hover{border-color:rgba(25,197,139,.45);box-shadow:0 12px 28px rgba(6,39,31,.055);transform:translateY(-3px)}
+.gp-page .gp-button .elementor-button:hover{box-shadow:0 7px 18px rgba(25,197,139,.14)}
+/* Motion is opt-in at runtime; without JS everything stays visible. */
+@media(prefers-reduced-motion:no-preference){
+ .gp-page.gp-hero-live .gp-hero-copy>*,.gp-page.gp-hero-live .gp-hero-art{animation:gp-hero-enter .7s var(--gp-ease) both}
+ .gp-page.gp-hero-live .gp-hero-copy>:nth-child(2){animation-delay:.08s}
+ .gp-page.gp-hero-live .gp-hero-copy>:nth-child(3){animation-delay:.16s}
+ .gp-page.gp-hero-live .gp-hero-copy>:nth-child(4){animation-delay:.24s}
+ .gp-page.gp-hero-live .gp-hero-art{animation-delay:.12s}
+ .gp-page.gp-hero-live .gp-art-float-main{animation:gp-art-float 8s ease-in-out infinite}
+ .gp-page.gp-hero-live .gp-art-float-ui{animation:gp-art-float 7s ease-in-out -2s infinite reverse}
+ .gp-page.gp-hero-live .gp-art-float-chip{animation:gp-art-float 9s ease-in-out -4s infinite}
+ .gp-page.gp-hero-live .gp-art-float-mini{animation:gp-art-float 8s ease-in-out -3s infinite reverse}
+ .gp-page.gp-hero-live .gp-art-flow{filter:drop-shadow(0 0 4px rgba(163,244,81,.7));stroke-dasharray:4 115;animation:gp-art-signal 4.8s linear infinite}
+ .gp-page.gp-hero-live .gp-art-flow-alt{animation-duration:5.8s;animation-delay:-2s}
+ .gp-page.gp-hero-live .gp-art-flow-slow{animation-duration:6.7s;animation-delay:-4s}
+ .gp-page.gp-motion-ready .gp-card-reveal:not(.gp-in-view){opacity:0}
+ .gp-page.gp-motion-ready .gp-card-reveal.gp-in-view{animation:gp-card-enter .55s var(--gp-ease) var(--gp-card-delay,0s) both}
+ .gp-page .gp-price-grid>.gp-card-reveal:nth-child(2),.gp-page .gp-seo-grid>.gp-card-reveal:nth-child(2){--gp-card-delay:.08s}
+ .gp-page .gp-price-grid>.gp-card-reveal:nth-child(3),.gp-page .gp-seo-grid>.gp-card-reveal:nth-child(3){--gp-card-delay:.16s}
+ .gp-page .gp-seo-grid>.gp-card-reveal:nth-child(4){--gp-card-delay:.24s}
+ .gp-page.gp-motion-ready :is(.gp-reveal,.gp-card-reveal):focus-within{opacity:1!important;transform:none!important;animation:none!important}
+}
+@keyframes gp-hero-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes gp-card-enter{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
+@keyframes gp-art-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes gp-art-signal{to{stroke-dashoffset:-119}}
 @media(max-width:1050px){
  .gp-page .gp-header-inner{gap:10px}
  .gp-page .gp-nav-link .elementor-button{font-size:12.5px;padding-inline:7px}
@@ -243,6 +315,21 @@
  .gp-page,.gp-page *,.gp-page *::before,.gp-page *::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
  .gp-page.gp-motion-ready .gp-reveal{opacity:1;transform:none}
 }
+@media(max-width:680px){
+ .gp-page .gp-hero-inner{padding-block:58px 48px;gap:24px}
+ .gp-page .gp-quick-inner{width:100%;gap:0;padding-inline:var(--gp-gutter)}
+ .gp-page .gp-quick-label{display:none}
+ .gp-page .gp-quick-scroll{width:100%;flex:1 1 auto;gap:8px}
+ .gp-page .gp-quick-link .elementor-button{min-height:56px;padding-inline:10px;font-size:12.5px}
+ .gp-page .gp-price-card .gp-price-value .elementor-heading-title{font-size:37px}
+ .gp-page.gp-hero-live .gp-art-float-chip,.gp-page.gp-hero-live .gp-art-float-mini,.gp-page.gp-hero-live .gp-art-flow-alt,.gp-page.gp-hero-live .gp-art-flow-slow{animation:none}
+}
+@media(prefers-reduced-motion:reduce){
+ html.gp-smooth-scroll{scroll-behavior:auto}
+ .gp-page.gp-motion-ready .gp-card-reveal{opacity:1;translate:none;animation:none}
+ .gp-page .gp-price-card:hover,.gp-page .gp-seo-card:hover,.gp-page .gp-price-card:hover .gp-card-icon .elementor-icon,.gp-page .gp-button .elementor-button:hover::after{transform:none}
+}
+body.elementor-editor-active .gp-page .gp-quickbar,body.elementor-editor-preview .gp-page .gp-quickbar{position:relative;top:auto}
 /* Keep every editable navigation item selectable inside Elementor. */
 body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-preview .gp-page .gp-primary-nav{display:flex!important}
 
@@ -278,16 +365,75 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 <div class="elementor-widget elementor-widget-heading gp-body"><p class="elementor-heading-title">از طراحی و توسعه وب‌سایت تا سئو، پشتیبانی و برنامه‌نویسی اختصاصی؛ خدمات متناسب با نیاز کسب‌وکار شما، با قیمت‌گذاری شفاف و رویکردی تخصصی.</p></div>
 <div class="elementor-widget elementor-widget-button gp-button"><a class="elementor-button elementor-button-link" href="#consult"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">مشاوره و دریافت قیمت</span></span></a></div>
 </div>
-<div class="elementor-widget elementor-widget-html gp-hero-art"><svg viewBox="0 0 490 395" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-<path d="M22 100h52M22 100V72M462 276h-48M462 276v35" stroke="#19C58B" stroke-opacity=".38" stroke-width="1.5"/><circle cx="22" cy="68" r="3" fill="#19C58B"/><circle cx="462" cy="315" r="3" fill="#A3F451"/>
-<rect x="55" y="38" width="365" height="278" rx="10" fill="#0B4435" stroke="#90D9B6" stroke-opacity=".32"/>
-<path d="M55 79h365" stroke="#90D9B6" stroke-opacity=".25"/><circle cx="84" cy="59" r="3.5" fill="#A3F451"/><circle cx="99" cy="59" r="3.5" fill="#19C58B" fill-opacity=".65"/><circle cx="114" cy="59" r="3.5" fill="#19C58B" fill-opacity=".35"/>
-<rect x="85" y="109" width="159" height="11" rx="5.5" fill="#D7F4E3" fill-opacity=".75"/><rect x="85" y="133" width="204" height="8" rx="4" fill="#A5D9BA" fill-opacity=".27"/><rect x="85" y="150" width="170" height="8" rx="4" fill="#A5D9BA" fill-opacity=".2"/>
-<rect x="85" y="184" width="101" height="31" rx="4" fill="#A3F451"/><path d="M112 199h47m-7-5 7 5-7 5" stroke="#0B4435" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="85" y="249" width="87" height="35" rx="4" stroke="#A5D9BA" stroke-opacity=".25"/><rect x="182" y="249" width="87" height="35" rx="4" stroke="#A5D9BA" stroke-opacity=".25"/><rect x="279" y="249" width="87" height="35" rx="4" stroke="#A5D9BA" stroke-opacity=".25"/>
-<circle cx="345" cy="156" r="45" fill="#06271F" fill-opacity=".55" stroke="#90D9B6" stroke-opacity=".25"/><path d="M329 157l11 11 23-24" stroke="#A3F451" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="5" y="270" width="123" height="74" rx="8" fill="#F0FBF6" stroke="#A5D9BA" stroke-opacity=".5"/><circle cx="28" cy="295" r="7" fill="#19C58B"/><path d="M45 291h57M45 301h42M21 319h81" stroke="#0B4435" stroke-opacity=".3" stroke-width="5" stroke-linecap="round"/>
-<rect x="342" y="292" width="124" height="70" rx="8" fill="#0B4435" stroke="#90D9B6" stroke-opacity=".45"/><path d="M363 334l17-13 13 6 20-17 26 7" stroke="#A3F451" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="413" cy="310" r="3.5" fill="#A3F451"/>
+<div class="elementor-widget elementor-widget-html gp-hero-art"><svg class="gp-engineering-art" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="direction:ltr">
+  <defs>
+    <linearGradient id="gp-art-board" x1="110" y1="103" x2="475" y2="385" gradientUnits="userSpaceOnUse"><stop stop-color="#0E4D3A"/><stop offset="1" stop-color="#072F25"/></linearGradient>
+    <radialGradient id="gp-art-light" cx="0" cy="0" r="1" gradientTransform="translate(295 250) rotate(90) scale(220 255)" gradientUnits="userSpaceOnUse"><stop stop-color="#19C58B" stop-opacity=".14"/><stop offset="1" stop-color="#19C58B" stop-opacity="0"/></radialGradient>
+  </defs>
+  <circle cx="295" cy="250" r="238" fill="url(#gp-art-light)"/>
+  <g class="gp-art-traces" stroke="#19C58B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity=".44">
+    <path d="M30 143h67l31 31h47M30 157h58l30 30h57M30 171h48l31 31h66"/>
+    <path d="M150 105V76L121 47H72M166 105V68L145 47H120M182 105V60L169 47h-15"/>
+    <path d="M475 168h45l32-32h24M475 184h55l33-33h13M475 200h65l30-30h6"/>
+    <path d="M160 353v37l-28 28H86M176 353v48l-31 31h-27M192 353v57l-36 36h-19"/>
+    <path d="M399 351v40l26 26h41M414 351v34l29 29h44M429 351v25l31 31h53"/>
+    <circle cx="27" cy="143" r="4"/><circle cx="27" cy="157" r="4"/><circle cx="27" cy="171" r="4"/>
+    <circle cx="68" cy="47" r="4"/><circle cx="116" cy="47" r="4"/><circle cx="150" cy="47" r="4"/>
+    <circle cx="579" cy="136" r="4"/><circle cx="579" cy="151" r="4"/><circle cx="579" cy="170" r="4"/>
+    <circle cx="82" cy="418" r="4"/><circle cx="114" cy="432" r="4"/><circle cx="133" cy="446" r="4"/>
+    <circle cx="470" cy="417" r="4"/><circle cx="491" cy="414" r="4"/><circle cx="517" cy="407" r="4"/>
+  </g>
+  <g class="gp-art-signals" fill="none" stroke="#A3F451" stroke-width="2" stroke-linecap="round">
+    <path class="gp-art-flow" d="M30 143h67l31 31h47"/>
+    <path class="gp-art-flow gp-art-flow-alt" d="M475 184h55l33-33h13"/>
+    <path class="gp-art-flow gp-art-flow-slow" d="M192 353v57l-36 36h-19"/>
+  </g>
+  <g class="gp-art-points">
+    <circle cx="68" cy="47" r="4" fill="#A3F451"/><circle cx="579" cy="151" r="4" fill="#19C58B"/>
+    <circle cx="82" cy="418" r="4" fill="#19C58B"/><circle cx="517" cy="407" r="4" fill="#A3F451"/>
+  </g>
+  <g class="gp-art-float-main">
+    <rect x="108" y="110" width="372" height="254" rx="12" fill="#041F18" fill-opacity=".42"/>
+    <rect x="101" y="102" width="372" height="254" rx="12" fill="url(#gp-art-board)" stroke="#44AA7D" stroke-opacity=".6"/>
+    <path d="M101 145h372" stroke="#8DE2B5" stroke-opacity=".18"/>
+    <circle cx="126" cy="123" r="3.5" fill="#A3F451"/><circle cx="140" cy="123" r="3.5" fill="#19C58B" fill-opacity=".65"/><circle cx="154" cy="123" r="3.5" fill="#A4DAC0" fill-opacity=".32"/>
+    <path d="M190 106v39" stroke="#8DE2B5" stroke-opacity=".14"/>
+    <text x="209" y="128" fill="#D7F4E3" fill-opacity=".74" font-family="monospace" font-size="12" letter-spacing="1.2">&lt;/&gt;  PROJECT.JS</text>
+    <g font-family="monospace" font-size="14" letter-spacing=".2">
+      <text x="126" y="182" fill="#80B9A1">01</text><text x="166" y="182" fill="#19C58B">const <tspan fill="#E4F6EC">project</tspan><tspan fill="#A5D9BA"> = {</tspan></text>
+      <text x="126" y="212" fill="#80B9A1">02</text><text x="182" y="212" fill="#D6F2E2">design<tspan fill="#80B9A1">:</tspan> <tspan fill="#A3F451">'interface'</tspan><tspan fill="#80B9A1">,</tspan></text>
+      <text x="126" y="242" fill="#80B9A1">03</text><text x="182" y="242" fill="#D6F2E2">develop<tspan fill="#80B9A1">:</tspan> <tspan fill="#A3F451">'web'</tspan><tspan fill="#80B9A1">,</tspan></text>
+      <text x="126" y="272" fill="#80B9A1">04</text><text x="182" y="272" fill="#D6F2E2">build<tspan fill="#80B9A1">:</tspan> <tspan fill="#A3F451">true</tspan></text>
+      <text x="126" y="302" fill="#80B9A1">05</text><text x="166" y="302" fill="#A5D9BA">};</text>
+    </g>
+    <path d="M101 322h372" stroke="#8DE2B5" stroke-opacity=".16"/>
+    <circle cx="128" cy="339" r="3" fill="#A3F451"/><path d="M141 339h48M205 339h27" stroke="#A5D9BA" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+    <path d="M385 339h18M414 339h33" stroke="#19C58B" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g class="gp-art-float-ui">
+    <rect x="390" y="50" width="146" height="108" rx="9" fill="#F0FBF6" stroke="#B7E0CA"/>
+    <rect x="404" y="64" width="118" height="10" rx="3" fill="#D6EDE1"/>
+    <circle cx="412" cy="69" r="2" fill="#19C58B"/><circle cx="420" cy="69" r="2" fill="#A3F451"/>
+    <rect x="404" y="84" width="49" height="57" rx="4" fill="#DDEFE5"/>
+    <rect x="412" y="94" width="33" height="4" rx="2" fill="#0B4435" fill-opacity=".45"/>
+    <rect x="412" y="105" width="25" height="3" rx="1.5" fill="#0B4435" fill-opacity=".22"/>
+    <rect x="412" y="116" width="28" height="3" rx="1.5" fill="#0B4435" fill-opacity=".22"/>
+    <rect x="462" y="84" width="60" height="25" rx="4" fill="#0B4435"/>
+    <path d="M473 97h25m-5-4 5 4-5 4" stroke="#A3F451" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="462" y="116" width="60" height="25" rx="4" fill="#CBEBDA"/>
+    <path d="M474 129h35" stroke="#0B4435" stroke-opacity=".32" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g class="gp-art-float-chip">
+    <rect x="42" y="253" width="88" height="81" rx="8" fill="#0B4435" stroke="#19C58B" stroke-opacity=".7"/>
+    <path d="M51 266h-9m9 13h-9m9 13h-9m9 13h-9m88-39h-9m9 13h-9m9 13h-9m9 13h-9" stroke="#19C58B" stroke-width="2" stroke-linecap="round"/>
+    <rect x="61" y="271" width="50" height="45" rx="5" fill="#06271F" stroke="#A3F451" stroke-opacity=".38"/>
+    <path d="m79 283-7 10 7 10m14-20 7 10-7 10m-8 2 5-24" stroke="#A3F451" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="gp-art-float-mini">
+    <rect x="365" y="334" width="150" height="68" rx="8" fill="#092F25" stroke="#75D3A4" stroke-opacity=".55"/>
+    <circle cx="386" cy="354" r="6" fill="#19C58B"/><path d="M401 351h66M401 360h42" stroke="#C9EAD7" stroke-opacity=".48" stroke-width="3" stroke-linecap="round"/>
+    <path d="M384 385h21v-9h18v6h18v-11h18v6h30" stroke="#A3F451" stroke-opacity=".9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="405" cy="376" r="2" fill="#A3F451"/><circle cx="441" cy="371" r="2" fill="#19C58B"/>
+  </g>
 </svg></div>
 </div>
 <div class="e-con e-con-full gp-hero-meta">
@@ -298,6 +444,18 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 </div>
 </div>
 </section>
+<nav class="e-con e-con-full gp-quickbar" aria-label="دسترسی سریع به بخش‌های خدمات">
+<div class="e-con e-con-full gp-wrap gp-quick-inner">
+<div class="elementor-widget elementor-widget-heading gp-quick-label"><p class="elementor-heading-title">دسترسی سریع</p></div>
+<div class="e-con e-con-full gp-quick-scroll">
+<div class="elementor-widget elementor-widget-button gp-quick-link"><a class="elementor-button elementor-button-link" href="#web-design"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">طراحی سایت</span></span></a></div>
+<div class="elementor-widget elementor-widget-button gp-quick-link"><a class="elementor-button elementor-button-link" href="#support"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">پشتیبانی سایت</span></span></a></div>
+<div class="elementor-widget elementor-widget-button gp-quick-link"><a class="elementor-button elementor-button-link" href="#seo"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">سئو و AEO</span></span></a></div>
+<div class="elementor-widget elementor-widget-button gp-quick-link"><a class="elementor-button elementor-button-link" href="#custom-development"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">برنامه‌نویسی اختصاصی</span></span></a></div>
+<div class="elementor-widget elementor-widget-button gp-quick-link"><a class="elementor-button elementor-button-link" href="#faq"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">سوالات متداول</span></span></a></div>
+</div>
+</div>
+</nav>
 <section class="e-con e-con-full gp-section gp-web-section" id="web-design">
 <div class="e-con e-con-full gp-wrap">
 <div class="e-con e-con-full gp-section-head gp-reveal">
@@ -305,8 +463,8 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 <div class="elementor-widget elementor-widget-heading gp-h2"><h2 class="elementor-heading-title">طراحی و توسعه وب‌سایت</h2></div>
 <div class="elementor-widget elementor-widget-heading gp-body"><p class="elementor-heading-title">وب‌سایت شما نقطه شروع حضور حرفه‌ای کسب‌وکارتان در فضای دیجیتال است. طراحی و توسعه سایت بر اساس نیاز، هویت برند و اهداف تجاری شما انجام می‌شود.</p></div>
 </div>
-<div class="e-con e-con-full gp-price-grid gp-reveal">
-<div class="e-con e-con-full gp-price-card">
+<div class="e-con e-con-full gp-price-grid">
+<div class="e-con e-con-full gp-price-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-icon gp-card-icon"><div class="elementor-icon-wrapper"><div class="elementor-icon"><svg aria-hidden="true" class="e-font-icon-svg e-far-file-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></div></div></div>
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">طراحی لندینگ پیج</h3></div>
 <div class="elementor-widget elementor-widget-heading gp-body"><p class="elementor-heading-title">طراحی صفحات فرود حرفه‌ای برای معرفی محصولات، خدمات، کمپین‌های تبلیغاتی و جذب مشتری.</p></div>
@@ -317,7 +475,7 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 </div>
 <div class="elementor-widget elementor-widget-button gp-button gp-button-soft"><a class="elementor-button elementor-button-link" href="https://gilaclick.ir/contact-us/"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">درخواست مشاوره</span></span></a></div>
 </div>
-<div class="e-con e-con-full gp-price-card">
+<div class="e-con e-con-full gp-price-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-icon gp-card-icon"><div class="elementor-icon-wrapper"><div class="elementor-icon"><svg aria-hidden="true" class="e-font-icon-svg e-far-building" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"></path></svg></div></div></div>
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">طراحی سایت شرکتی و خدماتی</h3></div>
 <div class="elementor-widget elementor-widget-heading gp-body"><p class="elementor-heading-title">طراحی وب‌سایت حرفه‌ای برای معرفی کسب‌وکار، خدمات، سوابق و ایجاد مسیر ارتباطی مؤثر با مشتریان.</p></div>
@@ -328,7 +486,7 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 </div>
 <div class="elementor-widget elementor-widget-button gp-button gp-button-soft"><a class="elementor-button elementor-button-link" href="https://gilaclick.ir/contact-us/"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">درخواست مشاوره</span></span></a></div>
 </div>
-<div class="e-con e-con-full gp-price-card">
+<div class="e-con e-con-full gp-price-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-icon gp-card-icon"><div class="elementor-icon-wrapper"><div class="elementor-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-shopping-basket" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M576 216v16c0 13.255-10.745 24-24 24h-8l-26.113 182.788C514.509 462.435 494.257 480 470.37 480H105.63c-23.887 0-44.139-17.565-47.518-41.212L32 256h-8c-13.255 0-24-10.745-24-24v-16c0-13.255 10.745-24 24-24h67.341l106.78-146.821c10.395-14.292 30.407-17.453 44.701-7.058 14.293 10.395 17.453 30.408 7.058 44.701L170.477 192h235.046L326.12 82.821c-10.395-14.292-7.234-34.306 7.059-44.701 14.291-10.395 34.306-7.235 44.701 7.058L484.659 192H552c13.255 0 24 10.745 24 24zM312 392V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm112 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm-224 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24z"></path></svg></div></div></div>
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">طراحی سایت فروشگاهی</h3></div>
 <div class="elementor-widget elementor-widget-heading gp-body"><p class="elementor-heading-title">راه‌اندازی فروشگاه اینترنتی با قابلیت مدیریت محصولات، سفارش‌ها، پرداخت آنلاین و توسعه امکانات فروش.</p></div>
@@ -390,20 +548,20 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
 <div class="elementor-widget elementor-widget-heading gp-small"><p class="elementor-heading-title">حداقل مدت قرارداد: ۶ ماه</p></div>
 </div>
 </div>
-<div class="e-con e-con-full gp-seo-grid gp-reveal">
-<div class="e-con e-con-full gp-seo-card">
+<div class="e-con e-con-full gp-seo-grid">
+<div class="e-con e-con-full gp-seo-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">خدمات سئو تکنیکال</h3></div>
 <div class="elementor-widget elementor-widget-icon-list gp-list"><ul class="elementor-icon-list-items"><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بررسی و رفع مشکلات فنی سایت</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهینه‌سازی سرعت و ساختار سایت</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بررسی ایندکس صفحات</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهینه‌سازی لینک‌سازی داخلی و داده‌های ساختاریافته</span></li></ul></div>
 </div>
-<div class="e-con e-con-full gp-seo-card">
+<div class="e-con e-con-full gp-seo-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">خدمات سئو داخلی و محتوایی</h3></div>
 <div class="elementor-widget elementor-widget-icon-list gp-list"><ul class="elementor-icon-list-items"><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">تحقیق کلمات کلیدی و تحلیل رقبا</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">تدوین استراتژی و تقویم محتوایی</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهینه‌سازی صفحات محصولات و خدمات</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">تولید و بهینه‌سازی محتوای هدفمند</span></li></ul></div>
 </div>
-<div class="e-con e-con-full gp-seo-card">
+<div class="e-con e-con-full gp-seo-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">خدمات AEO و GEO</h3></div>
 <div class="elementor-widget elementor-widget-icon-list gp-list"><ul class="elementor-icon-list-items"><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهینه‌سازی محتوا برای پاسخ به پرسش کاربران</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهبود ساختار محتوا برای درک بهتر توسط موتورهای پاسخ‌گو</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">تقویت اعتبار و هویت برند در فضای وب</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بهبود قابلیت دسترسی و خوانایی محتوا برای ابزارهای هوش مصنوعی</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">پایش میزان دیده‌شدن و ارجاع به سایت در ابزارهای هوش مصنوعی، در حد امکانات اندازه‌گیری</span></li></ul></div>
 </div>
-<div class="e-con e-con-full gp-seo-card">
+<div class="e-con e-con-full gp-seo-card gp-card-reveal">
 <div class="elementor-widget elementor-widget-heading gp-h3"><h3 class="elementor-heading-title">گزارش و پایش</h3></div>
 <div class="elementor-widget elementor-widget-icon-list gp-list"><ul class="elementor-icon-list-items"><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بررسی عملکرد در Google Search Console و ابزارهای تحلیلی</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">بررسی وضعیت کلمات کلیدی</span></li><li class="elementor-icon-list-item"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span><span class="elementor-icon-list-text">گزارش ماهانه اقدامات و نتایج</span></li></ul></div>
 </div>
@@ -505,6 +663,83 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
       });
       if (small.addEventListener) small.addEventListener('change', sync); else small.addListener(sync);
     }
+    // Sticky section navigation: keep native anchor links as the no-JS fallback.
+    var quick = root.querySelector('.gp-quickbar');
+    var quickTrack = quick && quick.querySelector('.gp-quick-scroll');
+    if (quick && quickTrack && !inEditor) {
+      quick.setAttribute('aria-label', 'دسترسی سریع به بخش‌های خدمات');
+      var links = Array.prototype.slice.call(quickTrack.querySelectorAll('a[href^="#"]'));
+      var pairs = links.map(function (link) {
+        var id = link.getAttribute('href').slice(1);
+        return {link: link, section: id && document.getElementById(id)};
+      }).filter(function (pair) { return !!pair.section; });
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (!reduced.matches) document.documentElement.classList.add('gp-smooth-scroll');
+      if (reduced.addEventListener) {
+        reduced.addEventListener('change', function () {
+          document.documentElement.classList.toggle('gp-smooth-scroll', !reduced.matches);
+        });
+      }
+      var scheduled = false;
+      var active = null;
+      var lastTop = -1;
+      var lastScrollTop = -1;
+      var lastHeight = -1;
+      function headerOffset() {
+        // Only count bars actually fixed/stuck at the top, not normal-flow headers.
+        var bars = Array.prototype.slice.call(document.querySelectorAll('#wpadminbar, header, .site-header, .elementor-location-header, [data-gp-fixed-header]'));
+        bars = bars.filter(function (bar) { return bar !== quick && !quick.contains(bar); });
+        bars.sort(function (a, b) { return a.getBoundingClientRect().top - b.getBoundingClientRect().top; });
+        var bottom = 0;
+        bars.forEach(function (bar) {
+          var style = window.getComputedStyle(bar);
+          var box = bar.getBoundingClientRect();
+          if ((style.position === 'fixed' || style.position === 'sticky') && style.visibility !== 'hidden' && style.display !== 'none' && box.height > 0 && box.top <= bottom + 2 && box.bottom > bottom) {
+            bottom = box.bottom;
+          }
+        });
+        return Math.max(0, Math.min(Math.ceil(bottom), Math.floor(window.innerHeight / 2)));
+      }
+      function keepActiveVisible(link) {
+        if (!link) return;
+        var trackBox = quickTrack.getBoundingClientRect();
+        var linkBox = link.getBoundingClientRect();
+        var delta = linkBox.left < trackBox.left + 8 ? linkBox.left - trackBox.left - 8 :
+          linkBox.right > trackBox.right - 8 ? linkBox.right - trackBox.right + 8 : 0;
+        if (delta) quickTrack.scrollBy({left: delta, behavior: reduced.matches ? 'auto' : 'smooth'});
+      }
+      function updateQuick() {
+        scheduled = false;
+        var top = headerOffset();
+        var height = Math.ceil(quick.getBoundingClientRect().height);
+        if (top !== lastTop) { root.style.setProperty('--gp-quick-top', top + 'px'); lastTop = top; }
+        if (top !== lastScrollTop || height !== lastHeight) {
+          root.style.setProperty('--gp-scroll-offset', (top + height) + 'px');
+          lastScrollTop = top;
+          lastHeight = height;
+        }
+        var probe = top + height + 32;
+        var current = null;
+        pairs.forEach(function (pair) { if (pair.section.getBoundingClientRect().top <= probe) current = pair.link; });
+        if (current !== active) {
+          links.forEach(function (link) {
+            if (link === current) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+          active = current;
+          keepActiveVisible(active);
+        }
+      }
+      function scheduleQuick() {
+        if (!scheduled) { scheduled = true; window.requestAnimationFrame(updateQuick); }
+      }
+      window.addEventListener('scroll', scheduleQuick, {passive: true});
+      window.addEventListener('resize', scheduleQuick, {passive: true});
+      if ('ResizeObserver' in window) new ResizeObserver(scheduleQuick).observe(quick);
+      links.forEach(function (link) { link.addEventListener('click', updateQuick); });
+      updateQuick();
+    }
+    if (!inEditor && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) root.classList.add('gp-hero-live');
     // Elementor 4's classic accordion applies aria-selected to a role=button
     // and creates nested focus stops. Keep its native accordion behavior, but
     // move the button semantics to its existing keyboard-focusable title link.
@@ -535,20 +770,25 @@ body.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-prev
       });
     }
     if (!inEditor && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      var nodes = root.querySelectorAll('.gp-reveal');
+      var nodes = root.querySelectorAll('.gp-reveal, .gp-card-reveal');
       if (nodes.length) {
         root.classList.add('gp-motion-ready');
+        var delivered = false;
         var observer = new IntersectionObserver(function (entries) {
+          delivered = true;
           entries.forEach(function (entry) {
             if (entry.isIntersecting) { entry.target.classList.add('gp-in-view'); observer.unobserve(entry.target); }
           });
-        }, { rootMargin: '0px 0px -45px 0px', threshold: 0.05 });
+        }, { rootMargin: '0px 0px -35px 0px', threshold: 0.05 });
         nodes.forEach(function (node) { observer.observe(node); });
-        // Never leave content hidden if an observer is blocked or interrupted.
+        // If an observer never delivers at all, fail open; normal offscreen items
+        // remain observable until they are actually reached, even on a slow visit.
         window.setTimeout(function () {
-          nodes.forEach(function (node) { node.classList.add('gp-in-view'); });
-          observer.disconnect();
-        }, 4500);
+          if (!delivered) {
+            nodes.forEach(function (node) { node.classList.add('gp-in-view'); });
+            observer.disconnect();
+          }
+        }, 2500);
       }
     }
   }
