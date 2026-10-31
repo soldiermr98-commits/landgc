@@ -67,6 +67,18 @@
   transition: translate 0.6s var(--ease-out);
 }
 
+/* Protect our variants and their labels, without overriding unrelated .btns. */
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link),
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):hover,
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):focus,
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):active,
+body .btn.btn .btn__label,
+body .btn.btn:hover .btn__label,
+body .btn.btn:focus .btn__label,
+body .btn.btn:active .btn__label {
+  color: var(--btn-fg) !important;
+}
+
 .btn__icon {
   position: relative;
   transition: transform var(--dur-3) var(--ease-spring);
@@ -211,6 +223,7 @@
 
 /* link — text button with an animated underline */
 .btn--link {
+  --btn-fg: var(--btn-link-color, var(--c-green-ink));
   min-height: auto;
   padding: 0.35rem 0;
   border: 0;

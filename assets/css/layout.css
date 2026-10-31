@@ -250,11 +250,24 @@
 .site-header {
   --bar-inset: max(8px, calc((100% - var(--container)) / 2 - 14px));
   position: fixed;
-  inset-block-start: 0;
+  inset-block-start: var(--gc-admin-offset, 0px);
   inset-inline: 0;
   z-index: 100;
   padding-block-start: var(--header-gap);
   transition: padding var(--dur-3) var(--ease-out);
+}
+
+/* Keep the floating bar below WordPress' toolbar before JavaScript starts. */
+body.admin-bar .site-header,
+body.admin-bar .mobile-nav {
+  --gc-admin-offset: 32px;
+}
+
+@media (max-width: 782px) {
+  body.admin-bar .site-header,
+  body.admin-bar .mobile-nav {
+    --gc-admin-offset: 46px;
+  }
 }
 
 .js .site-header {
@@ -438,13 +451,27 @@ a:hover .logo__halo {
     background-color var(--dur-2);
 }
 
-.site-nav__link:hover,
-.has-panel.is-open > .site-nav__link {
+/* Reset theme button styles that otherwise add borders or underlines here. */
+body .site-header .site-nav__link.site-nav__link {
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  color: rgb(23 43 37 / 0.82);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+body .site-header .site-nav__link.site-nav__link:hover,
+body .site-header .has-panel.is-open > .site-nav__link.site-nav__link {
   color: var(--c-ink-950);
   background: rgb(25 197 139 / 0.07);
 }
 
-.site-nav__link[aria-current='page'] {
+body .site-header .site-nav__link.site-nav__link[aria-current='page'] {
   color: var(--c-ink-950);
 }
 
@@ -699,9 +726,10 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  width: 2.75rem;
   height: 2.75rem;
-  padding-inline: 1rem;
+  padding: 0;
   border-radius: var(--r-md);
   background: var(--c-ink-950);
   color: var(--c-white);
@@ -713,8 +741,52 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
     box-shadow var(--dur-3);
 }
 
+/* Icon-only on desktop and tablet; the label remains available to readers. */
+.header-cta__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .header-cta .icon {
   color: var(--c-lime);
+}
+
+/* Icon slots are used by the Elementor header controls; the original SVGs
+   remain in place until an editor deliberately selects a different icon. */
+.gc-header-icon-slot {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.gc-header-custom-icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  object-fit: contain;
+  fill: currentColor;
+}
+
+.logo .gc-header-custom-icon {
+  width: 2.375rem;
+  height: 2.375rem;
+  font-size: 2.375rem;
+}
+
+.header-cta .gc-header-icon-slot,
+.mobile-nav__btn--dark .gc-header-icon-slot {
+  color: var(--c-lime);
+}
+
+.mobile-nav__sublink .gc-header-icon-slot {
+  color: var(--c-green-ink);
 }
 
 .header-cta::after {
@@ -777,21 +849,6 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
   .site-nav__link {
     padding-inline: 0.6rem;
   }
-
-  .header-cta {
-    width: 2.75rem;
-    padding: 0;
-    justify-content: center;
-  }
-
-  .header-cta__label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
 }
 
 @media (max-width: 1099.98px) {
@@ -821,6 +878,7 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
 .mobile-nav {
   position: fixed;
   inset: 0;
+  inset-block-start: var(--gc-admin-offset, 0px);
   z-index: 150;
 }
 

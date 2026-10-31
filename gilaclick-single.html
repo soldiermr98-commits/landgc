@@ -465,6 +465,18 @@ html.is-locked {
   transition: translate 0.6s var(--ease-out);
 }
 
+/* Protect our variants and their labels, without overriding unrelated .btns. */
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link),
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):hover,
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):focus,
+body .btn.btn:is(.btn--primary, .btn--dark, .btn--secondary, .btn--outline, .btn--link):active,
+body .btn.btn .btn__label,
+body .btn.btn:hover .btn__label,
+body .btn.btn:focus .btn__label,
+body .btn.btn:active .btn__label {
+  color: var(--btn-fg) !important;
+}
+
 .btn__icon {
   position: relative;
   transition: transform var(--dur-3) var(--ease-spring);
@@ -609,6 +621,7 @@ html.is-locked {
 
 /* link — text button with an animated underline */
 .btn--link {
+  --btn-fg: var(--btn-link-color, var(--c-green-ink));
   min-height: auto;
   padding: 0.35rem 0;
   border: 0;
@@ -1140,11 +1153,24 @@ html.is-locked {
 .site-header {
   --bar-inset: max(8px, calc((100% - var(--container)) / 2 - 14px));
   position: fixed;
-  inset-block-start: 0;
+  inset-block-start: var(--gc-admin-offset, 0px);
   inset-inline: 0;
   z-index: 100;
   padding-block-start: var(--header-gap);
   transition: padding var(--dur-3) var(--ease-out);
+}
+
+/* Keep the floating bar below WordPress' toolbar before JavaScript starts. */
+body.admin-bar .site-header,
+body.admin-bar .mobile-nav {
+  --gc-admin-offset: 32px;
+}
+
+@media (max-width: 782px) {
+  body.admin-bar .site-header,
+  body.admin-bar .mobile-nav {
+    --gc-admin-offset: 46px;
+  }
 }
 
 .js .site-header {
@@ -1328,13 +1354,27 @@ a:hover .logo__halo {
     background-color var(--dur-2);
 }
 
-.site-nav__link:hover,
-.has-panel.is-open > .site-nav__link {
+/* Reset theme button styles that otherwise add borders or underlines here. */
+body .site-header .site-nav__link.site-nav__link {
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  color: rgb(23 43 37 / 0.82);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+body .site-header .site-nav__link.site-nav__link:hover,
+body .site-header .has-panel.is-open > .site-nav__link.site-nav__link {
   color: var(--c-ink-950);
   background: rgb(25 197 139 / 0.07);
 }
 
-.site-nav__link[aria-current='page'] {
+body .site-header .site-nav__link.site-nav__link[aria-current='page'] {
   color: var(--c-ink-950);
 }
 
@@ -1589,9 +1629,10 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  width: 2.75rem;
   height: 2.75rem;
-  padding-inline: 1rem;
+  padding: 0;
   border-radius: var(--r-md);
   background: var(--c-ink-950);
   color: var(--c-white);
@@ -1603,8 +1644,52 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
     box-shadow var(--dur-3);
 }
 
+/* Icon-only on desktop and tablet; the label remains available to readers. */
+.header-cta__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .header-cta .icon {
   color: var(--c-lime);
+}
+
+/* Icon slots are used by the Elementor header controls; the original SVGs
+   remain in place until an editor deliberately selects a different icon. */
+.gc-header-icon-slot {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.gc-header-custom-icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  object-fit: contain;
+  fill: currentColor;
+}
+
+.logo .gc-header-custom-icon {
+  width: 2.375rem;
+  height: 2.375rem;
+  font-size: 2.375rem;
+}
+
+.header-cta .gc-header-icon-slot,
+.mobile-nav__btn--dark .gc-header-icon-slot {
+  color: var(--c-lime);
+}
+
+.mobile-nav__sublink .gc-header-icon-slot {
+  color: var(--c-green-ink);
 }
 
 .header-cta::after {
@@ -1667,21 +1752,6 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
   .site-nav__link {
     padding-inline: 0.6rem;
   }
-
-  .header-cta {
-    width: 2.75rem;
-    padding: 0;
-    justify-content: center;
-  }
-
-  .header-cta__label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
 }
 
 @media (max-width: 1099.98px) {
@@ -1711,6 +1781,7 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
 .mobile-nav {
   position: fixed;
   inset: 0;
+  inset-block-start: var(--gc-admin-offset, 0px);
   z-index: 150;
 }
 
@@ -6884,7 +6955,7 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
             <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-shopping-cart" /></svg>
             <span class="icon-btn__badge" data-cart-count hidden></span>
           </a>
-          <a class="header-cta" href="https://gilaclick.ir/my-account/">
+          <a class="header-cta" href="https://gilaclick.ir/my-account/" aria-label="ورود / حساب کاربری">
             <svg class="icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-user-round" /></svg>
             <span class="header-cta__label">ورود / حساب کاربری</span>
           </a>
@@ -9584,11 +9655,20 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
     var header = GC.$('[data-header]');
     if (!header) return;
     var docked = null;
+    var adminBar = document.getElementById('wpadminbar');
+    var drawer = GC.$('[data-mobile-nav]');
+    var lastOffset = null;
     GC.onScroll(function (y) {
       var next = y > 24;
-      if (next === docked) return;
+      // On mobile WordPress' toolbar scrolls away; its visible bottom is the
+      // amount of space the fixed header actually needs at this moment.
+      var offset = adminBar ? Math.max(0, Math.round(adminBar.getBoundingClientRect().bottom)) : 0;
+      if (next === docked && offset === lastOffset) return;
       return function () {
         docked = next;
+        lastOffset = offset;
+        header.style.setProperty('--gc-admin-offset', offset + 'px');
+        if (drawer) drawer.style.setProperty('--gc-admin-offset', offset + 'px');
         header.classList.toggle('is-scrolled', next);
       };
     });
@@ -9792,6 +9872,7 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
     var link = GC.$('[data-cart-link]');
     var api = GC.config.storeApi;
     if (!badge || !link || !api) return;
+    var label = link.getAttribute('aria-label') || 'سبد خرید';
     if (!/(?:^|;\s*)woocommerce_items_in_cart=1(?:;|$)/.test(document.cookie)) return;
 
     var url = new URL(api.replace(/\/+$/, '') + '/cart', window.location.href);
@@ -9806,7 +9887,7 @@ html:not(.js) .has-panel:focus-within > .nav-panel {
         if (count <= 0) return;
         badge.textContent = GC.faDigits(count);
         badge.hidden = false;
-        link.setAttribute('aria-label', 'سبد خرید — ' + GC.faDigits(count) + ' کالا');
+        link.setAttribute('aria-label', label + ' — ' + GC.faDigits(count) + ' کالا');
       })
       .catch(function () {
         /* the badge is optional */
