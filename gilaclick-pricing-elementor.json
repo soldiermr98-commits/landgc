@@ -1,0 +1,2729 @@
+{
+  "version": "0.4",
+  "title": "خدمات و تعرفه‌های گیلاکلیک — قابل ویرایش",
+  "type": "page",
+  "page_settings": {
+    "template": "elementor_canvas",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "0000092",
+      "elType": "container",
+      "isInner": false,
+      "isLocked": false,
+      "settings": {
+        "content_width": "full",
+        "css_classes": "gp-page",
+        "_title": "صفحه خدمات و تعرفه‌ها"
+      },
+      "elements": [
+        {
+          "id": "0000093",
+          "elType": "widget",
+          "isInner": true,
+          "isLocked": false,
+          "widgetType": "html",
+          "settings": {
+            "_css_classes": "gp-system",
+            "_title": "⚙️ استایل صفحه — حذف نشود",
+            "html": "<style>\n/* GilaClick services — shared styles for the standalone and Elementor versions.\n   Peyda is not embedded. For standalone, add the licensed font URL below. */\n/* @font-face { font-family: Peyda; src: url('YOUR-LICENSED-PEYDA.woff2') format('woff2'); font-style: normal; font-weight: 100 900; font-display: swap; } */\n@font-face{font-family:GPVazir;src:url('/assets/fonts/vazirmatn-arabic-wght-normal.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}\n@font-face{font-family:GPVazir;src:url('/assets/fonts/vazirmatn-latin-wght-normal.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F}\n.gp-page{--gp-ink:#06271f;--gp-green:#0b4435;--gp-emerald:#19c58b;--gp-lime:#a3f451;--gp-mint:#f0fbf6;--gp-text:#172b25;--gp-muted:#64756e;--gp-line:rgba(23,43,37,.14);--gp-wrap:1200px;--gp-gutter:clamp(20px,4vw,40px);--gp-ease:cubic-bezier(.22,1,.36,1);direction:rtl;text-align:right;isolation:isolate;color:var(--gp-text);background:#fff;font-family:Peyda,GPVazir,Vazirmatn,Tahoma,sans-serif;font-size:16px;line-height:1.9;letter-spacing:normal}\n.gp-page,.gp-page *,.gp-page *::before,.gp-page *::after{box-sizing:border-box}\n.gp-page.e-con,.gp-page .e-con{--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;--gap:0px;--row-gap:0px;--column-gap:0px;--content-width:100%;min-width:0;min-height:0;max-width:none;margin:0;padding:0;gap:0;display:flex;flex-direction:column}\n.gp-page .elementor-widget{min-width:0;max-width:100%;margin:0}\n.gp-page .elementor-widget-container{margin:0;padding:0}\n.gp-page .elementor-heading-title,.gp-page p{margin:0;padding:0;color:inherit;font:inherit;line-height:inherit;letter-spacing:normal;text-transform:none}\n.gp-page a{color:inherit;text-decoration:none}\n.gp-page svg{display:block}\n.gp-page .gp-system{display:none}\n.gp-page .gp-wrap{width:min(var(--gp-wrap),calc(100% - 2 * var(--gp-gutter)));max-width:var(--gp-wrap);margin-inline:auto}\n.gp-page .gp-section{padding-block:clamp(76px,8.2vw,118px)}\n.gp-page :focus-visible{outline:3px solid var(--gp-green);outline-offset:4px}\n.gp-page .gp-dark :focus-visible{outline-color:var(--gp-lime)}\n.gp-page .gp-skip .elementor-button{position:fixed;top:12px;right:12px;z-index:99999;transform:translateY(-180%);background:var(--gp-lime);color:var(--gp-ink);padding:12px 18px;border-radius:4px}\n.gp-page .gp-skip .elementor-button:focus{transform:translateY(0)}\n/* Header: native Elementor buttons and containers; menu enhanced only after JS starts. */\n.gp-page .gp-header{background:var(--gp-ink);padding-block:14px 0;position:relative;z-index:30}\n.gp-page .gp-header-inner{position:relative;width:min(1240px,calc(100% - 2 * var(--gp-gutter)));max-width:1240px;min-height:70px;margin-inline:auto;padding:10px 14px 10px 18px;display:flex;flex-direction:row;align-items:center;gap:25px;border-radius:10px;background:#fff;color:var(--gp-text)}\n.gp-page .gp-logo{flex:0 0 auto}\n.gp-page .gp-logo .elementor-button{position:relative;display:flex;align-items:center;min-height:44px;padding:0 48px 10px 0;border:0;border-radius:0;background:transparent;color:var(--gp-ink);font-family:inherit;font-size:18px;font-weight:850;line-height:1.1;text-decoration:none}\n.gp-page .gp-logo .elementor-button::before{content:\"\";position:absolute;right:0;top:3px;width:37px;height:37px;background:center/contain no-repeat url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%2306271f' d='M9 1h22a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H9a8 8 0 0 1-8-8V8.2L8.2 1Z'/%3E%3Cpath fill='none' stroke='%23a3f451' stroke-linecap='round' stroke-width='2.4' d='M26.7 13.3A9.5 9.5 0 1 0 29.4 21.3H23.2'/%3E%3Ccircle cx='21' cy='21.3' r='2.4' fill='%2319c58b'/%3E%3C/svg%3E\")}\n.gp-page .gp-logo .elementor-button::after{content:\"GILACLICK\";position:absolute;right:48px;bottom:3px;direction:ltr;font-family:Arial,sans-serif;font-size:8px;letter-spacing:.22em;font-weight:700;color:var(--gp-muted)}\n.gp-page .gp-logo .elementor-button:hover,.gp-page .gp-logo .elementor-button:focus{color:var(--gp-ink);background:transparent}\n.gp-page .gp-primary-nav{flex:1 1 auto;width:auto;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:4px}\n.gp-page .gp-nav-link .elementor-button{display:inline-flex;align-items:center;min-height:42px;padding:8px 10px;border:0;border-radius:5px;background:transparent;color:var(--gp-text);font:inherit;font-size:13.5px;font-weight:650;line-height:1.4;white-space:nowrap}\n.gp-page .gp-nav-link .elementor-button:hover,.gp-page .gp-nav-link .elementor-button:focus-visible{background:var(--gp-mint);color:var(--gp-green)}\n.gp-page .gp-nav-current .elementor-button{color:var(--gp-green);position:relative}\n.gp-page .gp-nav-current .elementor-button::after{content:\"\";position:absolute;bottom:2px;right:10px;left:10px;height:2px;background:var(--gp-emerald)}\n.gp-page .gp-header-actions{width:auto;flex:0 0 auto;display:flex;flex-direction:row;align-items:center;gap:5px}\n.gp-page .gp-icon-button .elementor-button{display:flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:1px solid rgba(23,43,37,.12);border-radius:6px;background:#fff;color:var(--gp-green)}\n.gp-page .gp-icon-button .elementor-button:hover,.gp-page .gp-icon-button .elementor-button:focus-visible{background:var(--gp-mint);color:var(--gp-green);border-color:rgba(11,68,53,.3)}\n.gp-page .gp-icon-button .elementor-button-content-wrapper{display:flex;align-items:center;justify-content:center;line-height:1}\n.gp-page .gp-icon-button .elementor-button-icon{display:flex;align-items:center;justify-content:center}\n.gp-page .gp-icon-button svg{width:17px;height:17px;fill:currentColor}\n.gp-page .gp-icon-button .elementor-button-text{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}\n.gp-page .gp-menu-toggle{display:none}\n/* Type and controls */\n.gp-page .gp-kicker .elementor-heading-title{display:flex;align-items:center;gap:10px;color:var(--gp-green);font-size:13px;font-weight:800;line-height:1.4}\n.gp-page .gp-kicker .elementor-heading-title::before{content:\"\";width:26px;height:2px;flex:none;background:var(--gp-emerald)}\n.gp-page .gp-dark .gp-kicker .elementor-heading-title{color:var(--gp-lime)}\n.gp-page .gp-dark .gp-kicker .elementor-heading-title::before{background:var(--gp-lime)}\n.gp-page .gp-h1 .elementor-heading-title{font-size:clamp(33px,3.6vw,52px);font-weight:900;line-height:1.55;letter-spacing:-.025em}\n.gp-page .gp-h1 .gp-accent{color:var(--gp-lime)}\n.gp-page .gp-h2 .elementor-heading-title{font-size:clamp(27px,2.65vw,38px);font-weight:850;line-height:1.55;letter-spacing:-.02em}\n.gp-page .gp-h3 .elementor-heading-title{font-size:20px;font-weight:800;line-height:1.7}\n.gp-page .gp-body .elementor-heading-title{font-size:15px;line-height:2.05;color:var(--gp-muted);font-weight:400}\n.gp-page .gp-dark .gp-body .elementor-heading-title{color:#c4d8ce}\n.gp-page .gp-small .elementor-heading-title{font-size:13px;line-height:1.9;color:var(--gp-muted);font-weight:500}\n.gp-page .gp-button .elementor-button{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:15px;min-height:52px;padding:13px 19px;border:1px solid transparent;border-radius:6px;background:var(--gp-lime);color:var(--gp-ink);font-family:inherit;font-size:14px;font-weight:800;line-height:1.5;text-decoration:none;transition:background-color .2s var(--gp-ease),border-color .2s var(--gp-ease),transform .2s var(--gp-ease),color .2s var(--gp-ease)}\n.gp-page .gp-button .elementor-button::after{content:\"←\";display:block;font-family:Arial,sans-serif;font-size:20px;font-weight:400;line-height:1;transition:transform .2s var(--gp-ease)}\n.gp-page .gp-button .elementor-button:hover,.gp-page .gp-button .elementor-button:focus{background:#b9f77c;color:var(--gp-ink);border-color:transparent}\n.gp-page .gp-button .elementor-button:hover::after{transform:translateX(-4px)}\n.gp-page .gp-button .elementor-button-content-wrapper{display:flex;align-items:center;gap:8px}\n.gp-page .gp-button .elementor-button-text{color:inherit}\n.gp-page .gp-button-outline .elementor-button{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}\n.gp-page .gp-button-outline .elementor-button:hover,.gp-page .gp-button-outline .elementor-button:focus{background:#fff;color:var(--gp-ink);border-color:#fff}\n.gp-page .gp-button-soft .elementor-button{min-height:47px;background:var(--gp-mint);color:var(--gp-green);border-color:rgba(11,68,53,.08);font-size:13px}\n.gp-page .gp-button-soft .elementor-button:hover,.gp-page .gp-button-soft .elementor-button:focus{background:#e2f6eb;color:var(--gp-green);border-color:rgba(11,68,53,.2)}\n/* Hero */\n.gp-page .gp-hero{position:relative;overflow:hidden;background:var(--gp-ink);color:#fff}\n.gp-page .gp-hero::before{content:\"\";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(25,197,139,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(25,197,139,.035) 1px,transparent 1px);background-size:66px 66px;mask-image:linear-gradient(to left,transparent 15%,#000 100%)}\n.gp-page .gp-hero-inner{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(35px,6vw,90px);align-items:center;padding-block:clamp(72px,9vw,128px) 94px}\n.gp-page .gp-hero-copy{align-items:flex-start;gap:21px}\n.gp-page .gp-hero-copy .gp-body{max-width:620px}\n.gp-page .gp-hero-copy .gp-body .elementor-heading-title{font-size:16px;line-height:2.05}\n.gp-page .gp-hero-copy .gp-button{margin-top:9px}\n.gp-page .gp-hero-art{width:min(100%,480px);max-width:480px;justify-self:center}\n.gp-page .gp-hero-art svg{width:100%;height:auto;overflow:visible}\n.gp-page .gp-hero-meta{position:relative;width:100%;padding:18px 0 21px;border-top:1px solid rgba(255,255,255,.13)}\n.gp-page .gp-hero-meta-inner{display:flex;flex-direction:row;align-items:center;gap:28px;flex-wrap:wrap}\n.gp-page .gp-meta-item .elementor-heading-title{display:flex;align-items:center;gap:8px;color:#bdd4c7;font-size:12px;line-height:1.5;font-weight:600}\n.gp-page .gp-meta-item .elementor-heading-title::before{content:\"\";width:5px;height:5px;border-radius:50%;background:var(--gp-emerald)}\n/* Generic section heading */\n.gp-page .gp-section-head{gap:15px;max-width:760px;margin-bottom:42px}\n.gp-page .gp-section-head .gp-body{max-width:710px}\n.gp-page .gp-section-intro{gap:15px}\n/* Price cards */\n.gp-page .gp-web-section{background:#fff}\n.gp-page .gp-price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}\n.gp-page .gp-price-card{position:relative;align-items:stretch;min-height:330px;padding:26px;border:1px solid var(--gp-line);border-radius:9px;background:#fff;transition:border-color .25s var(--gp-ease),transform .25s var(--gp-ease)}\n.gp-page .gp-price-card:hover{border-color:rgba(25,197,139,.65);transform:translateY(-3px)}\n.gp-page .gp-card-icon .elementor-icon{display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-bottom:22px;border:1px solid var(--gp-green);border-radius:6px;background:var(--gp-mint);color:var(--gp-green);font-size:18px;line-height:1}\n.gp-page .gp-card-icon svg{width:18px;height:18px;fill:currentColor}\n.gp-page .gp-price-card .gp-body{margin-top:9px}\n.gp-page .gp-price-card .gp-price-row{margin-top:auto;padding-top:25px}\n.gp-page .gp-price-row{display:flex;flex-direction:row;align-items:baseline;justify-content:flex-start;gap:7px;flex-wrap:wrap;color:var(--gp-ink)}\n.gp-page .gp-price-prefix .elementor-heading-title,.gp-page .gp-price-unit .elementor-heading-title{font-size:13px;line-height:1.7;font-weight:700;color:var(--gp-muted)}\n.gp-page .gp-price-value .elementor-heading-title{font-size:37px;line-height:1.4;font-weight:900;color:var(--gp-ink);letter-spacing:-.03em}\n.gp-page .gp-price-card .gp-button{margin-top:19px}\n.gp-page .gp-included{margin-top:22px;padding:29px 32px;border:1px solid rgba(11,68,53,.1);border-radius:9px;background:var(--gp-mint);gap:19px}\n.gp-page .gp-included-title .elementor-heading-title{font-size:17px;font-weight:800;line-height:1.6;color:var(--gp-green)}\n.gp-page .gp-list .elementor-icon-list-items{display:grid;grid-template-columns:1fr;gap:10px;list-style:none;margin:0;padding:0}\n.gp-page .gp-list .elementor-icon-list-item{display:flex;align-items:flex-start;gap:9px;margin:0;padding:0;line-height:1.85}\n.gp-page .gp-list .elementor-icon-list-icon{display:flex;align-items:center;justify-content:center;flex:0 0 17px;width:17px;height:17px;margin:5px 0 0;padding:0;color:#12805e}\n.gp-page .gp-list .elementor-icon-list-icon svg{width:13px;height:13px;fill:currentColor}\n.gp-page .gp-list .elementor-icon-list-text{display:block;padding:0!important;color:var(--gp-text);font-family:inherit;font-size:13.5px;font-weight:500;line-height:1.85}\n.gp-page .gp-list-two .elementor-icon-list-items{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:25px;row-gap:8px}\n.gp-page .gp-note{margin-top:20px}\n.gp-page .gp-note .elementor-heading-title{padding-right:15px;border-right:2px solid var(--gp-emerald);color:var(--gp-muted);font-size:13px;line-height:2;font-weight:500}\n/* Support */\n.gp-page .gp-support-section{background:var(--gp-mint)}\n.gp-page .gp-support-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,6vw,80px);align-items:start}\n.gp-page .gp-support-panel{padding:32px;border:1px solid rgba(11,68,53,.1);border-radius:9px;background:#fff;gap:22px}\n.gp-page .gp-panel-price{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:12px;flex-wrap:wrap;padding-bottom:23px;border-bottom:1px solid var(--gp-line)}\n.gp-page .gp-panel-price>.gp-price-row{width:auto}\n.gp-page .gp-panel-price .gp-price-value .elementor-heading-title{font-size:32px}\n.gp-page .gp-price-period .elementor-heading-title{display:inline-flex;align-items:center;padding:5px 10px;border-radius:4px;background:var(--gp-mint);color:var(--gp-green);font-size:12px;font-weight:750;line-height:1.6}\n.gp-page .gp-panel-label .elementor-heading-title{font-size:15px;font-weight:800;line-height:1.6;color:var(--gp-green)}\n.gp-page .gp-support-terms{padding-top:20px;border-top:1px solid var(--gp-line);gap:10px}\n.gp-page .gp-support-terms .gp-small .elementor-heading-title{line-height:2}\n.gp-page .gp-support-terms .gp-list .elementor-icon-list-text{color:var(--gp-muted);font-size:13px}\n.gp-page .gp-support-terms .gp-list .elementor-icon-list-items{gap:7px}\n/* SEO */\n.gp-page .gp-seo-section{background:#fff}\n.gp-page .gp-seo-heading{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:stretch;margin-bottom:30px}\n.gp-page .gp-seo-price{padding:25px 28px;border-radius:8px;background:var(--gp-ink);color:#fff;gap:13px;justify-content:center}\n.gp-page .gp-seo-price .gp-price-prefix .elementor-heading-title,.gp-page .gp-seo-price .gp-price-unit .elementor-heading-title{color:#c4d8ce}\n.gp-page .gp-seo-price .gp-price-value .elementor-heading-title{color:var(--gp-lime);font-size:40px}\n.gp-page .gp-seo-price .gp-small .elementor-heading-title{color:#d2e3d9}\n.gp-page .gp-seo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.gp-page .gp-seo-card{padding:26px;border:1px solid var(--gp-line);border-radius:8px;background:#fff;gap:14px}\n.gp-page .gp-seo-card .gp-h3 .elementor-heading-title{font-size:17px}\n.gp-page .gp-seo-card .gp-list .elementor-icon-list-text{font-size:13px}\n.gp-page .gp-seo-card .gp-list .elementor-icon-list-items{gap:8px}\n/* Custom development */\n.gp-page .gp-custom-section{position:relative;overflow:hidden;background:var(--gp-green);color:#fff}\n.gp-page .gp-custom-section::before{content:\"\";position:absolute;left:-50px;bottom:-120px;width:340px;height:340px;border:1px solid rgba(163,244,81,.14);border-radius:50%;pointer-events:none}\n.gp-page .gp-custom-layout{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(45px,8vw,110px);align-items:start}\n.gp-page .gp-custom-copy{align-items:flex-start;gap:18px}\n.gp-page .gp-custom-copy .gp-button{margin-top:5px}\n.gp-page .gp-telegram-handle .elementor-heading-title{direction:ltr;text-align:right;color:#d5e8dd;font-family:Arial,sans-serif;font-size:13px;line-height:1.6;letter-spacing:.02em}\n.gp-page .gp-custom-list{padding:10px 0;border-top:1px solid rgba(255,255,255,.2)}\n.gp-page .gp-custom-list .elementor-icon-list-items{gap:0}\n.gp-page .gp-custom-list .elementor-icon-list-item{padding:14px 2px;border-bottom:1px solid rgba(255,255,255,.17)}\n.gp-page .gp-custom-list .elementor-icon-list-icon{color:var(--gp-lime)}\n.gp-page .gp-custom-list .elementor-icon-list-text{color:#f2faf5;font-size:14px}\n/* FAQ: Elementor accordion and semantic native details share the same appearance. */\n.gp-page .gp-faq-section{background:#fff}\n.gp-page .gp-faq-layout{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(38px,8vw,105px);align-items:start}\n.gp-page .gp-faq .elementor-accordion{border-top:1px solid var(--gp-line)}\n.gp-page .gp-faq .elementor-accordion-item{display:block;margin:0;border:0;border-bottom:1px solid var(--gp-line);background:transparent}\n.gp-page .gp-faq .elementor-tab-title{display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;gap:16px;margin:0;padding:21px 0;border:0;background:transparent;color:var(--gp-text);font:inherit;font-size:15px;font-weight:750;line-height:1.8;cursor:pointer;list-style:none}\n.gp-page .gp-faq summary.elementor-tab-title{flex-direction:row}\n.gp-page .gp-faq summary::-webkit-details-marker{display:none}\n.gp-page .gp-faq .elementor-accordion-title{flex:1;color:inherit;font:inherit;text-decoration:none;outline-offset:4px}\n.gp-page .gp-faq .elementor-accordion-icon{display:flex;align-items:center;justify-content:center;flex:0 0 29px;width:29px;height:29px;margin:0!important;border:1px solid rgba(11,68,53,.18);border-radius:4px;color:var(--gp-green);font-size:15px;line-height:1}\n.gp-page .gp-faq .elementor-accordion-icon svg{width:11px;height:11px;fill:currentColor}\n.gp-page .gp-faq .elementor-accordion-icon-closed,.gp-page .gp-faq .elementor-accordion-icon-opened{display:flex;align-items:center;justify-content:center}\n.gp-page .gp-faq .elementor-accordion-icon-opened{display:none}\n.gp-page .gp-faq .elementor-tab-title.elementor-active .elementor-accordion-icon-closed,.gp-page .gp-faq details[open] .elementor-accordion-icon-closed{display:none}\n.gp-page .gp-faq .elementor-tab-title.elementor-active .elementor-accordion-icon-opened,.gp-page .gp-faq details[open] .elementor-accordion-icon-opened{display:flex}\n.gp-page .gp-faq .elementor-tab-content{padding:0 0 22px;border:0;color:var(--gp-muted);font-family:inherit;font-size:14px;font-weight:400;line-height:2.05}\n.gp-page .gp-faq .elementor-tab-content p{margin:0;color:inherit;font:inherit;line-height:inherit}\n.gp-page .gp-faq .elementor-tab-title:hover{color:var(--gp-green)}\n@supports (interpolate-size: allow-keywords) {\n .gp-page .gp-faq details{interpolate-size:allow-keywords}\n .gp-page .gp-faq details::details-content{overflow:clip;block-size:0;transition:block-size .28s var(--gp-ease),content-visibility .28s allow-discrete}\n .gp-page .gp-faq details[open]::details-content{block-size:auto}\n}\n/* Final CTA and footer */\n.gp-page .gp-final-section{background:var(--gp-ink);color:#fff;padding-block:76px}\n.gp-page .gp-final-inner{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:35px}\n.gp-page .gp-final-copy{width:auto;gap:14px;max-width:min(720px,100%)}\n.gp-page .gp-final-actions{width:max-content;max-width:100%;flex:0 0 auto;display:flex;flex-direction:row;align-items:center;gap:12px;flex-wrap:wrap}\n.gp-page .gp-footer{background:var(--gp-ink);color:#c0d4c9}\n.gp-page .gp-footer-inner{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:20px;padding-block:22px;border-top:1px solid rgba(255,255,255,.13)}\n.gp-page .gp-footer-brand .elementor-heading-title{font-size:14px;font-weight:800;color:#fff}\n.gp-page .gp-footer-note .elementor-heading-title{font-size:12px;color:#b8cfc2}\n/* Scroll reveals: content remains visible if JS or IntersectionObserver is unavailable. */\n@media (prefers-reduced-motion:no-preference){\n .gp-page.gp-motion-ready .gp-reveal{opacity:0;transform:translateY(16px);transition:opacity .48s var(--gp-ease),transform .48s var(--gp-ease)}\n .gp-page.gp-motion-ready .gp-reveal.gp-in-view{opacity:1;transform:none}\n}\n@media(max-width:1050px){\n .gp-page .gp-header-inner{gap:10px}\n .gp-page .gp-nav-link .elementor-button{font-size:12.5px;padding-inline:7px}\n}\n@media(max-width:900px){\n .gp-page .gp-header-inner{justify-content:space-between;flex-wrap:wrap}\n .gp-page.gp-js .gp-menu-toggle{display:block}\n .gp-page .gp-primary-nav{order:3;flex:1 0 100%;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:10px 0 0;background:#fff}\n .gp-page.gp-js .gp-primary-nav{position:absolute;top:calc(100% + 8px);right:0;left:0;order:initial;flex:auto;padding:12px;border:1px solid rgba(11,68,53,.12);border-radius:8px;box-shadow:0 14px 30px rgba(6,39,31,.15)}\n .gp-page .gp-primary-nav[hidden]{display:none!important}\n .gp-page .gp-nav-link .elementor-button{display:flex;justify-content:flex-start;width:100%;min-height:45px;padding-inline:13px;font-size:14px}\n .gp-page .gp-nav-current .elementor-button::after{display:none}\n .gp-page .gp-hero-inner{grid-template-columns:minmax(0,1fr) minmax(0,.75fr);gap:25px;padding-block:70px 80px}\n .gp-page .gp-support-layout,.gp-page .gp-custom-layout{gap:35px}\n .gp-page .gp-final-inner{align-items:flex-start;flex-direction:column}\n}\n@media(max-width:680px){\n .gp-page{--gp-gutter:20px}\n .gp-page .gp-section{padding-block:70px}\n .gp-page .gp-header{padding-top:10px}\n .gp-page .gp-header-inner{min-height:63px;width:calc(100% - 2 * var(--gp-gutter));padding:8px 10px;gap:8px}\n .gp-page .gp-logo .elementor-button{font-size:16px}\n .gp-page .gp-icon-button .elementor-button{width:38px;height:38px}\n .gp-page .gp-header-actions{gap:4px}\n .gp-page .gp-hero-inner{grid-template-columns:1fr;padding-block:58px 56px;gap:30px}\n .gp-page .gp-hero-copy{gap:17px}\n .gp-page .gp-hero-copy .gp-body .elementor-heading-title{font-size:14px}\n .gp-page .gp-hero-art{width:min(100%,330px);max-width:330px}\n .gp-page .gp-hero-meta-inner{gap:13px 20px}\n .gp-page .gp-h1 .elementor-heading-title{font-size:clamp(30px,8vw,39px)}\n .gp-page .gp-h2 .elementor-heading-title{font-size:clamp(25px,6.8vw,31px)}\n .gp-page .gp-section-head{margin-bottom:30px}\n .gp-page .gp-price-grid,.gp-page .gp-seo-grid,.gp-page .gp-support-layout,.gp-page .gp-seo-heading,.gp-page .gp-custom-layout,.gp-page .gp-faq-layout{grid-template-columns:1fr}\n .gp-page .gp-price-grid{gap:13px}\n .gp-page .gp-price-card{min-height:0;padding:23px}\n .gp-page .gp-card-icon .elementor-icon{margin-bottom:16px}\n .gp-page .gp-price-card .gp-price-row{padding-top:20px}\n .gp-page .gp-included,.gp-page .gp-support-panel,.gp-page .gp-seo-card{padding:23px}\n .gp-page .gp-list-two .elementor-icon-list-items{grid-template-columns:1fr}\n .gp-page .gp-support-layout,.gp-page .gp-seo-heading,.gp-page .gp-custom-layout,.gp-page .gp-faq-layout{gap:30px}\n .gp-page .gp-seo-heading{margin-bottom:18px}\n .gp-page .gp-custom-section::before{width:200px;height:200px}\n .gp-page .gp-final-section{padding-block:65px}\n .gp-page .gp-footer-inner{align-items:flex-start;flex-direction:column;gap:6px}\n}\n@media(max-width:359px){\n .gp-page{--gp-gutter:14px}\n .gp-page .gp-header-actions{gap:3px}\n .gp-page .gp-icon-button .elementor-button{width:35px;height:38px}\n .gp-page .gp-logo .elementor-button{padding-right:43px;font-size:15px}\n .gp-page .gp-logo .elementor-button::before{width:34px;height:34px}\n .gp-page .gp-logo .elementor-button::after{right:43px}\n}\n@media(prefers-reduced-motion:reduce){\n .gp-page,.gp-page *,.gp-page *::before,.gp-page *::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}\n .gp-page.gp-motion-ready .gp-reveal{opacity:1;transform:none}\n}\n/* Keep every editable navigation item selectable inside Elementor. */\nbody.elementor-editor-active .gp-page .gp-primary-nav,body.elementor-editor-preview .gp-page .gp-primary-nav{display:flex!important}\n\n</style><noscript><style>.gp-page .gp-faq .elementor-tab-content{display:block!important}.gp-page .gp-faq .elementor-accordion-icon{display:none!important}</style></noscript>"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000091",
+          "elType": "widget",
+          "isInner": true,
+          "isLocked": false,
+          "widgetType": "button",
+          "settings": {
+            "_css_classes": "gp-skip",
+            "_title": "رفتن به محتوای اصلی",
+            "text": "رفتن به محتوای اصلی",
+            "link": {
+              "url": "#main-content",
+              "is_external": false,
+              "nofollow": false,
+              "custom_attributes": ""
+            },
+            "background_background": "classic",
+            "background_color": "#a3f451",
+            "button_text_color": "#06271f",
+            "button_background_hover_background": "classic",
+            "button_background_hover_color": "#b9f77c",
+            "hover_color": "#06271f",
+            "selected_icon": {
+              "value": "",
+              "library": ""
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "000000e",
+          "elType": "container",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "content_width": "full",
+            "css_classes": "gp-header",
+            "_title": "سربرگ",
+            "html_tag": "header"
+          },
+          "elements": [
+            {
+              "id": "000000d",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-header-inner",
+                "_title": "ردیف سربرگ"
+              },
+              "elements": [
+                {
+                  "id": "0000008",
+                  "elType": "widget",
+                  "isInner": true,
+                  "isLocked": false,
+                  "widgetType": "button",
+                  "settings": {
+                    "_css_classes": "gp-logo",
+                    "_title": "لوگو و صفحه اصلی",
+                    "text": "گیلاکلیک",
+                    "link": {
+                      "url": "https://gilaclick.ir/",
+                      "is_external": false,
+                      "nofollow": false,
+                      "custom_attributes": ""
+                    },
+                    "background_background": "classic",
+                    "background_color": "#ffffff00",
+                    "button_text_color": "#06271f",
+                    "button_background_hover_background": "classic",
+                    "button_background_hover_color": "#ffffff00",
+                    "hover_color": "#06271f",
+                    "selected_icon": {
+                      "value": "",
+                      "library": ""
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000007",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-primary-nav",
+                    "_title": "منوی اصلی",
+                    "html_tag": "nav",
+                    "_element_id": "gp-main-nav"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000001",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link",
+                        "_title": "صفحه اصلی",
+                        "text": "صفحه اصلی",
+                        "link": {
+                          "url": "https://gilaclick.ir/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#172b25",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000002",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link",
+                        "_title": "فروشگاه محصولات",
+                        "text": "فروشگاه محصولات",
+                        "link": {
+                          "url": "https://gilaclick.ir/shop/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#172b25",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000003",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link gp-nav-current",
+                        "_title": "خدمات و تعرفه‌ها",
+                        "text": "خدمات و تعرفه‌ها",
+                        "link": {
+                          "url": "#web-design",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#0b4435",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000004",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link",
+                        "_title": "درباره ما",
+                        "text": "درباره ما",
+                        "link": {
+                          "url": "https://gilaclick.ir/about-us/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#172b25",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000005",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link",
+                        "_title": "مجله",
+                        "text": "مجله",
+                        "link": {
+                          "url": "https://gilaclick.ir/blog/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#172b25",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000006",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-nav-link",
+                        "_title": "تماس با ما",
+                        "text": "تماس با ما",
+                        "link": {
+                          "url": "https://gilaclick.ir/contact-us/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_text_color": "#172b25",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "000000c",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-header-actions",
+                    "_title": "آیکن‌های سربرگ"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000009",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-icon-button",
+                        "_title": "سبد خرید",
+                        "text": "سبد خرید",
+                        "link": {
+                          "url": "https://gilaclick.ir/cart/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#0b4435",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "fas fa-shopping-bag",
+                          "library": "fa-solid"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000a",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-icon-button",
+                        "_title": "حساب کاربری",
+                        "text": "حساب کاربری",
+                        "link": {
+                          "url": "https://gilaclick.ir/my-account/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#0b4435",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "far fa-user",
+                          "library": "fa-regular"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000b",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "_css_classes": "gp-icon-button gp-menu-toggle",
+                        "_title": "دکمه منوی موبایل",
+                        "text": "باز کردن منوی اصلی",
+                        "link": {
+                          "url": "#gp-main-nav",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#0b4435",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#f0fbf6",
+                        "hover_color": "#0b4435",
+                        "selected_icon": {
+                          "value": "fas fa-bars",
+                          "library": "fa-solid"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000090",
+          "elType": "container",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "content_width": "full",
+            "css_classes": "gp-main",
+            "_title": "محتوای صفحه",
+            "html_tag": "main",
+            "_element_id": "main-content"
+          },
+          "elements": [
+            {
+              "id": "000001b",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-hero gp-dark",
+                "_title": "معرفی صفحه",
+                "html_tag": "section"
+              },
+              "elements": [
+                {
+                  "id": "0000015",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap gp-hero-inner",
+                    "_title": "چیدمان هِرو"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000013",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-hero-copy",
+                        "_title": "معرفی تعرفه‌ها"
+                      },
+                      "elements": [
+                        {
+                          "id": "000000f",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "خدمات دیجیتال گیلاکلیک",
+                            "title": "خدمات دیجیتال گیلاکلیک",
+                            "header_size": "p",
+                            "title_color": "#a3f451"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000010",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h1",
+                            "_title": "تعرفه خدمات و راهکارهای دیجیتال گیلاکلیک",
+                            "title": "تعرفه خدمات و <span class=\"gp-accent\">راهکارهای دیجیتال</span> گیلاکلیک",
+                            "header_size": "h1",
+                            "title_color": "#ffffff"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000011",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "از طراحی و توسعه وب‌سایت تا سئو، پشتیبانی و برنامه",
+                            "title": "از طراحی و توسعه وب‌سایت تا سئو، پشتیبانی و برنامه‌نویسی اختصاصی؛ خدمات متناسب با نیاز کسب‌وکار شما، با قیمت‌گذاری شفاف و رویکردی تخصصی.",
+                            "header_size": "p",
+                            "title_color": "#c4d8ce"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000012",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "button",
+                          "settings": {
+                            "_css_classes": "gp-button",
+                            "_title": "مشاوره و دریافت قیمت",
+                            "text": "مشاوره و دریافت قیمت",
+                            "link": {
+                              "url": "#consult",
+                              "is_external": false,
+                              "nofollow": false,
+                              "custom_attributes": ""
+                            },
+                            "background_background": "classic",
+                            "background_color": "#a3f451",
+                            "button_text_color": "#06271f",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#b9f77c",
+                            "hover_color": "#06271f",
+                            "selected_icon": {
+                              "value": "",
+                              "library": ""
+                            }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000014",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "html",
+                      "settings": {
+                        "_css_classes": "gp-hero-art",
+                        "_title": "تصویر تزئینی هِرو",
+                        "html": "<svg viewBox=\"0 0 490 395\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\">\n<path d=\"M22 100h52M22 100V72M462 276h-48M462 276v35\" stroke=\"#19C58B\" stroke-opacity=\".38\" stroke-width=\"1.5\"/><circle cx=\"22\" cy=\"68\" r=\"3\" fill=\"#19C58B\"/><circle cx=\"462\" cy=\"315\" r=\"3\" fill=\"#A3F451\"/>\n<rect x=\"55\" y=\"38\" width=\"365\" height=\"278\" rx=\"10\" fill=\"#0B4435\" stroke=\"#90D9B6\" stroke-opacity=\".32\"/>\n<path d=\"M55 79h365\" stroke=\"#90D9B6\" stroke-opacity=\".25\"/><circle cx=\"84\" cy=\"59\" r=\"3.5\" fill=\"#A3F451\"/><circle cx=\"99\" cy=\"59\" r=\"3.5\" fill=\"#19C58B\" fill-opacity=\".65\"/><circle cx=\"114\" cy=\"59\" r=\"3.5\" fill=\"#19C58B\" fill-opacity=\".35\"/>\n<rect x=\"85\" y=\"109\" width=\"159\" height=\"11\" rx=\"5.5\" fill=\"#D7F4E3\" fill-opacity=\".75\"/><rect x=\"85\" y=\"133\" width=\"204\" height=\"8\" rx=\"4\" fill=\"#A5D9BA\" fill-opacity=\".27\"/><rect x=\"85\" y=\"150\" width=\"170\" height=\"8\" rx=\"4\" fill=\"#A5D9BA\" fill-opacity=\".2\"/>\n<rect x=\"85\" y=\"184\" width=\"101\" height=\"31\" rx=\"4\" fill=\"#A3F451\"/><path d=\"M112 199h47m-7-5 7 5-7 5\" stroke=\"#0B4435\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<rect x=\"85\" y=\"249\" width=\"87\" height=\"35\" rx=\"4\" stroke=\"#A5D9BA\" stroke-opacity=\".25\"/><rect x=\"182\" y=\"249\" width=\"87\" height=\"35\" rx=\"4\" stroke=\"#A5D9BA\" stroke-opacity=\".25\"/><rect x=\"279\" y=\"249\" width=\"87\" height=\"35\" rx=\"4\" stroke=\"#A5D9BA\" stroke-opacity=\".25\"/>\n<circle cx=\"345\" cy=\"156\" r=\"45\" fill=\"#06271F\" fill-opacity=\".55\" stroke=\"#90D9B6\" stroke-opacity=\".25\"/><path d=\"M329 157l11 11 23-24\" stroke=\"#A3F451\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<rect x=\"5\" y=\"270\" width=\"123\" height=\"74\" rx=\"8\" fill=\"#F0FBF6\" stroke=\"#A5D9BA\" stroke-opacity=\".5\"/><circle cx=\"28\" cy=\"295\" r=\"7\" fill=\"#19C58B\"/><path d=\"M45 291h57M45 301h42M21 319h81\" stroke=\"#0B4435\" stroke-opacity=\".3\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<rect x=\"342\" y=\"292\" width=\"124\" height=\"70\" rx=\"8\" fill=\"#0B4435\" stroke=\"#90D9B6\" stroke-opacity=\".45\"/><path d=\"M363 334l17-13 13 6 20-17 26 7\" stroke=\"#A3F451\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"413\" cy=\"310\" r=\"3.5\" fill=\"#A3F451\"/>\n</svg>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "000001a",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-hero-meta",
+                    "_title": ""
+                  },
+                  "elements": [
+                    {
+                      "id": "0000019",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-wrap gp-hero-meta-inner",
+                        "_title": "حوزه‌های خدمات"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000016",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-meta-item",
+                            "_title": "طراحی و توسعه وب‌سایت",
+                            "title": "طراحی و توسعه وب‌سایت",
+                            "header_size": "p",
+                            "title_color": "#bdd4c7"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000017",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-meta-item",
+                            "_title": "سئو و بهینه‌سازی",
+                            "title": "سئو و بهینه‌سازی",
+                            "header_size": "p",
+                            "title_color": "#bdd4c7"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000018",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-meta-item",
+                            "_title": "پشتیبانی و توسعه اختصاصی",
+                            "title": "پشتیبانی و توسعه اختصاصی",
+                            "header_size": "p",
+                            "title_color": "#bdd4c7"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000041",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-section gp-web-section",
+                "_title": "طراحی و توسعه وب‌سایت",
+                "html_tag": "section",
+                "_element_id": "web-design"
+              },
+              "elements": [
+                {
+                  "id": "0000040",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap",
+                    "_title": "محتوای طراحی وب"
+                  },
+                  "elements": [
+                    {
+                      "id": "000003a",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-section-head gp-reveal",
+                        "_title": "معرفی طراحی وب"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000037",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "طراحی و توسعه",
+                            "title": "طراحی و توسعه",
+                            "header_size": "p",
+                            "title_color": "#0b4435"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000038",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h2",
+                            "_title": "طراحی و توسعه وب‌سایت",
+                            "title": "طراحی و توسعه وب‌سایت",
+                            "header_size": "h2",
+                            "title_color": "#172b25"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000039",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "وب‌سایت شما نقطه شروع حضور حرفه‌ای کسب‌وکارتان در ",
+                            "title": "وب‌سایت شما نقطه شروع حضور حرفه‌ای کسب‌وکارتان در فضای دیجیتال است. طراحی و توسعه سایت بر اساس نیاز، هویت برند و اهداف تجاری شما انجام می‌شود.",
+                            "header_size": "p",
+                            "title_color": "#64756e"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000003b",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-price-grid gp-reveal",
+                        "_title": "تعرفه طراحی وب"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000024",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-price-card",
+                            "_title": "طراحی لندینگ پیج"
+                          },
+                          "elements": [
+                            {
+                              "id": "000001c",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon",
+                              "settings": {
+                                "_css_classes": "gp-card-icon",
+                                "_title": "آیکن طراحی لندینگ پیج",
+                                "selected_icon": {
+                                  "value": "far fa-file-alt",
+                                  "library": "fa-regular"
+                                },
+                                "primary_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001d",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "طراحی لندینگ پیج",
+                                "title": "طراحی لندینگ پیج",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001e",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-body",
+                                "_title": "طراحی صفحات فرود حرفه‌ای برای معرفی محصولات، خدمات",
+                                "title": "طراحی صفحات فرود حرفه‌ای برای معرفی محصولات، خدمات، کمپین‌های تبلیغاتی و جذب مشتری.",
+                                "header_size": "p",
+                                "title_color": "#64756e"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000022",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "gp-price-row ",
+                                "_title": "مبلغ"
+                              },
+                              "elements": [
+                                {
+                                  "id": "000001f",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-prefix",
+                                    "_title": "شروع از",
+                                    "title": "شروع از",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000020",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-value",
+                                    "_title": "۵",
+                                    "title": "۵",
+                                    "header_size": "span",
+                                    "title_color": "#06271f"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000021",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-unit",
+                                    "_title": "میلیون تومان",
+                                    "title": "میلیون تومان",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "0000023",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "button",
+                              "settings": {
+                                "_css_classes": "gp-button gp-button-soft",
+                                "_title": "درخواست مشاوره",
+                                "text": "درخواست مشاوره",
+                                "link": {
+                                  "url": "https://gilaclick.ir/contact-us/",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#f0fbf6",
+                                "button_text_color": "#0b4435",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#e2f6eb",
+                                "hover_color": "#0b4435",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000002d",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-price-card",
+                            "_title": "طراحی سایت شرکتی و خدماتی"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000025",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon",
+                              "settings": {
+                                "_css_classes": "gp-card-icon",
+                                "_title": "آیکن طراحی سایت شرکتی و خدماتی",
+                                "selected_icon": {
+                                  "value": "far fa-building",
+                                  "library": "fa-regular"
+                                },
+                                "primary_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000026",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "طراحی سایت شرکتی و خدماتی",
+                                "title": "طراحی سایت شرکتی و خدماتی",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000027",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-body",
+                                "_title": "طراحی وب‌سایت حرفه‌ای برای معرفی کسب‌وکار، خدمات، ",
+                                "title": "طراحی وب‌سایت حرفه‌ای برای معرفی کسب‌وکار، خدمات، سوابق و ایجاد مسیر ارتباطی مؤثر با مشتریان.",
+                                "header_size": "p",
+                                "title_color": "#64756e"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002b",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "gp-price-row ",
+                                "_title": "مبلغ"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000028",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-prefix",
+                                    "_title": "شروع از",
+                                    "title": "شروع از",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000029",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-value",
+                                    "_title": "۴۵",
+                                    "title": "۴۵",
+                                    "header_size": "span",
+                                    "title_color": "#06271f"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "000002a",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-unit",
+                                    "_title": "میلیون تومان",
+                                    "title": "میلیون تومان",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "000002c",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "button",
+                              "settings": {
+                                "_css_classes": "gp-button gp-button-soft",
+                                "_title": "درخواست مشاوره",
+                                "text": "درخواست مشاوره",
+                                "link": {
+                                  "url": "https://gilaclick.ir/contact-us/",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#f0fbf6",
+                                "button_text_color": "#0b4435",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#e2f6eb",
+                                "hover_color": "#0b4435",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000036",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-price-card",
+                            "_title": "طراحی سایت فروشگاهی"
+                          },
+                          "elements": [
+                            {
+                              "id": "000002e",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon",
+                              "settings": {
+                                "_css_classes": "gp-card-icon",
+                                "_title": "آیکن طراحی سایت فروشگاهی",
+                                "selected_icon": {
+                                  "value": "fas fa-shopping-basket",
+                                  "library": "fa-solid"
+                                },
+                                "primary_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002f",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "طراحی سایت فروشگاهی",
+                                "title": "طراحی سایت فروشگاهی",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000030",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-body",
+                                "_title": "راه‌اندازی فروشگاه اینترنتی با قابلیت مدیریت محصول",
+                                "title": "راه‌اندازی فروشگاه اینترنتی با قابلیت مدیریت محصولات، سفارش‌ها، پرداخت آنلاین و توسعه امکانات فروش.",
+                                "header_size": "p",
+                                "title_color": "#64756e"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000034",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "gp-price-row ",
+                                "_title": "مبلغ"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000031",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-prefix",
+                                    "_title": "شروع از",
+                                    "title": "شروع از",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000032",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-value",
+                                    "_title": "۶۰",
+                                    "title": "۶۰",
+                                    "header_size": "span",
+                                    "title_color": "#06271f"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000033",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-unit",
+                                    "_title": "میلیون تومان",
+                                    "title": "میلیون تومان",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "0000035",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "button",
+                              "settings": {
+                                "_css_classes": "gp-button gp-button-soft",
+                                "_title": "درخواست مشاوره",
+                                "text": "درخواست مشاوره",
+                                "link": {
+                                  "url": "https://gilaclick.ir/contact-us/",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#f0fbf6",
+                                "button_text_color": "#0b4435",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#e2f6eb",
+                                "hover_color": "#0b4435",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000003e",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-included gp-reveal",
+                        "_title": "امکانات مشترک طراحی وب"
+                      },
+                      "elements": [
+                        {
+                          "id": "000003c",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-included-title",
+                            "_title": "امکانات پایه طراحی سایت",
+                            "title": "امکانات پایه طراحی سایت",
+                            "header_size": "h3",
+                            "title_color": "#0b4435"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000003d",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_css_classes": "gp-list gp-list-two",
+                            "_title": "امکانات پایه",
+                            "icon_list": [
+                              {
+                                "_id": "0000095",
+                                "text": "طراحی واکنش‌گرا برای موبایل، تبلت و دسکتاپ",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "0000096",
+                                "text": "طراحی رابط کاربری متناسب با هویت برند",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "0000097",
+                                "text": "پیاده‌سازی ساختار اولیه سئو",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "0000098",
+                                "text": "بهینه‌سازی اولیه سرعت و عملکرد",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "0000099",
+                                "text": "اتصال به Google Search Console",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "000009a",
+                                "text": "تنظیمات اولیه امنیتی",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "000009b",
+                                "text": "آموزش مدیریت سایت",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "000009c",
+                                "text": "تحویل پنل مدیریت و دسترسی‌ها",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              }
+                            ],
+                            "text_color": "#172b25",
+                            "icon_color": "#12805e"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000003f",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "_css_classes": "gp-note",
+                        "_title": "قیمت‌های اعلام‌شده، مبالغ پایه هستند و هزینه نهایی",
+                        "title": "قیمت‌های اعلام‌شده، مبالغ پایه هستند و هزینه نهایی بر اساس امکانات، پیچیدگی و نیازهای اختصاصی هر پروژه تعیین می‌شود. شرایط هاست و دامنه نیز متناسب با پروژه بررسی خواهد شد.",
+                        "header_size": "p",
+                        "title_color": "#64756e"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000054",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-section gp-support-section",
+                "_title": "پشتیبانی و نگهداری",
+                "html_tag": "section",
+                "_element_id": "support"
+              },
+              "elements": [
+                {
+                  "id": "0000053",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap gp-support-layout",
+                    "_title": "محتوای پشتیبانی"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000045",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-section-intro gp-reveal",
+                        "_title": "معرفی پشتیبانی"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000042",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "همراهی و نگهداری",
+                            "title": "همراهی و نگهداری",
+                            "header_size": "p",
+                            "title_color": "#0b4435"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000043",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h2",
+                            "_title": "پشتیبانی و نگهداری وب‌سایت",
+                            "title": "پشتیبانی و نگهداری وب‌سایت",
+                            "header_size": "h2",
+                            "title_color": "#172b25"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000044",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "با نگهداری منظم و بررسی فنی سایت، از بروز مشکلات ج",
+                            "title": "با نگهداری منظم و بررسی فنی سایت، از بروز مشکلات جدی جلوگیری کنید و عملکرد وب‌سایت خود را در وضعیت مطلوب حفظ کنید.",
+                            "header_size": "p",
+                            "title_color": "#64756e"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000052",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-support-panel gp-reveal",
+                        "_title": "تعرفه و شرایط پشتیبانی"
+                      },
+                      "elements": [
+                        {
+                          "id": "000004a",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-panel-price",
+                            "_title": "قیمت پشتیبانی"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000049",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-price-period",
+                                "_title": "ماهانه",
+                                "title": "ماهانه",
+                                "header_size": "p",
+                                "title_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000048",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "gp-price-row ",
+                                "_title": "مبلغ"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000046",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-value",
+                                    "_title": "۶ تا ۱۲",
+                                    "title": "۶ تا ۱۲",
+                                    "header_size": "span",
+                                    "title_color": "#06271f"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000047",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-unit",
+                                    "_title": "میلیون تومان",
+                                    "title": "میلیون تومان",
+                                    "header_size": "span",
+                                    "title_color": "#64756e"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000004b",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-panel-label",
+                            "_title": "خدمات",
+                            "title": "خدمات",
+                            "header_size": "h3",
+                            "title_color": "#0b4435"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000004c",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_css_classes": "gp-list",
+                            "_title": "خدمات پشتیبانی",
+                            "icon_list": [
+                              {
+                                "_id": "000009d",
+                                "text": "بروزرسانی هسته وردپرس، قالب و افزونه‌ها",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "000009e",
+                                "text": "تهیه نسخه پشتیبان منظم",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "000009f",
+                                "text": "بررسی امنیت و سلامت سایت",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000a0",
+                                "text": "بررسی عملکرد و مشکلات فنی",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000a1",
+                                "text": "رفع خطاهای ناشی از بروزرسانی‌ها و اختلالات فنی",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              }
+                            ],
+                            "text_color": "#172b25",
+                            "icon_color": "#12805e"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000051",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-support-terms",
+                            "_title": "شرایط پشتیبانی"
+                          },
+                          "elements": [
+                            {
+                              "id": "00000be",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-panel-label",
+                                "_title": "شرایط همکاری",
+                                "title": "شرایط همکاری",
+                                "header_size": "h3",
+                                "title_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "00000bf",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon-list",
+                              "settings": {
+                                "_css_classes": "gp-list gp-terms-list",
+                                "_title": "شرایط همکاری",
+                                "icon_list": [
+                                  {
+                                    "_id": "00000c0",
+                                    "text": "قراردادهای پشتیبانی در دوره‌های ۶ ماهه و یک‌ساله ارائه می‌شوند.",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000c1",
+                                    "text": "خدمات برای سایت‌های طراحی‌شده توسط گیلاکلیک و سایر سایت‌های وردپرسی قابل ارائه است.",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000c2",
+                                    "text": "پذیرش سایت‌های دیگران پس از بررسی اولیه فنی انجام می‌شود.",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000c3",
+                                    "text": "تعمیرات اساسی، تغییرات طراحی و توسعه امکانات جدید خارج از قرارداد هستند و جداگانه برآورد می‌شوند.",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  }
+                                ],
+                                "text_color": "#64756e",
+                                "icon_color": "#12805e"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000050",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-small",
+                                "_title": "هزینه نهایی بر اساس پیچیدگی فنی، حجم سایت و میزان ",
+                                "title": "هزینه نهایی بر اساس پیچیدگی فنی، حجم سایت و میزان نیاز به نگهداری تعیین می‌شود.",
+                                "header_size": "p",
+                                "title_color": "#64756e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000070",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-section gp-seo-section",
+                "_title": "سئو و بهینه‌سازی",
+                "html_tag": "section",
+                "_element_id": "seo"
+              },
+              "elements": [
+                {
+                  "id": "000006f",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap",
+                    "_title": "محتوای سئو"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000060",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-seo-heading",
+                        "_title": "عنوان و قیمت سئو"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000058",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-section-intro gp-reveal",
+                            "_title": "معرفی سئو"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000055",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-kicker",
+                                "_title": "دیده‌شدن در جست‌وجو",
+                                "title": "دیده‌شدن در جست‌وجو",
+                                "header_size": "p",
+                                "title_color": "#0b4435"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000056",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h2",
+                                "_title": "سئو و بهینه‌سازی برای موتورهای جست‌وجو و هوش مصنوع",
+                                "title": "سئو و بهینه‌سازی برای موتورهای جست‌وجو و هوش مصنوعی",
+                                "header_size": "h2",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000057",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-body",
+                                "_title": "فراتر از رتبه گرفتن در گوگل؛ کمک به دیده‌شدن کسب‌و",
+                                "title": "فراتر از رتبه گرفتن در گوگل؛ کمک به دیده‌شدن کسب‌وکار شما در نتایج جست‌وجو، موتورهای پاسخ‌گو و پلتفرم‌های مبتنی بر هوش مصنوعی.",
+                                "header_size": "p",
+                                "title_color": "#64756e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000005f",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-seo-price gp-dark gp-reveal",
+                            "_title": "قیمت و مدت قرارداد سئو"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000059",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-kicker",
+                                "_title": "تعرفه خدمات سئو",
+                                "title": "تعرفه خدمات سئو",
+                                "header_size": "p",
+                                "title_color": "#a3f451"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000005d",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "gp-price-row ",
+                                "_title": "مبلغ"
+                              },
+                              "elements": [
+                                {
+                                  "id": "000005a",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-prefix",
+                                    "_title": "شروع از",
+                                    "title": "شروع از",
+                                    "header_size": "span",
+                                    "title_color": "#c4d8ce"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "000005b",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-value",
+                                    "_title": "۲۰",
+                                    "title": "۲۰",
+                                    "header_size": "span",
+                                    "title_color": "#a3f451"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "000005c",
+                                  "elType": "widget",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "widgetType": "heading",
+                                  "settings": {
+                                    "_css_classes": "gp-price-unit",
+                                    "_title": "میلیون تومان در ماه",
+                                    "title": "میلیون تومان در ماه",
+                                    "header_size": "span",
+                                    "title_color": "#c4d8ce"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "000005e",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-small",
+                                "_title": "حداقل مدت قرارداد: ۶ ماه",
+                                "title": "حداقل مدت قرارداد: ۶ ماه",
+                                "header_size": "p",
+                                "title_color": "#d2e3d9"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000006d",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-seo-grid gp-reveal",
+                        "_title": "حوزه‌های خدمات سئو"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000063",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-seo-card",
+                            "_title": "سئوی فنی"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000061",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "خدمات سئو تکنیکال",
+                                "title": "خدمات سئو تکنیکال",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000062",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon-list",
+                              "settings": {
+                                "_css_classes": "gp-list",
+                                "_title": "خدمات سئو تکنیکال",
+                                "icon_list": [
+                                  {
+                                    "_id": "00000a2",
+                                    "text": "بررسی و رفع مشکلات فنی سایت",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b3",
+                                    "text": "بهینه‌سازی سرعت و ساختار سایت",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b4",
+                                    "text": "بررسی ایندکس صفحات",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b5",
+                                    "text": "بهینه‌سازی لینک‌سازی داخلی و داده‌های ساختاریافته",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  }
+                                ],
+                                "text_color": "#172b25",
+                                "icon_color": "#12805e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000066",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-seo-card",
+                            "_title": "سئوی داخلی و محتوا"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000064",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "خدمات سئو داخلی و محتوایی",
+                                "title": "خدمات سئو داخلی و محتوایی",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000065",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon-list",
+                              "settings": {
+                                "_css_classes": "gp-list",
+                                "_title": "خدمات سئو داخلی و محتوایی",
+                                "icon_list": [
+                                  {
+                                    "_id": "00000a3",
+                                    "text": "تحقیق کلمات کلیدی و تحلیل رقبا",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b6",
+                                    "text": "تدوین استراتژی و تقویم محتوایی",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b7",
+                                    "text": "بهینه‌سازی صفحات محصولات و خدمات",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b8",
+                                    "text": "تولید و بهینه‌سازی محتوای هدفمند",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  }
+                                ],
+                                "text_color": "#172b25",
+                                "icon_color": "#12805e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000069",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-seo-card",
+                            "_title": "بهینه‌سازی AEO و GEO"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000067",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "خدمات AEO و GEO",
+                                "title": "خدمات AEO و GEO",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000068",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon-list",
+                              "settings": {
+                                "_css_classes": "gp-list",
+                                "_title": "خدمات AEO و GEO",
+                                "icon_list": [
+                                  {
+                                    "_id": "00000a4",
+                                    "text": "بهینه‌سازی محتوا برای پاسخ به پرسش کاربران",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000a5",
+                                    "text": "بهبود ساختار محتوا برای درک بهتر توسط موتورهای پاسخ‌گو",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000b9",
+                                    "text": "تقویت اعتبار و هویت برند در فضای وب",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000ba",
+                                    "text": "بهبود قابلیت دسترسی و خوانایی محتوا برای ابزارهای هوش مصنوعی",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000bb",
+                                    "text": "پایش میزان دیده‌شدن و ارجاع به سایت در ابزارهای هوش مصنوعی، در حد امکانات اندازه‌گیری",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  }
+                                ],
+                                "text_color": "#172b25",
+                                "icon_color": "#12805e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000006c",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "gp-seo-card",
+                            "_title": "گزارش‌دهی و پایش"
+                          },
+                          "elements": [
+                            {
+                              "id": "000006a",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "heading",
+                              "settings": {
+                                "_css_classes": "gp-h3",
+                                "_title": "گزارش و پایش",
+                                "title": "گزارش و پایش",
+                                "header_size": "h3",
+                                "title_color": "#172b25"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000006b",
+                              "elType": "widget",
+                              "isInner": true,
+                              "isLocked": false,
+                              "widgetType": "icon-list",
+                              "settings": {
+                                "_css_classes": "gp-list",
+                                "_title": "گزارش و پایش",
+                                "icon_list": [
+                                  {
+                                    "_id": "00000a6",
+                                    "text": "بررسی عملکرد در Google Search Console و ابزارهای تحلیلی",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000bc",
+                                    "text": "بررسی وضعیت کلمات کلیدی",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  },
+                                  {
+                                    "_id": "00000bd",
+                                    "text": "گزارش ماهانه اقدامات و نتایج",
+                                    "selected_icon": {
+                                      "value": "fas fa-check",
+                                      "library": "fa-solid"
+                                    }
+                                  }
+                                ],
+                                "text_color": "#172b25",
+                                "icon_color": "#12805e"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000006e",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "_css_classes": "gp-note",
+                        "_title": "تعرفه نهایی با توجه به وضعیت سایت، میزان رقابت، تع",
+                        "title": "تعرفه نهایی با توجه به وضعیت سایت، میزان رقابت، تعداد صفحات و حجم فعالیت‌های موردنیاز تعیین می‌شود. تولید محتوای گسترده و خدمات خارج از محدوده توافق‌شده، جداگانه برآورد خواهند شد.",
+                        "header_size": "p",
+                        "title_color": "#64756e"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000007b",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-section gp-custom-section gp-dark",
+                "_title": "برنامه‌نویسی و توسعه اختصاصی",
+                "html_tag": "section",
+                "_element_id": "custom-development"
+              },
+              "elements": [
+                {
+                  "id": "000007a",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap gp-custom-layout",
+                    "_title": "محتوای توسعه اختصاصی"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000077",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-custom-copy gp-reveal",
+                        "_title": "معرفی توسعه اختصاصی"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000071",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "راهکار متناسب با پروژه",
+                            "title": "راهکار متناسب با پروژه",
+                            "header_size": "p",
+                            "title_color": "#a3f451"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000072",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h2",
+                            "_title": "برنامه‌نویسی و توسعه اختصاصی",
+                            "title": "برنامه‌نویسی و توسعه اختصاصی",
+                            "header_size": "h2",
+                            "title_color": "#ffffff"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000073",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "اگر به قابلیت، ابزار یا سامانه‌ای نیاز دارید که با",
+                            "title": "اگر به قابلیت، ابزار یا سامانه‌ای نیاز دارید که با راهکارهای آماده قابل پیاده‌سازی نیست، می‌توانیم آن را متناسب با نیاز کسب‌وکار شما طراحی و توسعه دهیم.",
+                            "header_size": "p",
+                            "title_color": "#c4d8ce"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000074",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "هزینه پروژه: پس از بررسی نیازمندی‌ها و مشخصات فنی ",
+                            "title": "هزینه پروژه: پس از بررسی نیازمندی‌ها و مشخصات فنی برآورد می‌شود.",
+                            "header_size": "p",
+                            "title_color": "#c4d8ce"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000075",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "button",
+                          "settings": {
+                            "_css_classes": "gp-button",
+                            "_title": "درخواست مشاوره در تلگرام",
+                            "text": "درخواست مشاوره در تلگرام",
+                            "link": {
+                              "url": "https://t.me/mdjavad01",
+                              "is_external": true,
+                              "nofollow": false,
+                              "custom_attributes": ""
+                            },
+                            "background_background": "classic",
+                            "background_color": "#a3f451",
+                            "button_text_color": "#06271f",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#b9f77c",
+                            "hover_color": "#06271f",
+                            "selected_icon": {
+                              "value": "",
+                              "library": ""
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000076",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-telegram-handle",
+                            "_title": "@mdjavad01",
+                            "title": "@mdjavad01",
+                            "header_size": "p",
+                            "title_color": "#d5e8dd"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000079",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-reveal",
+                        "_title": "حوزه‌های توسعه اختصاصی"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000078",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_css_classes": "gp-list gp-custom-list",
+                            "_title": "حوزه‌های توسعه اختصاصی",
+                            "icon_list": [
+                              {
+                                "_id": "00000a7",
+                                "text": "توسعه افزونه و ماژول اختصاصی وردپرس",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000a8",
+                                "text": "برنامه‌نویسی و توسعه امکانات ووکامرس",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000a9",
+                                "text": "طراحی و پیاده‌سازی سامانه‌های مدیریتی",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000aa",
+                                "text": "توسعه API و اتصال سرویس‌های مختلف",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000ab",
+                                "text": "طراحی و توسعه ابزارها و نرم‌افزارهای تحت وب",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              },
+                              {
+                                "_id": "00000ac",
+                                "text": "توسعه و سفارشی‌سازی سیستم‌های موجود",
+                                "selected_icon": {
+                                  "value": "fas fa-check",
+                                  "library": "fa-solid"
+                                }
+                              }
+                            ],
+                            "text_color": "#f2faf5",
+                            "icon_color": "#a3f451"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000082",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-section gp-faq-section",
+                "_title": "سوالات متداول",
+                "html_tag": "section",
+                "_element_id": "faq"
+              },
+              "elements": [
+                {
+                  "id": "0000081",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap gp-faq-layout",
+                    "_title": "پرسش‌ها و پاسخ‌ها"
+                  },
+                  "elements": [
+                    {
+                      "id": "000007f",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-section-intro gp-reveal",
+                        "_title": "معرفی سوالات"
+                      },
+                      "elements": [
+                        {
+                          "id": "000007c",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "پاسخ به پرسش‌ها",
+                            "title": "پاسخ به پرسش‌ها",
+                            "header_size": "p",
+                            "title_color": "#0b4435"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000007d",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h2",
+                            "_title": "سوالات متداول",
+                            "title": "سوالات متداول",
+                            "header_size": "h2",
+                            "title_color": "#172b25"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000080",
+                      "elType": "widget",
+                      "isInner": true,
+                      "isLocked": false,
+                      "widgetType": "accordion",
+                      "settings": {
+                        "_css_classes": "gp-faq",
+                        "_title": "سوالات متداول",
+                        "tabs": [
+                          {
+                            "_id": "00000ad",
+                            "tab_title": "آیا قیمت‌های اعلام‌شده قطعی هستند؟",
+                            "tab_content": "خیر. قیمت‌ها به‌صورت مبلغ پایه یا بازه خدمات اعلام شده‌اند و هزینه نهایی پس از بررسی نیازها و مشخصات پروژه تعیین می‌شود."
+                          },
+                          {
+                            "_id": "00000ae",
+                            "tab_title": "آیا امکان طراحی سایت با امکانات اختصاصی وجود دارد؟",
+                            "tab_content": "بله. امکانات اختصاصی بر اساس نیاز پروژه قابل طراحی و پیاده‌سازی هستند."
+                          },
+                          {
+                            "_id": "00000af",
+                            "tab_title": "آیا خدمات پشتیبانی فقط برای سایت‌های طراحی‌شده توسط گیلاکلیک ارائه می‌شود؟",
+                            "tab_content": "خیر. سایت‌های وردپرسی دیگر نیز پس از بررسی فنی اولیه قابل پذیرش هستند."
+                          },
+                          {
+                            "_id": "00000b0",
+                            "tab_title": "حداقل مدت قرارداد سئو چقدر است؟",
+                            "tab_content": "حداقل مدت همکاری در خدمات سئو و AEO شش ماه است."
+                          },
+                          {
+                            "_id": "00000b1",
+                            "tab_title": "آیا هاست و دامنه در هزینه طراحی سایت محاسبه شده‌اند؟",
+                            "tab_content": "شرایط تهیه و هزینه هاست و دامنه متناسب با نوع پروژه و نیازهای آن جداگانه بررسی می‌شود."
+                          },
+                          {
+                            "_id": "00000b2",
+                            "tab_title": "برای دریافت هزینه برنامه‌نویسی اختصاصی چه کاری باید انجام دهم؟",
+                            "tab_content": "از طریق تلگرام با ما ارتباط بگیرید و نیازمندی‌های پروژه را مطرح کنید تا پس از بررسی، برآورد هزینه ارائه شود."
+                          }
+                        ],
+                        "selected_icon": {
+                          "value": "fas fa-plus",
+                          "library": "fa-solid"
+                        },
+                        "selected_active_icon": {
+                          "value": "fas fa-minus",
+                          "library": "fa-solid"
+                        },
+                        "title_html_tag": "div",
+                        "faq_schema": "no",
+                        "icon_align": "left",
+                        "title_color": "#172b25",
+                        "icon_color": "#0b4435",
+                        "content_color": "#64756e"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000008b",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-final-section gp-dark",
+                "_title": "مشاوره و ارتباط",
+                "html_tag": "section",
+                "_element_id": "consult"
+              },
+              "elements": [
+                {
+                  "id": "000008a",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "gp-wrap gp-final-inner",
+                    "_title": "دعوت پایانی"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000086",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-final-copy gp-reveal",
+                        "_title": "دعوت به مشاوره"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000083",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-kicker",
+                            "_title": "گام بعدی پروژه شما",
+                            "title": "گام بعدی پروژه شما",
+                            "header_size": "p",
+                            "title_color": "#a3f451"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000084",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-h2",
+                            "_title": "برای شروع پروژه‌تان آماده‌اید؟",
+                            "title": "برای شروع پروژه‌تان آماده‌اید؟",
+                            "header_size": "h2",
+                            "title_color": "#ffffff"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000085",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "heading",
+                          "settings": {
+                            "_css_classes": "gp-body",
+                            "_title": "نیاز کسب‌وکار خود را با ما مطرح کنید تا مناسب‌ترین",
+                            "title": "نیاز کسب‌وکار خود را با ما مطرح کنید تا مناسب‌ترین راهکار و برآورد هزینه را دریافت کنید.",
+                            "header_size": "p",
+                            "title_color": "#c4d8ce"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000089",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "gp-final-actions",
+                        "_title": "راه‌های ارتباط"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000087",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "button",
+                          "settings": {
+                            "_css_classes": "gp-button",
+                            "_title": "درخواست مشاوره",
+                            "text": "درخواست مشاوره",
+                            "link": {
+                              "url": "https://gilaclick.ir/contact-us/",
+                              "is_external": false,
+                              "nofollow": false,
+                              "custom_attributes": ""
+                            },
+                            "background_background": "classic",
+                            "background_color": "#a3f451",
+                            "button_text_color": "#06271f",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#b9f77c",
+                            "hover_color": "#06271f",
+                            "selected_icon": {
+                              "value": "",
+                              "library": ""
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000088",
+                          "elType": "widget",
+                          "isInner": true,
+                          "isLocked": false,
+                          "widgetType": "button",
+                          "settings": {
+                            "_css_classes": "gp-button gp-button-outline",
+                            "_title": "ارتباط در تلگرام",
+                            "text": "ارتباط در تلگرام",
+                            "link": {
+                              "url": "https://t.me/mdjavad01",
+                              "is_external": true,
+                              "nofollow": false,
+                              "custom_attributes": ""
+                            },
+                            "background_background": "classic",
+                            "background_color": "#ffffff00",
+                            "button_text_color": "#ffffff",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#ffffff",
+                            "hover_color": "#06271f",
+                            "selected_icon": {
+                              "value": "",
+                              "library": ""
+                            }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000008f",
+          "elType": "container",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "content_width": "full",
+            "css_classes": "gp-footer gp-dark",
+            "_title": "پاورقی",
+            "html_tag": "footer"
+          },
+          "elements": [
+            {
+              "id": "000008e",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "gp-wrap gp-footer-inner",
+                "_title": "پاورقی"
+              },
+              "elements": [
+                {
+                  "id": "000008c",
+                  "elType": "widget",
+                  "isInner": true,
+                  "isLocked": false,
+                  "widgetType": "heading",
+                  "settings": {
+                    "_css_classes": "gp-footer-brand",
+                    "_title": "گیلاکلیک",
+                    "title": "گیلاکلیک",
+                    "header_size": "p",
+                    "title_color": "#ffffff"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000008d",
+                  "elType": "widget",
+                  "isInner": true,
+                  "isLocked": false,
+                  "widgetType": "heading",
+                  "settings": {
+                    "_css_classes": "gp-footer-note",
+                    "_title": "طراحی و توسعه راهکارهای دیجیتال",
+                    "title": "طراحی و توسعه راهکارهای دیجیتال",
+                    "header_size": "p",
+                    "title_color": "#b8cfc2"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000094",
+          "elType": "widget",
+          "isInner": true,
+          "isLocked": false,
+          "widgetType": "html",
+          "settings": {
+            "_css_classes": "gp-system",
+            "_title": "⚙️ رفتار منو و حرکت — حذف نشود",
+            "html": "<script>\n/* Progressive enhancement for the GilaClick services page. */\n(function () {\n  'use strict';\n  function setup(root) {\n    if (!root || root.dataset.gpReady === '1') return;\n    root.dataset.gpReady = '1';\n    root.setAttribute('dir', 'rtl');\n    root.setAttribute('lang', 'fa');\n    var inEditor = document.body.classList.contains('elementor-editor-active') || /[?&]elementor-preview=/.test(location.search);\n    var nav = root.querySelector('.gp-primary-nav');\n    var widget = root.querySelector('.gp-menu-toggle');\n    var toggle = widget && widget.querySelector('a');\n    var small = window.matchMedia('(max-width: 900px)');\n    if (!inEditor && nav && toggle) {\n      root.classList.add('gp-js');\n      toggle.setAttribute('role', 'button');\n      toggle.setAttribute('aria-controls', nav.id || 'gp-main-nav');\n      function close(restoreFocus) {\n        toggle.setAttribute('aria-expanded', 'false');\n        if (small.matches) nav.hidden = true;\n        if (restoreFocus) toggle.focus();\n      }\n      function sync() {\n        toggle.setAttribute('aria-expanded', 'false');\n        nav.hidden = small.matches;\n      }\n      sync();\n      toggle.addEventListener('click', function (event) {\n        event.preventDefault();\n        if (!small.matches) return;\n        var opening = nav.hidden;\n        nav.hidden = !opening;\n        toggle.setAttribute('aria-expanded', String(opening));\n      });\n      toggle.addEventListener('keydown', function (event) {\n        if (event.key === ' ') { event.preventDefault(); toggle.click(); }\n      });\n      nav.addEventListener('click', function (event) {\n        if (event.target.closest('a') && small.matches) close(false);\n      });\n      document.addEventListener('click', function (event) {\n        if (small.matches && !nav.hidden && !nav.contains(event.target) && !toggle.contains(event.target)) close(false);\n      });\n      document.addEventListener('keydown', function (event) {\n        if (event.key === 'Escape' && small.matches && !nav.hidden) close(true);\n      });\n      if (small.addEventListener) small.addEventListener('change', sync); else small.addListener(sync);\n    }\n    // Elementor 4's classic accordion applies aria-selected to a role=button\n    // and creates nested focus stops. Keep its native accordion behavior, but\n    // move the button semantics to its existing keyboard-focusable title link.\n    if (!inEditor && 'MutationObserver' in window) {\n      root.querySelectorAll('.gp-faq .elementor-tab-title[role=\"button\"]').forEach(function (title) {\n        var button = title.querySelector('.elementor-accordion-title');\n        var controls = title.getAttribute('aria-controls');\n        if (!button || !controls) return;\n        button.setAttribute('role', 'button');\n        button.setAttribute('aria-controls', controls);\n        function syncAccordion() {\n          var expanded = title.getAttribute('aria-expanded');\n          if (expanded !== null) button.setAttribute('aria-expanded', expanded);\n          ['aria-expanded', 'aria-controls', 'aria-selected', 'role'].forEach(function (attr) {\n            if (title.hasAttribute(attr)) title.removeAttribute(attr);\n          });\n          if (title.getAttribute('tabindex') !== '-1') title.setAttribute('tabindex', '-1');\n          // Elementor's classic widget uses jQuery slide animations; finish only\n          // this panel immediately when the visitor asks for reduced motion.\n          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.jQuery) {\n            var panel = document.getElementById(controls);\n            if (panel) window.jQuery(panel).stop(true, true);\n          }\n        }\n        var a11yObserver = new MutationObserver(syncAccordion);\n        a11yObserver.observe(title, {attributes: true, attributeFilter: ['aria-expanded', 'aria-controls', 'aria-selected', 'role', 'tabindex']});\n        syncAccordion();\n      });\n    }\n    if (!inEditor && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {\n      var nodes = root.querySelectorAll('.gp-reveal');\n      if (nodes.length) {\n        root.classList.add('gp-motion-ready');\n        var observer = new IntersectionObserver(function (entries) {\n          entries.forEach(function (entry) {\n            if (entry.isIntersecting) { entry.target.classList.add('gp-in-view'); observer.unobserve(entry.target); }\n          });\n        }, { rootMargin: '0px 0px -45px 0px', threshold: 0.05 });\n        nodes.forEach(function (node) { observer.observe(node); });\n        // Never leave content hidden if an observer is blocked or interrupted.\n        window.setTimeout(function () {\n          nodes.forEach(function (node) { node.classList.add('gp-in-view'); });\n          observer.disconnect();\n        }, 4500);\n      }\n    }\n  }\n  function init() { document.querySelectorAll('.gp-page').forEach(setup); }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();\n}());\n\n</script>"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
