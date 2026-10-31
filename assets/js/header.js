@@ -13,11 +13,20 @@
     var header = GC.$('[data-header]');
     if (!header) return;
     var docked = null;
+    var adminBar = document.getElementById('wpadminbar');
+    var drawer = GC.$('[data-mobile-nav]');
+    var lastOffset = null;
     GC.onScroll(function (y) {
       var next = y > 24;
-      if (next === docked) return;
+      // On mobile WordPress' toolbar scrolls away; its visible bottom is the
+      // amount of space the fixed header actually needs at this moment.
+      var offset = adminBar ? Math.max(0, Math.round(adminBar.getBoundingClientRect().bottom)) : 0;
+      if (next === docked && offset === lastOffset) return;
       return function () {
         docked = next;
+        lastOffset = offset;
+        header.style.setProperty('--gc-admin-offset', offset + 'px');
+        if (drawer) drawer.style.setProperty('--gc-admin-offset', offset + 'px');
         header.classList.toggle('is-scrolled', next);
       };
     });
@@ -221,6 +230,7 @@
     var link = GC.$('[data-cart-link]');
     var api = GC.config.storeApi;
     if (!badge || !link || !api) return;
+    var label = link.getAttribute('aria-label') || 'سبد خرید';
     if (!/(?:^|;\s*)woocommerce_items_in_cart=1(?:;|$)/.test(document.cookie)) return;
 
     var url = new URL(api.replace(/\/+$/, '') + '/cart', window.location.href);
@@ -235,7 +245,7 @@
         if (count <= 0) return;
         badge.textContent = GC.faDigits(count);
         badge.hidden = false;
-        link.setAttribute('aria-label', 'سبد خرید — ' + GC.faDigits(count) + ' کالا');
+        link.setAttribute('aria-label', label + ' — ' + GC.faDigits(count) + ' کالا');
       })
       .catch(function () {
         /* the badge is optional */
