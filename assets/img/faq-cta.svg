@@ -1,0 +1,22 @@
+<svg viewBox="0 0 620 620" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs><radialGradient id="gf-final-glow"><stop stop-color="#168f64" stop-opacity=".36"/><stop offset="1" stop-color="#06271f" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="310" cy="310" r="305" fill="url(#gf-final-glow)"/>
+  <g fill="none" stroke="#38bf86" stroke-width="1.2" opacity=".46">
+    <path class="gf-trace" pathLength="1" d="M12 310h118l53-53h47M608 310H490l-53-53h-47M60 455h100l62-62h28M560 165H460l-62 62h-28"/>
+    <circle cx="310" cy="310" r="245"/><circle cx="310" cy="310" r="175"/>
+  </g>
+  <g class="gf-orbit-cw" fill="none" stroke="#25c889" stroke-linecap="round">
+    <circle cx="310" cy="310" r="229" stroke-width="2" stroke-dasharray="128 32 16 48 84 40"/>
+    <circle cx="310" cy="81" r="5" fill="#a3f451" stroke="none"/>
+  </g>
+  <g class="gf-orbit-ccw gf-orbit-fast" fill="none" stroke="#a3f451" opacity=".75">
+    <circle cx="310" cy="310" r="157" stroke-width="1.5" stroke-dasharray="12 14 62 58"/>
+    <circle cx="467" cy="310" r="4" fill="#a3f451" stroke="none"/>
+  </g>
+  <circle cx="310" cy="310" r="100" fill="#0a3a2c" stroke="#36ca8e" stroke-opacity=".7"/>
+  <path d="M265 293h90v55h-37l-20 17v-17h-33z" fill="none" stroke="#a3f451" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M283 313h54M283 326h39" fill="none" stroke="#36ca8e" stroke-width="2.5" stroke-linecap="round"/>
+  <circle class="gf-pulse" cx="346" cy="270" r="4" fill="#a3f451"/>
+  <circle class="gf-signal" r="3.5" style="offset-path:path('M12 310 H130 L183 257 H230');--gf-delay:-3s" fill="#a3f451"/>
+  <circle class="gf-signal" r="3.5" style="offset-path:path('M608 310 H490 L437 257 H390');--gf-delay:-6s" fill="#a3f451"/>
+</svg>
