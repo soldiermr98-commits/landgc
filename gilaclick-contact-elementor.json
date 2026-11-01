@@ -1,0 +1,1736 @@
+{
+  "version": "0.4",
+  "title": "تماس با گیلاکلیک — المنتور پرو",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "0000071",
+      "elType": "container",
+      "settings": {
+        "_title": "صفحه تماس گیلاکلیک",
+        "content_width": "full",
+        "css_classes": "gct-page"
+      },
+      "elements": [
+        {
+          "id": "000006d",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "⚙️ استایل صفحه — حذف نشود",
+            "_css_classes": "gct-system",
+            "html": "<style>\n/* GilaClick contact — all class names are scoped to this page. */\n.gct-page{--ink:#06271f;--green:#0b4435;--emerald:#19c58b;--lime:#a3f451;--mint:#f0fbf6;--text:#172b25;--muted:#64756e;--gutter:clamp(20px,4vw,44px);--ease:cubic-bezier(.2,.7,.2,1);direction:rtl;text-align:right;isolation:isolate;background:#fff;color:var(--text);font-family:peyda!important;font-size:16px;line-height:1.9}\n.gct-page,.gct-page *,.gct-page *::before,.gct-page *::after{box-sizing:border-box;font-family:peyda!important}\n.gct-page.e-con,.gct-page .e-con{--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;--gap:0px;--row-gap:0px;--column-gap:0px;--content-width:100%;min-width:0;min-height:0;max-width:none;margin:0;padding:0;gap:0;display:flex;flex-direction:column}\n.gct-page .elementor-widget{min-width:0;max-width:100%;margin:0}.gct-page .elementor-widget-container{margin:0;padding:0}.gct-page .elementor-heading-title,.gct-page p{margin:0;padding:0;color:inherit;font:inherit;line-height:inherit;letter-spacing:normal;text-transform:none}.gct-page a{color:inherit;text-decoration:none}.gct-page svg{display:block}.gct-page .gct-system{display:none}.gct-page .gct-wrap{width:min(1268px,calc(100% - 2 * var(--gutter)));max-width:1268px;margin-inline:auto}.gct-page .gct-section{position:relative;padding-block:clamp(76px,8vw,118px)}\n.gct-page :focus-visible{outline:3px solid #0d7654;outline-offset:4px}.gct-page .gct-dark :focus-visible{outline-color:var(--lime)}\n.gct-page .gct-skip .elementor-button{position:fixed;top:10px;right:12px;z-index:100000;transform:translateY(-180%);padding:10px 18px;background:var(--lime);color:var(--ink);border-radius:5px}.gct-page .gct-skip .elementor-button:focus{transform:translateY(0)}\n/* Native Elementor controls form the header and navigation. */\n.gct-page .gct-header{position:sticky;top:var(--gct-admin-offset,0px);z-index:40;background:var(--ink);padding:14px 0 0}.gct-page .gct-header-inner{position:relative;display:flex;flex-direction:row;align-items:center;gap:22px;min-height:68px;padding:10px 14px 10px 18px;background:#fff;border-radius:11px;box-shadow:0 12px 32px #0002}.gct-page .gct-logo{flex:none}\n.gct-page.gct-page .gct-header .gct-logo .elementor-button{position:relative;display:flex;align-items:center;min-height:44px;padding:0 48px 10px 0;border:0;background:transparent;color:var(--ink);font-size:18px;font-weight:900;line-height:1.1}.gct-page .gct-logo .elementor-button::before{content:\"\";position:absolute;right:0;top:3px;width:37px;height:37px;background:center/contain no-repeat url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%2306271f' d='M9 1h22a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H9a8 8 0 0 1-8-8V8.2L8.2 1Z'/%3E%3Cpath fill='none' stroke='%23a3f451' stroke-linecap='round' stroke-width='2.4' d='M26.7 13.3A9.5 9.5 0 1 0 29.4 21.3H23.2'/%3E%3Ccircle cx='21' cy='21.3' r='2.4' fill='%2319c58b'/%3E%3C/svg%3E\")}.gct-page .gct-logo .elementor-button::after{content:'GILACLICK';position:absolute;right:48px;bottom:3px;direction:ltr;color:#64756e;font-size:8px;font-weight:700;line-height:1;letter-spacing:.18em}\n.gct-page .gct-primary-nav{flex:1 1 auto;width:auto;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:4px}.gct-page.gct-page .gct-header .gct-nav-link .elementor-button{position:relative;display:inline-flex;align-items:center;min-height:42px;padding:8px 10px;border:0;border-radius:5px;background:transparent;color:var(--text);font-size:13.5px;font-weight:700;line-height:1.4;white-space:nowrap}.gct-page.gct-page .gct-header .gct-nav-link .elementor-button:hover,.gct-page.gct-page .gct-header .gct-nav-link .elementor-button:focus-visible{background:var(--mint);color:#0b6047}.gct-page.gct-page .gct-header .gct-current .elementor-button{color:#0b6047}.gct-page .gct-current .elementor-button::after{content:\"\";position:absolute;right:10px;left:10px;bottom:3px;height:2px;background:var(--emerald)}\n.gct-page .gct-header-actions{width:auto;display:flex;flex-direction:row;align-items:center;gap:7px}.gct-page.gct-page .gct-header .gct-icon-button .elementor-button{width:44px;height:44px;display:flex;justify-content:center;align-items:center;padding:0;border:1px solid #dfe7e2;border-radius:9px;background:#fff;color:var(--ink);font-size:0}.gct-page .gct-icon-button .elementor-button::before{content:\"\";width:20px;height:20px;display:block;background:center/contain no-repeat}.gct-page .gct-cart .elementor-button::before{background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306271f' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='20' r='1'/%3E%3Ccircle cx='19' cy='20' r='1'/%3E%3Cpath d='M2 3h2l2.4 11h12l2-8H5'/%3E%3C/svg%3E\")}.gct-page.gct-page .gct-header .gct-account .elementor-button{background:var(--ink);border-color:var(--ink)}.gct-page .gct-account .elementor-button::before{background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3f451' stroke-width='1.7' stroke-linecap='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M5 21c0-4 3-6 7-6s7 2 7 6'/%3E%3C/svg%3E\")}.gct-page .gct-menu .elementor-button::before{background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306271f' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M4 7h16M4 12h16M4 17h16'/%3E%3C/svg%3E\")}.gct-page .gct-icon-button .elementor-button-text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.gct-page .gct-menu{display:none}\n/* Hero: layered traces, nodes and orbital rings. */\n.gct-page .gct-hero{overflow:hidden;background:radial-gradient(ellipse at 20% 42%,#0e4937 0%,transparent 38%),linear-gradient(115deg,#06271f,#06251d 60%,#073428);color:#fff;position:relative}.gct-page .gct-hero::before{content:\"\";position:absolute;inset:0;background-image:radial-gradient(#8fe4b7 1px,transparent 1px);background-size:26px 26px;opacity:.075;pointer-events:none}.gct-page .gct-hero::after{content:\"\";position:absolute;inset:auto 0 0;height:120px;background:linear-gradient(transparent,#06271f80);pointer-events:none}\n.gct-page .gct-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:clamp(24px,4vw,68px);min-height:clamp(650px,calc(100vh - 82px),820px);padding-block:42px 70px}.gct-page .gct-hero-copy{max-width:610px;align-items:flex-start}.gct-page .gct-kicker{display:inline-flex;width:auto;align-self:flex-start;padding:6px 14px;border:1px solid #a3f4514a;border-radius:5px;background:#a3f4510d;color:#c8e0d4;font-size:13px;font-weight:700;line-height:1.6}.gct-page .gct-kicker .elementor-heading-title::before{content:\"\";display:inline-block;width:7px;height:7px;margin-left:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}\n.gct-page .gct-hero-title{margin-top:27px;color:#fff;font-size:clamp(37px,4.15vw,62px);font-weight:900;line-height:1.55;letter-spacing:-.035em}.gct-page .gct-hero-title em{font-style:normal;color:var(--lime)}.gct-page .gct-hero-line{width:min(380px,70%);height:1px;margin:22px 0 23px;background:linear-gradient(270deg,var(--lime),#19c58b00);position:relative}.gct-page .gct-hero-line::after{content:\"\";position:absolute;left:0;top:-3px;width:7px;height:7px;border:1px solid var(--lime);border-radius:50%;box-shadow:0 0 10px var(--lime)}.gct-page .gct-hero-lead{max-width:580px;color:#c4d8cd;font-size:clamp(15px,1.18vw,17px);font-weight:400;line-height:2.15}.gct-page .gct-actions{display:flex;flex-direction:row;gap:11px;flex-wrap:wrap;margin-top:34px}\n.gct-page.gct-page .gct-btn .elementor-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:54px;padding:12px 21px;border:1px solid transparent;border-radius:6px;background:var(--lime);color:var(--ink);font-size:14px;font-weight:800;line-height:1.5;transition:transform .22s,box-shadow .22s,background .22s,color .22s}.gct-page.gct-page .gct-btn .elementor-button::after{content:'←';font-size:19px;line-height:1}.gct-page.gct-page .gct-btn .elementor-button:hover,.gct-page.gct-page .gct-btn .elementor-button:focus-visible{transform:translateY(-3px);background:#b4ff6b;color:var(--ink);box-shadow:0 9px 25px #a3f45132}.gct-page.gct-page .gct-btn-outline .elementor-button{background:#ffffff09;color:#f0fbf6;border-color:#ffffff45}.gct-page.gct-page .gct-btn-outline .elementor-button:hover,.gct-page.gct-page .gct-btn-outline .elementor-button:focus-visible{background:#19c58b20;color:#fff;border-color:#19c58b}\n.gct-page .gct-hero-note{display:flex;flex-direction:row;align-items:center;gap:9px;margin-top:34px;color:#b7cfc3;font-size:13px}.gct-page .gct-hero-note::before{content:\"\";width:21px;height:1px;background:var(--emerald)}\n.gct-page .gct-hero-art{position:relative;width:100%;min-width:0}.gct-page .gct-art-stage{position:relative;isolation:isolate;aspect-ratio:660/600;transform:translate3d(var(--gct-px,0px),var(--gct-py,0px),0);transition:transform .25s ease-out}.gct-page .gct-orbit-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.gct-page .gct-spin{transform-origin:330px 300px;animation:orbit 55s linear infinite;animation-play-state:paused}.gct-page .gct-spin-middle{animation-duration:42s;animation-direction:reverse}.gct-page .gct-runner path,.gct-page .gct-map-runner path{stroke-dasharray:5 560;stroke-dashoffset:0;animation:trace 6s linear infinite;animation-play-state:paused}.gct-page .gct-runner path:nth-child(2),.gct-page .gct-map-runner path:nth-child(2){animation-delay:-3s}.gct-page .gct-runner path:nth-child(3){animation-delay:-1.5s}.gct-page .gct-runner path:nth-child(4){animation-delay:-4.5s}.gct-page .gct-playing .gct-spin,.gct-page .gct-playing .gct-runner path,.gct-page .gct-playing .gct-map-runner path{animation-play-state:running}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes trace{to{stroke-dashoffset:-565}}\n.gct-page .gct-node{position:absolute;display:flex;align-items:center;gap:10px;min-height:56px;padding:9px 14px;background:#eaf8f1;color:var(--ink);border:1px solid #8ed9b2;border-radius:9px;box-shadow:0 12px 32px #001b14a8;transition:transform .25s,box-shadow .25s;font-size:12px;font-weight:800;line-height:1.5}.gct-page .gct-node:hover,.gct-page .gct-node:focus-visible{transform:translateY(-4px);box-shadow:0 0 0 2px #a3f45180,0 14px 35px #001b14a8}.gct-page .gct-node svg{width:23px;height:23px;color:#078458;flex:none}.gct-page .gct-node b{display:block;font-size:12px}.gct-page .gct-node small{display:block;color:#64756e;font-size:10px;font-weight:500;direction:ltr;text-align:right}.gct-page .gct-node-tg{top:18%;right:0}.gct-page .gct-node-wa{bottom:18%;left:1%}.gct-page .gct-node-form{bottom:12%;right:9%}\n/* Connected contact paths */\n.gct-page .gct-paths{background:#fff}.gct-page .gct-section-head{max-width:700px;margin-bottom:42px}.gct-page .gct-eyebrow{color:#087854;font-size:13px;font-weight:800;line-height:1.5}.gct-page .gct-eyebrow .elementor-heading-title::before{content:\"\";display:inline-block;vertical-align:middle;width:26px;height:2px;margin-left:10px;background:var(--emerald)}.gct-page .gct-h2{margin-top:12px;color:var(--text);font-size:clamp(28px,3vw,42px);font-weight:900;line-height:1.5}.gct-page .gct-section-copy{margin-top:13px;color:var(--muted);font-size:15px;line-height:2.1}.gct-page .gct-path-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #cfe8dc;background:linear-gradient(180deg,#f7fcf9,#fff)}.gct-page .gct-path-grid::before{content:\"\";position:absolute;right:10%;left:10%;top:58px;height:1px;background:linear-gradient(90deg,#19c58b22,#19c58b,#19c58b22)}.gct-page .gct-path{position:relative;min-width:0;padding:28px 30px 32px;align-items:flex-start}.gct-page .gct-path+.gct-path{border-right:1px solid #d7eae1}.gct-page .gct-path-icon{position:relative;z-index:1;width:60px;height:60px;display:grid;place-items:center;border:1px solid #9cdbbe;border-radius:8px;background:#eaf9f0;color:#087854;box-shadow:0 0 0 9px #f6fcf8}.gct-page .gct-path-icon svg{width:26px;height:26px}.gct-page .gct-path-kicker{margin-top:25px;color:#087854;font-size:12px;font-weight:800}.gct-page .gct-path-title{margin-top:3px;color:var(--ink);font-size:22px;font-weight:900;line-height:1.5}.gct-page .gct-path-id{margin-top:2px;color:#42685a;font-size:13px;font-weight:700;direction:ltr;text-align:right}.gct-page .gct-path-text{margin-top:14px;min-height:63px;color:#64756e;font-size:14px;line-height:2}.gct-page.gct-page .gct-text-link .elementor-button{position:relative;display:inline-flex;gap:12px;align-items:center;padding:0;border:0;border-radius:0;background:transparent;color:#087854;font-size:13px;font-weight:900;line-height:1.7}.gct-page.gct-page .gct-text-link .elementor-button::after{content:'←';font-size:18px;transition:transform .2s}.gct-page.gct-page .gct-text-link .elementor-button:hover,.gct-page.gct-page .gct-text-link .elementor-button:focus-visible{color:#064b36}.gct-page .gct-text-link .elementor-button:hover::after{transform:translateX(-5px)}.gct-page .gct-path-link{margin-top:22px}\n/* Interactive route map: every suggested channel remains an actual link. */\n.gct-page .gct-guide{overflow:hidden;background:#f0fbf6}.gct-page .gct-guide-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,80px);align-items:center}.gct-page .gct-guide-copy{align-self:center}.gct-page .gct-guide-art{margin-top:24px;width:100%;max-width:480px}.gct-page .gct-guide-art svg{width:100%;height:auto}.gct-page .gct-routes{position:relative;border-top:1px solid #b9dccb}.gct-page .gct-route{position:relative;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:15px;min-height:76px;padding:14px 17px 14px 8px;border-bottom:1px solid #b9dccb;transition:background .22s,transform .22s}.gct-page .gct-route::before{content:\"\";position:absolute;right:0;top:0;bottom:0;width:2px;background:transparent;transition:background .22s}.gct-page .gct-route:hover,.gct-page .gct-route:focus-within{background:#ffffffa8;transform:translateX(-4px)}.gct-page .gct-route:hover::before,.gct-page .gct-route:focus-within::before{background:var(--emerald)}.gct-page .gct-route-title{color:var(--text);font-size:14px;font-weight:800;line-height:1.8}.gct-page .gct-route-links{width:auto;display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap}.gct-page.gct-page .gct-route-link .elementor-button{display:inline-flex;align-items:center;justify-content:center;min-height:35px;padding:6px 11px;border:1px solid #abd9c3;border-radius:4px;background:#fff;color:#096d4e;font-size:11px;font-weight:800;line-height:1.5;white-space:nowrap;transition:background .2s,border .2s,color .2s}.gct-page.gct-page .gct-route-link .elementor-button:hover,.gct-page.gct-page .gct-route-link .elementor-button:focus-visible{background:var(--ink);border-color:var(--ink);color:var(--lime)}\n/* Form / native Elementor Pro form */\n.gct-page .gct-form-section{overflow:hidden;background:#fff}.gct-page .gct-form-layout{display:grid;grid-template-columns:.83fr 1.17fr;gap:clamp(34px,6vw,90px);align-items:start}.gct-page .gct-form-copy{position:sticky;top:calc(var(--gct-admin-offset,0px) + 112px)}.gct-page .gct-form-panel{position:relative;padding:clamp(22px,3.5vw,42px);border:1px solid #d5e9df;background:#f8fcfa;box-shadow:0 18px 65px #073c270a}.gct-page .gct-form-panel::before{content:\"\";position:absolute;top:-1px;right:-1px;width:85px;height:2px;background:var(--emerald)}.gct-page .gct-form-tip{margin-top:23px;padding:16px 18px;border-right:2px solid var(--emerald);background:var(--mint);color:#42685a;font-size:13px;line-height:2}.gct-page .gct-form-tip strong{color:#0b6047}.gct-page .gct-form-widget{width:100%}.gct-page .gct-form-widget .elementor-form-fields-wrapper{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0}.gct-page .gct-form-widget .elementor-field-group{display:flex;flex-direction:column;align-items:stretch;width:auto;min-width:0;margin:0;padding:0}.gct-page .gct-form-widget .elementor-field-group-message,.gct-page .gct-form-widget .elementor-field-type-submit{grid-column:1/-1}.gct-page .gct-form-widget label{display:block;margin:0 0 7px;padding:0!important;color:#173d2d;font-size:13px;font-weight:800;line-height:1.6}.gct-page .gct-form-widget .elementor-field-required label::after{content:' *';color:#087854}.gct-page .gct-form-widget :is(input:not([type=hidden]),textarea,select){display:block;width:100%;max-width:100%;min-height:50px;margin:0;padding:12px 14px;border:1px solid #c8ded2;border-radius:5px;outline:0;background:#fff;color:var(--text);font-size:14px;font-weight:400;line-height:1.7;box-shadow:none;transition:border-color .2s,box-shadow .2s}.gct-page .gct-form-widget textarea{min-height:142px;resize:vertical}.gct-page .gct-form-widget :is(input,textarea)::placeholder{color:#899b91;opacity:1}.gct-page .gct-form-widget :is(input,textarea,select):focus{border-color:#119668;box-shadow:0 0 0 3px #19c58b1c}.gct-page .gct-form-widget :is(input,textarea,select)[aria-invalid=true]{border-color:#b84d43}.gct-page .gct-form-widget .elementor-select-wrapper{width:100%}.gct-page .gct-form-widget .select-caret-down-wrapper{display:none}.gct-page .gct-form-widget select{appearance:auto}.gct-page.gct-page .gct-form-widget button[type=submit]{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:54px;margin:2px 0 0;padding:12px 22px;border:1px solid var(--ink);border-radius:5px;background:var(--ink);color:#fff;font-size:15px;font-weight:900;line-height:1.5;cursor:pointer;transition:background .2s,border-color .2s,color .2s,box-shadow .2s}.gct-page.gct-page .gct-form-widget button[type=submit]:hover,.gct-page.gct-page .gct-form-widget button[type=submit]:focus-visible{background:#0b4435;color:var(--lime);border-color:#0b6047;box-shadow:0 9px 23px #0b44352b}.gct-page .gct-form-widget button:disabled{opacity:.6;cursor:wait}.gct-page .gct-form-widget .elementor-message,.gct-page .gct-status{display:block;grid-column:1/-1;margin:13px 0 0;padding:10px 13px;border-right:3px solid #b34e42;background:#fff4f1;color:#8c3129;font-size:13px;line-height:1.9}.gct-page .gct-form-widget .elementor-message:empty,.gct-page .gct-status:empty{display:none}.gct-page .gct-form-widget .elementor-message-success,.gct-page .gct-status[data-state=success]{border-color:#087854;background:#e8f8ef;color:#07563b}.gct-page .gct-status[data-state=sending]{border-color:#159c6a;background:#e8f8ef;color:#07563b}.gct-page .gct-form-widget .elementor-form-spinner{margin-left:7px}.gct-page .gct-form-widget .elementor-form-waiting{opacity:1!important}\n/* A quieter secondary email channel */\n.gct-page .gct-email-section{background:#eaf7f0;padding:34px 0}.gct-page .gct-email-inner{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:22px}.gct-page .gct-email-copy{display:flex;flex-direction:row;align-items:center;gap:15px}.gct-page .gct-email-icon{display:grid;place-items:center;width:48px;height:48px;flex:none;border:1px solid #abd8c2;border-radius:6px;color:#087854}.gct-page .gct-email-icon svg{width:23px;height:23px}.gct-page .gct-email-text{color:#47685a;font-size:13px;line-height:1.9}.gct-page.gct-page .gct-email-link .elementor-button{display:inline-flex;align-items:center;gap:10px;padding:8px 0;border:0;background:transparent;color:#086e4e;font-size:15px;font-weight:800;direction:ltr}.gct-page.gct-page .gct-email-link .elementor-button:hover{color:var(--ink)}.gct-page .gct-footer{background:var(--ink);color:#d5e7dc;padding:26px 0}.gct-page .gct-footer-inner{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:20px}.gct-page .gct-footer-brand{font-weight:900;font-size:18px}.gct-page .gct-footer-note{font-size:12px;color:#a6c0b2}\n/* Scroll effects activate only after JS, and stay readable if JS is absent. */\n.gct-page.gct-ready .gct-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}.gct-page.gct-ready .gct-reveal.gct-visible{opacity:1;transform:none}.gct-page.gct-ready .gct-path:nth-child(2){transition-delay:.09s}.gct-page.gct-ready .gct-path:nth-child(3){transition-delay:.18s}\n@media(max-width:1024px){.gct-page .gct-primary-nav{gap:0}.gct-page.gct-page .gct-header .gct-nav-link .elementor-button{font-size:12px;padding-inline:7px}.gct-page .gct-hero-grid{gap:10px}.gct-page .gct-path{padding-inline:22px}.gct-page .gct-guide-grid{grid-template-columns:.75fr 1.25fr;gap:35px}}\n@media(max-width:767px){.gct-page .gct-header{padding-top:10px}.gct-page .gct-header-inner{min-height:62px;padding:8px 11px;gap:10px}.gct-page .gct-header-actions{margin-right:auto}.gct-page .gct-cart{display:none}.gct-page .gct-menu{display:block}.gct-page .gct-primary-nav{position:static;display:flex;flex-direction:column;align-items:stretch;gap:2px;width:100%;order:3;padding:8px 0}.gct-page .gct-header-inner{flex-wrap:wrap}.gct-page.gct-ready .gct-primary-nav{display:none}.gct-page.gct-ready .gct-primary-nav.gct-nav-open{display:flex}.gct-page.gct-page .gct-header .gct-nav-link .elementor-button{display:flex;width:100%;font-size:14px;padding:10px 8px}.gct-page .gct-current .elementor-button::after{display:none}.gct-page .gct-hero-grid{grid-template-columns:1fr;min-height:0;padding-block:68px 46px;gap:12px}.gct-page .gct-hero-copy{max-width:none}.gct-page .gct-hero-title{font-size:clamp(34px,8.5vw,46px);margin-top:21px}.gct-page .gct-hero-lead{font-size:15px}.gct-page .gct-hero-art{width:min(100%,510px);margin-inline:auto}.gct-page .gct-art-stage{transform:none}.gct-page .gct-node{min-height:48px;padding:7px 9px;font-size:10px}.gct-page .gct-node svg{width:20px;height:20px}.gct-page .gct-node b{font-size:10px}.gct-page .gct-node small{font-size:9px}.gct-page .gct-node-tg{right:0;top:17%}.gct-page .gct-node-wa{left:0;bottom:16%}.gct-page .gct-node-form{right:4%;bottom:10%}.gct-page .gct-path-grid{grid-template-columns:1fr}.gct-page .gct-path-grid::before{right:55px;left:auto;top:50px;bottom:50px;width:1px;height:auto;background:linear-gradient(#19c58b44,#19c58b,#19c58b44)}.gct-page .gct-path{padding:24px 28px}.gct-page .gct-path+.gct-path{border-right:0;border-top:1px solid #d7eae1}.gct-page .gct-path-text{min-height:0}.gct-page .gct-guide-grid,.gct-page .gct-form-layout{grid-template-columns:1fr}.gct-page .gct-guide-art{max-width:400px;margin-inline:auto}.gct-page .gct-form-copy{position:static}.gct-page .gct-email-inner,.gct-page .gct-footer-inner{align-items:flex-start;flex-direction:column;gap:12px}.gct-page .gct-email-link{margin-right:63px}.gct-page .gct-spin{animation-duration:85s}.gct-page .gct-spin-middle{animation-duration:70s}.gct-page .gct-runner path:nth-child(n+3){animation:none}}\n@media(max-width:420px){.gct-page .gct-actions{display:grid;grid-template-columns:1fr;width:100%}.gct-page.gct-page .gct-actions .elementor-button{width:100%}.gct-page .gct-form-widget .elementor-form-fields-wrapper{grid-template-columns:1fr;gap:15px}.gct-page .gct-form-widget .elementor-field-group{grid-column:1}.gct-page .gct-route{flex-direction:column;align-items:flex-start;gap:8px}.gct-page .gct-route-links{justify-content:flex-start}.gct-page .gct-hero-title{font-size:34px}}\n@media(prefers-reduced-motion:reduce){.gct-page *, .gct-page *::before, .gct-page *::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.gct-page.gct-ready .gct-reveal{opacity:1;transform:none}.gct-page .gct-art-stage{transform:none!important}}\n/* Override per-widget Elementor form gaps and wrapping, which otherwise turn\n   each label/input into separate flex columns and make fields overflow. */\n.gct-page.gct-page .gct-form-widget .elementor-form-fields-wrapper{margin:0!important}\n.gct-page.gct-page .gct-form-widget .elementor-field-group{flex-wrap:nowrap;margin:0!important;padding:0!important}\n.gct-page.gct-page .gct-form-widget .elementor-field-group>:is(input,textarea,.elementor-select-wrapper){flex:0 0 auto}\n.gct-page.gct-page .gct-email-copy{width:100%;flex-wrap:nowrap}\n.gct-page.gct-page .gct-email-graphic{width:48px;flex:0 0 48px}\n.gct-page.gct-page .gct-email-text{flex:1 1 auto;min-width:0}\n.gct-page.gct-page .gct-email-link .elementor-button{line-height:1.3}\n@media(max-width:767px){.gct-page.gct-page .gct-guide-art{width:min(100%,400px);max-width:400px}}\n.gct-page.gct-page .gct-route{flex-wrap:nowrap}\n@media(max-width:600px){.gct-page .gct-route{flex-direction:column;align-items:flex-start;gap:8px}.gct-page .gct-route-links{justify-content:flex-start}}\n/* The header icons are native, editable Elementor icon controls; inline SVGs\n   provide the same artwork in the standalone HTML. */\n.gct-page.gct-page .gct-icon-button .elementor-button::before{display:none}\n.gct-page .gct-icon-button .elementor-button-content-wrapper,.gct-page .gct-icon-button .elementor-button-icon{display:flex;align-items:center;justify-content:center;line-height:1}\n.gct-page .gct-icon-button .elementor-button-icon svg{width:17px;height:17px;fill:currentColor}\n.gct-page .gct-icon-button .elementor-button-icon i{font-size:17px;line-height:1}\n.gct-page .gct-icon-button .elementor-button-icon i.fas{font-family:'Font Awesome 5 Free'!important;font-weight:900}\n.gct-page .gct-icon-button .elementor-button-icon i.far{font-family:'Font Awesome 5 Free'!important;font-weight:400}\n.gct-page .gct-nojs-message{margin-top:15px;padding:12px 14px;border-right:3px solid #bd5a46;background:#fff4f1;color:#873a2f;font-size:13px;line-height:1.9}\n/* Do not inherit an unrelated Elementor/theme button-label color on hover. */\n.gct-page.gct-page .elementor-button .elementor-button-text{color:inherit!important}\n\n</style>"
+          },
+          "elements": []
+        },
+        {
+          "id": "000006e",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "_title": "رفتن به محتوای اصلی",
+            "_css_classes": "gct-skip",
+            "text": "رفتن به محتوای اصلی",
+            "link": {
+              "url": "#gct-main",
+              "is_external": false,
+              "nofollow": false,
+              "custom_attributes": ""
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff00",
+            "button_background_hover_background": "classic",
+            "button_background_hover_color": "#ffffff00",
+            "selected_icon": {
+              "value": "",
+              "library": ""
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "000000e",
+          "elType": "container",
+          "settings": {
+            "_title": "سربرگ",
+            "content_width": "full",
+            "css_classes": "gct-header",
+            "html_tag": "header"
+          },
+          "elements": [
+            {
+              "id": "000000d",
+              "elType": "container",
+              "settings": {
+                "_title": "ردیف سربرگ",
+                "content_width": "full",
+                "css_classes": "gct-wrap gct-header-inner"
+              },
+              "elements": [
+                {
+                  "id": "0000001",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "_title": "گیلاکلیک",
+                    "_css_classes": "gct-logo",
+                    "text": "گیلاکلیک",
+                    "link": {
+                      "url": "https://gilaclick.ir/",
+                      "is_external": false,
+                      "nofollow": false,
+                      "custom_attributes": ""
+                    },
+                    "background_background": "classic",
+                    "background_color": "#ffffff00",
+                    "button_background_hover_background": "classic",
+                    "button_background_hover_color": "#ffffff00",
+                    "selected_icon": {
+                      "value": "",
+                      "library": ""
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000008",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "منوی اصلی",
+                    "content_width": "full",
+                    "css_classes": "gct-primary-nav",
+                    "html_tag": "nav"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000002",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "صفحه اصلی",
+                        "_css_classes": "gct-nav-link",
+                        "text": "صفحه اصلی",
+                        "link": {
+                          "url": "https://gilaclick.ir/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000003",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "فروشگاه محصولات",
+                        "_css_classes": "gct-nav-link",
+                        "text": "فروشگاه محصولات",
+                        "link": {
+                          "url": "https://gilaclick.ir/shop/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000004",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "خدمات وب",
+                        "_css_classes": "gct-nav-link",
+                        "text": "خدمات وب",
+                        "link": {
+                          "url": "https://gilaclick.ir/price-web-services/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000005",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "راهنمای گیلان",
+                        "_css_classes": "gct-nav-link",
+                        "text": "راهنمای گیلان",
+                        "link": {
+                          "url": "https://gilaclick.ir/category/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%DA%AF%DB%8C%D9%84%D8%A7%D9%86/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000006",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "درباره ما",
+                        "_css_classes": "gct-nav-link",
+                        "text": "درباره ما",
+                        "link": {
+                          "url": "https://gilaclick.ir/about-us/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000007",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "تماس با ما",
+                        "_css_classes": "gct-nav-link gct-current",
+                        "text": "تماس با ما",
+                        "link": {
+                          "url": "https://gilaclick.ir/contact-us/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": "aria-current|page"
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "000000c",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "آیکن‌های سربرگ",
+                    "content_width": "full",
+                    "css_classes": "gct-header-actions"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000009",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "سبد خرید",
+                        "_css_classes": "gct-icon-button gct-cart",
+                        "text": "سبد خرید",
+                        "link": {
+                          "url": "https://gilaclick.ir/cart/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "fas fa-shopping-bag",
+                          "library": "fa-solid"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000a",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "حساب کاربری",
+                        "_css_classes": "gct-icon-button gct-account",
+                        "text": "حساب کاربری",
+                        "link": {
+                          "url": "https://gilaclick.ir/my-account/",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "far fa-user",
+                          "library": "fa-regular"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000b",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "باز کردن منوی اصلی",
+                        "_css_classes": "gct-icon-button gct-menu",
+                        "text": "باز کردن منوی اصلی",
+                        "link": {
+                          "url": "#gct-primary-nav",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "fas fa-bars",
+                          "library": "fa-solid"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000006f",
+          "elType": "container",
+          "settings": {
+            "_title": "محتوای صفحه",
+            "content_width": "full",
+            "css_classes": "gct-main",
+            "html_tag": "main",
+            "_element_id": "gct-main"
+          },
+          "elements": [
+            {
+              "id": "000001a",
+              "elType": "container",
+              "settings": {
+                "_title": "هِروی ارتباط",
+                "content_width": "full",
+                "css_classes": "gct-hero gct-dark gct-motion-zone",
+                "html_tag": "section",
+                "_element_id": "gct-hero"
+              },
+              "elements": [
+                {
+                  "id": "0000019",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "چیدمان هِرو",
+                    "content_width": "full",
+                    "css_classes": "gct-wrap gct-hero-grid"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000017",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "معرفی صفحه",
+                        "content_width": "full",
+                        "css_classes": "gct-hero-copy"
+                      },
+                      "elements": [
+                        {
+                          "id": "000000f",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "راه‌های ارتباطی گیلاکلیک",
+                            "_css_classes": "gct-kicker",
+                            "title": "راه‌های ارتباطی گیلاکلیک",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000010",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "برای شروع یک همکاری آماده‌ایم",
+                            "_css_classes": "gct-hero-title",
+                            "title": "برای شروع یک <em>همکاری</em> آماده‌ایم",
+                            "header_size": "h1",
+                            "typography_typography": "custom",
+                            "typography_font_family": "peyda"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000011",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "خط مداری تزئینی",
+                            "_css_classes": "gct-hero-line-widget",
+                            "html": "<div class=\"gct-hero-line\" aria-hidden=\"true\"></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000012",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "از خرید محصولات نرم‌افزاری تا سفارش طراحی سایت، توسعه اختصاصی و خدمات سئو؛ از طریق راه‌های ارتباطی زیر با ما در تماس باشید.",
+                            "_css_classes": "gct-hero-lead",
+                            "title": "از خرید محصولات نرم‌افزاری تا سفارش طراحی سایت، توسعه اختصاصی و خدمات سئو؛ از طریق راه‌های ارتباطی زیر با ما در تماس باشید.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000015",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "دکمه‌های هِرو",
+                            "content_width": "full",
+                            "css_classes": "gct-actions"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000013",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "راه‌های ارتباطی",
+                                "_css_classes": "gct-btn",
+                                "text": "راه‌های ارتباطی",
+                                "link": {
+                                  "url": "#gct-paths",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#ffffff00",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#ffffff00",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000014",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "ارسال درخواست",
+                                "_css_classes": "gct-btn gct-btn-outline",
+                                "text": "ارسال درخواست",
+                                "link": {
+                                  "url": "#gct-form",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#ffffff00",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#ffffff00",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000016",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "برای گفت‌وگو و شروع همکاری در کنار شما هستیم",
+                            "_css_classes": "gct-hero-note",
+                            "title": "برای گفت‌وگو و شروع همکاری در کنار شما هستیم",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000018",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "مدار تعاملی ارتباط",
+                        "_css_classes": "gct-hero-art",
+                        "html": "<div class=\"gct-art-stage\"><svg class=\"gct-orbit-svg\" viewBox=\"0 0 660 600\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"gct-core-glow\"><stop stop-color=\"#19c58b\" stop-opacity=\".27\"/><stop offset=\".55\" stop-color=\"#0b4435\" stop-opacity=\".16\"/><stop offset=\"1\" stop-color=\"#0b4435\" stop-opacity=\"0\"/></radialGradient>\n    <linearGradient id=\"gct-line\" x1=\"0\" x2=\"1\" y2=\"1\"><stop stop-color=\"#a3f451\"/><stop offset=\".58\" stop-color=\"#19c58b\"/><stop offset=\"1\" stop-color=\"#19c58b\" stop-opacity=\".2\"/></linearGradient>\n  </defs>\n  <circle cx=\"330\" cy=\"300\" r=\"280\" fill=\"url(#gct-core-glow)\"/>\n  <g fill=\"none\" stroke=\"#19c58b\" stroke-width=\"1\" opacity=\".29\">\n    <path d=\"M27 97h131l44 44h44\"/><path d=\"M19 115h130l45 45h38\"/><path d=\"M36 478h138l53-53h34\"/><path d=\"M41 495h141l56-56h27\"/>\n    <path d=\"M635 89H511l-50 50h-32\"/><path d=\"M644 106H520l-55 55h-27\"/><path d=\"M629 472H505l-50-50h-31\"/><path d=\"M643 490H516l-57-57h-32\"/>\n    <circle cx=\"28\" cy=\"97\" r=\"4\"/><circle cx=\"19\" cy=\"115\" r=\"3\"/><circle cx=\"36\" cy=\"478\" r=\"4\"/><circle cx=\"635\" cy=\"89\" r=\"4\"/><circle cx=\"629\" cy=\"472\" r=\"4\"/>\n  </g>\n  <g class=\"gct-spin gct-spin-outer\" fill=\"none\" stroke=\"url(#gct-line)\">\n    <circle cx=\"330\" cy=\"300\" r=\"238\" stroke-width=\"1\" opacity=\".35\" stroke-dasharray=\"18 9 2 12\"/>\n    <circle cx=\"330\" cy=\"300\" r=\"228\" stroke-width=\"2\" opacity=\".75\" stroke-dasharray=\"94 53 28 87 64 111\"/>\n    <circle cx=\"330\" cy=\"72\" r=\"4\" fill=\"#a3f451\" stroke=\"none\"/><circle cx=\"330\" cy=\"528\" r=\"3\" fill=\"#19c58b\" stroke=\"none\"/>\n  </g>\n  <g class=\"gct-spin gct-spin-middle\" fill=\"none\" stroke=\"url(#gct-line)\">\n    <circle cx=\"330\" cy=\"300\" r=\"188\" stroke-width=\"1\" opacity=\".55\" stroke-dasharray=\"5 10\"/>\n    <circle cx=\"330\" cy=\"300\" r=\"177\" stroke-width=\"2.5\" stroke-dasharray=\"120 48 18 70 44 93\"/>\n    <circle cx=\"330\" cy=\"123\" r=\"5\" fill=\"#a3f451\" stroke=\"none\"/><circle cx=\"330\" cy=\"477\" r=\"3\" fill=\"#19c58b\" stroke=\"none\"/>\n  </g>\n  <g fill=\"none\" stroke=\"#19c58b\" stroke-width=\"1\" opacity=\".48\">\n    <path d=\"M74 300h61l30-30h50\"/><path d=\"M585 300h-61l-30 30h-50\"/><path d=\"M330 38v62l-28 28v45\"/><path d=\"M330 563v-62l28-28v-45\"/>\n    <circle cx=\"74\" cy=\"300\" r=\"4\"/><circle cx=\"585\" cy=\"300\" r=\"4\"/><circle cx=\"330\" cy=\"38\" r=\"4\"/><circle cx=\"330\" cy=\"563\" r=\"4\"/>\n  </g>\n  <g class=\"gct-runner\" fill=\"none\" stroke=\"#a3f451\" stroke-width=\"3\" stroke-linecap=\"round\">\n    <path d=\"M27 97h131l44 44h44\"/><path d=\"M36 478h138l53-53h34\"/><path d=\"M635 89H511l-50 50h-32\"/><path d=\"M629 472H505l-50-50h-31\"/>\n  </g>\n  <circle cx=\"330\" cy=\"300\" r=\"139\" fill=\"#06271f\" fill-opacity=\".7\" stroke=\"#19c58b\" stroke-opacity=\".45\"/>\n  <circle cx=\"330\" cy=\"300\" r=\"125\" fill=\"none\" stroke=\"#19c58b\" stroke-opacity=\".24\" stroke-dasharray=\"2 8\"/>\n  <g transform=\"translate(282 252)\" fill=\"none\" stroke=\"url(#gct-line)\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <rect x=\"4\" y=\"10\" width=\"88\" height=\"70\" rx=\"8\"/><path d=\"M5 27l42 29 44-29\"/><path d=\"M24 76l-15 15v-13\"/>\n    <circle cx=\"70\" cy=\"19\" r=\"5\" fill=\"#a3f451\" stroke=\"#06271f\"/><path d=\"M38 4h20M48-6v20\" opacity=\".7\"/>\n  </g>\n  <g fill=\"#a3f451\"><circle cx=\"68\" cy=\"171\" r=\"2\"/><circle cx=\"603\" cy=\"184\" r=\"2\"/><circle cx=\"112\" cy=\"400\" r=\"2\"/><circle cx=\"562\" cy=\"405\" r=\"2\"/></g>\n</svg>\n\n<a class=\"gct-node gct-node-tg\" href=\"https://t.me/mdjavad01\" target=\"_blank\" rel=\"noopener noreferrer\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M21.8 3.1 18.4 20c-.2 1-1 1.3-1.8.8l-5.4-4-2.6 2.5c-.3.3-.6.5-1.1.5l.4-5.5L18 5.7c.4-.4-.1-.6-.6-.3L5 13.1l-5.3-1.7c-1.1-.3-1.1-1.1.3-1.7L20.7 2c.9-.3 1.6.2 1.1 1.1Z\" fill=\"currentColor\" stroke=\"none\"/></svg><span><b>تلگرام</b><small>@mdjavad01</small></span></a>\n<a class=\"gct-node gct-node-wa\" href=\"https://wa.me/989389659910\" target=\"_blank\" rel=\"noopener noreferrer\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.6l1.3-4.7a8.5 8.5 0 1 1 16.2-4.1Z\"/><path d=\"M8.3 7.7c.3-.3.5-.3.8 0l1 1.6c.2.3.1.5-.1.8l-.5.6c.6 1.4 1.5 2.3 2.9 2.9l.6-.5c.2-.2.5-.3.8-.1l1.6 1c.3.2.3.5 0 .8-.5.6-1.1.9-1.9.8-3.1-.5-5.8-3.1-6.3-6.2-.1-.7.2-1.2 1.1-1.7Z\"/></svg><span><b>واتساپ</b><small>09389659910</small></span></a>\n<a class=\"gct-node gct-node-form\" href=\"#gct-form\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg><span><b>فرم تماس</b><small>ثبت درخواست</small></span></a></div>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000035",
+              "elType": "container",
+              "settings": {
+                "_title": "راه‌های ارتباطی",
+                "content_width": "full",
+                "css_classes": "gct-section gct-paths",
+                "html_tag": "section",
+                "_element_id": "gct-paths"
+              },
+              "elements": [
+                {
+                  "id": "0000034",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "راه‌های ارتباطی",
+                    "content_width": "full",
+                    "css_classes": "gct-wrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000032",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "عنوان راه‌های ارتباطی",
+                        "content_width": "full",
+                        "css_classes": "gct-section-head gct-reveal"
+                      },
+                      "elements": [
+                        {
+                          "id": "000002f",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "راه‌های ارتباطی",
+                            "_css_classes": "gct-eyebrow",
+                            "title": "راه‌های ارتباطی",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000030",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "از کدام مسیر در تماس باشیم؟",
+                            "_css_classes": "gct-h2",
+                            "title": "از کدام مسیر در تماس باشیم؟",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000031",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "مسیر مناسب درخواست خود را انتخاب کنید و با ما در ارتباط باشید.",
+                            "_css_classes": "gct-section-copy",
+                            "title": "مسیر مناسب درخواست خود را انتخاب کنید و با ما در ارتباط باشید.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000033",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "مسیرهای ارتباطی",
+                        "content_width": "full",
+                        "css_classes": "gct-path-grid"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000021",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "راه ارتباطی تلگرام",
+                            "content_width": "full",
+                            "css_classes": "gct-path gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "000001b",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "settings": {
+                                "_title": "آیکن تلگرام",
+                                "_css_classes": "gct-path-graphic",
+                                "html": "<div class=\"gct-path-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M21.8 3.1 18.4 20c-.2 1-1 1.3-1.8.8l-5.4-4-2.6 2.5c-.3.3-.6.5-1.1.5l.4-5.5L18 5.7c.4-.4-.1-.6-.6-.3L5 13.1l-5.3-1.7c-1.1-.3-1.1-1.1.3-1.7L20.7 2c.9-.3 1.6.2 1.1 1.1Z\" fill=\"currentColor\" stroke=\"none\"/></svg></div>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001c",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "راه ارتباطی",
+                                "_css_classes": "gct-path-kicker",
+                                "title": "راه ارتباطی",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001d",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "تلگرام",
+                                "_css_classes": "gct-path-title",
+                                "title": "تلگرام",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001e",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "@mdjavad01",
+                                "_css_classes": "gct-path-id",
+                                "title": "@mdjavad01",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001f",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "برای گفت‌وگو، هماهنگی و پیگیری درخواست‌ها",
+                                "_css_classes": "gct-path-text",
+                                "title": "برای گفت‌وگو، هماهنگی و پیگیری درخواست‌ها",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000020",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "شروع گفت‌وگو در تلگرام",
+                                "_css_classes": "gct-text-link gct-path-link",
+                                "text": "شروع گفت‌وگو در تلگرام",
+                                "link": {
+                                  "url": "https://t.me/mdjavad01",
+                                  "is_external": true,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#ffffff00",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#ffffff00",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000028",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "راه ارتباطی واتساپ",
+                            "content_width": "full",
+                            "css_classes": "gct-path gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000022",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "settings": {
+                                "_title": "آیکن واتساپ",
+                                "_css_classes": "gct-path-graphic",
+                                "html": "<div class=\"gct-path-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.6l1.3-4.7a8.5 8.5 0 1 1 16.2-4.1Z\"/><path d=\"M8.3 7.7c.3-.3.5-.3.8 0l1 1.6c.2.3.1.5-.1.8l-.5.6c.6 1.4 1.5 2.3 2.9 2.9l.6-.5c.2-.2.5-.3.8-.1l1.6 1c.3.2.3.5 0 .8-.5.6-1.1.9-1.9.8-3.1-.5-5.8-3.1-6.3-6.2-.1-.7.2-1.2 1.1-1.7Z\"/></svg></div>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000023",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "راه ارتباطی",
+                                "_css_classes": "gct-path-kicker",
+                                "title": "راه ارتباطی",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000024",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "واتساپ",
+                                "_css_classes": "gct-path-title",
+                                "title": "واتساپ",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000025",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "09389659910",
+                                "_css_classes": "gct-path-id",
+                                "title": "09389659910",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000026",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "برای ارتباط سریع و ارسال توضیحات پروژه",
+                                "_css_classes": "gct-path-text",
+                                "title": "برای ارتباط سریع و ارسال توضیحات پروژه",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000027",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "ارسال پیام در واتساپ",
+                                "_css_classes": "gct-text-link gct-path-link",
+                                "text": "ارسال پیام در واتساپ",
+                                "link": {
+                                  "url": "https://wa.me/989389659910",
+                                  "is_external": true,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#ffffff00",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#ffffff00",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000002e",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "راه ارتباطی فرم تماس",
+                            "content_width": "full",
+                            "css_classes": "gct-path gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000029",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "settings": {
+                                "_title": "آیکن فرم تماس",
+                                "_css_classes": "gct-path-graphic",
+                                "html": "<div class=\"gct-path-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg></div>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002a",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "راه ارتباطی",
+                                "_css_classes": "gct-path-kicker",
+                                "title": "راه ارتباطی",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002b",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "فرم تماس",
+                                "_css_classes": "gct-path-title",
+                                "title": "فرم تماس",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002c",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "اگر نیاز به ارائه جزئیات بیشتر دارید، درخواست خود را از طریق فرم تماس ثبت کنید.",
+                                "_css_classes": "gct-path-text",
+                                "title": "اگر نیاز به ارائه جزئیات بیشتر دارید، درخواست خود را از طریق فرم تماس ثبت کنید.",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000002d",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "ثبت درخواست",
+                                "_css_classes": "gct-text-link gct-path-link",
+                                "text": "ثبت درخواست",
+                                "link": {
+                                  "url": "#gct-form",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "background_background": "classic",
+                                "background_color": "#ffffff00",
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#ffffff00",
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000058",
+              "elType": "container",
+              "settings": {
+                "_title": "راهنمای انتخاب مسیر",
+                "content_width": "full",
+                "css_classes": "gct-section gct-guide gct-motion-zone",
+                "html_tag": "section",
+                "_element_id": "gct-guide"
+              },
+              "elements": [
+                {
+                  "id": "0000057",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "چیدمان راهنما",
+                    "content_width": "full",
+                    "css_classes": "gct-wrap gct-guide-grid"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000055",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "راهنمای مسیر",
+                        "content_width": "full",
+                        "css_classes": "gct-guide-copy gct-reveal"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000051",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "راهنمای انتخاب مسیر",
+                            "_css_classes": "gct-eyebrow",
+                            "title": "راهنمای انتخاب مسیر",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000052",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "برای هر درخواست، یک مسیر روشن",
+                            "_css_classes": "gct-h2",
+                            "title": "برای هر درخواست، یک مسیر روشن",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000053",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "با توجه به موضوع درخواستتان، راه ارتباطی مناسب را انتخاب کنید.",
+                            "_css_classes": "gct-section-copy",
+                            "title": "با توجه به موضوع درخواستتان، راه ارتباطی مناسب را انتخاب کنید.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000054",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "نقشه مدار ارتباطی — تزئینی",
+                            "_css_classes": "gct-guide-art",
+                            "html": "<svg viewBox=\"0 0 650 430\" class=\"gct-map-svg\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\">\n <g fill=\"none\" stroke=\"#19c58b\" stroke-width=\"1.2\" opacity=\".34\">\n  <path d=\"M42 68h135l47 47h74l40 40h70\"/><path d=\"M42 125h118l43 43h77l44 44h84\"/><path d=\"M42 182h113l43 43h82l43 43h85\"/><path d=\"M42 239h95l43 43h65l40 40h123\"/><path d=\"M42 296h85l40 40h85\"/><path d=\"M42 353h80l31 31h101\"/>\n  <path d=\"M408 155h75l42-42h75\"/><path d=\"M408 212h84l40 0h68\"/><path d=\"M408 268h75l42 42h75\"/>\n  <circle cx=\"42\" cy=\"68\" r=\"4\"/><circle cx=\"42\" cy=\"125\" r=\"4\"/><circle cx=\"42\" cy=\"182\" r=\"4\"/><circle cx=\"42\" cy=\"239\" r=\"4\"/><circle cx=\"42\" cy=\"296\" r=\"4\"/><circle cx=\"42\" cy=\"353\" r=\"4\"/><circle cx=\"600\" cy=\"113\" r=\"5\"/><circle cx=\"600\" cy=\"212\" r=\"5\"/><circle cx=\"600\" cy=\"310\" r=\"5\"/>\n </g>\n <g class=\"gct-map-runner\" fill=\"none\" stroke=\"#19c58b\" stroke-width=\"2.5\" stroke-linecap=\"round\"><path d=\"M42 68h135l47 47h74l40 40h70l75 0 42-42h75\"/><path d=\"M42 182h113l43 43h82l43 43h85l75 0 42 42h75\"/></g>\n <g transform=\"translate(350 213)\"><circle r=\"74\" fill=\"#e2f7ed\" stroke=\"#19c58b\" stroke-opacity=\".36\"/><circle r=\"58\" fill=\"#f0fbf6\" stroke=\"#19c58b\" stroke-dasharray=\"3 8\"/><path d=\"M-21 -5h42M-21 8h29M-21 -18h42\" fill=\"none\" stroke=\"#0b7653\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"20\" cy=\"18\" r=\"9\" fill=\"#a3f451\" stroke=\"#0b7653\" stroke-width=\"2\"/></g>\n</svg>\n"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000056",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "مسیرهای پیشنهادی",
+                        "content_width": "full",
+                        "css_classes": "gct-routes"
+                      },
+                      "elements": [
+                        {
+                          "id": "000003a",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "خرید و راهنمایی محصولات نرم‌افزاری",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000036",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "خرید و راهنمایی محصولات نرم‌افزاری",
+                                "_css_classes": "gct-route-title",
+                                "title": "خرید و راهنمایی محصولات نرم‌افزاری",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000039",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای خرید و راهنمایی محصولات نرم‌افزاری",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000037",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "تلگرام",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "تلگرام",
+                                    "link": {
+                                      "url": "https://t.me/mdjavad01",
+                                      "is_external": true,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "0000038",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "واتساپ",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "واتساپ",
+                                    "link": {
+                                      "url": "https://wa.me/989389659910",
+                                      "is_external": true,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000003f",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "پشتیبانی محصولات نرم‌افزاری",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "000003b",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "پشتیبانی محصولات نرم‌افزاری",
+                                "_css_classes": "gct-route-title",
+                                "title": "پشتیبانی محصولات نرم‌افزاری",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000003e",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای پشتیبانی محصولات نرم‌افزاری",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "000003c",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "فرم تماس",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "فرم تماس",
+                                    "link": {
+                                      "url": "#gct-form",
+                                      "is_external": false,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "000003d",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "تلگرام",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "تلگرام",
+                                    "link": {
+                                      "url": "https://t.me/mdjavad01",
+                                      "is_external": true,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000043",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "طراحی و توسعه وب‌سایت",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000040",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "طراحی و توسعه وب‌سایت",
+                                "_css_classes": "gct-route-title",
+                                "title": "طراحی و توسعه وب‌سایت",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000042",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای طراحی و توسعه وب‌سایت",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000041",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "فرم تماس",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "فرم تماس",
+                                    "link": {
+                                      "url": "#gct-form",
+                                      "is_external": false,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000047",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "سئو و بهینه‌سازی",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000044",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "سئو و بهینه‌سازی",
+                                "_css_classes": "gct-route-title",
+                                "title": "سئو و بهینه‌سازی",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000046",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای سئو و بهینه‌سازی",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000045",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "فرم تماس",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "فرم تماس",
+                                    "link": {
+                                      "url": "#gct-form",
+                                      "is_external": false,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "000004c",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "برنامه‌نویسی اختصاصی",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000048",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "برنامه‌نویسی اختصاصی",
+                                "_css_classes": "gct-route-title",
+                                "title": "برنامه‌نویسی اختصاصی",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000004b",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای برنامه‌نویسی اختصاصی",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "0000049",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "تلگرام",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "تلگرام",
+                                    "link": {
+                                      "url": "https://t.me/mdjavad01",
+                                      "is_external": true,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "000004a",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "فرم تماس",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "فرم تماس",
+                                    "link": {
+                                      "url": "#gct-form",
+                                      "is_external": false,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0000050",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "همکاری و سایر موارد",
+                            "content_width": "full",
+                            "css_classes": "gct-route gct-reveal"
+                          },
+                          "elements": [
+                            {
+                              "id": "000004d",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "همکاری و سایر موارد",
+                                "_css_classes": "gct-route-title",
+                                "title": "همکاری و سایر موارد",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000004f",
+                              "elType": "container",
+                              "settings": {
+                                "_title": "پیوندهای همکاری و سایر موارد",
+                                "content_width": "full",
+                                "css_classes": "gct-route-links"
+                              },
+                              "elements": [
+                                {
+                                  "id": "000004e",
+                                  "elType": "widget",
+                                  "widgetType": "button",
+                                  "settings": {
+                                    "_title": "فرم تماس",
+                                    "_css_classes": "gct-route-link",
+                                    "text": "فرم تماس",
+                                    "link": {
+                                      "url": "#gct-form",
+                                      "is_external": false,
+                                      "nofollow": false,
+                                      "custom_attributes": ""
+                                    },
+                                    "background_background": "classic",
+                                    "background_color": "#ffffff00",
+                                    "button_background_hover_background": "classic",
+                                    "button_background_hover_color": "#ffffff00",
+                                    "selected_icon": {
+                                      "value": "",
+                                      "library": ""
+                                    }
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000062",
+              "elType": "container",
+              "settings": {
+                "_title": "ارسال درخواست",
+                "content_width": "full",
+                "css_classes": "gct-section gct-form-section",
+                "html_tag": "section",
+                "_element_id": "gct-form"
+              },
+              "elements": [
+                {
+                  "id": "0000061",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "چیدمان فرم",
+                    "content_width": "full",
+                    "css_classes": "gct-wrap gct-form-layout"
+                  },
+                  "elements": [
+                    {
+                      "id": "000005d",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "معرفی فرم",
+                        "content_width": "full",
+                        "css_classes": "gct-form-copy gct-reveal"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000059",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "فرم تماس",
+                            "_css_classes": "gct-eyebrow",
+                            "title": "فرم تماس",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005a",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "درخواست خود را برای ما ارسال کنید",
+                            "_css_classes": "gct-h2",
+                            "title": "درخواست خود را برای ما ارسال کنید",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005b",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "موضوع درخواستتان را مشخص کنید تا بتوانیم بهتر و دقیق‌تر راهنمایی‌تان کنیم.",
+                            "_css_classes": "gct-section-copy",
+                            "title": "موضوع درخواستتان را مشخص کنید تا بتوانیم بهتر و دقیق‌تر راهنمایی‌تان کنیم.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005c",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "برای ارائه توضیحات بیشتر، فرم را تکمیل کنید.",
+                            "_css_classes": "gct-form-tip",
+                            "title": "برای ارائه توضیحات بیشتر، فرم را تکمیل کنید.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000060",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "فرم تماس",
+                        "content_width": "full",
+                        "css_classes": "gct-form-panel gct-reveal"
+                      },
+                      "elements": [
+                        {
+                          "id": "000005e",
+                          "elType": "widget",
+                          "widgetType": "form",
+                          "settings": {
+                            "_title": "فرم تماس — المنتور پرو",
+                            "_css_classes": "gct-form-widget",
+                            "form_name": "درخواست تماس گیلاکلیک",
+                            "form_id": "gct_contact_form",
+                            "show_labels": "yes",
+                            "mark_required": "",
+                            "input_size": "sm",
+                            "button_text": "ارسال درخواست",
+                            "button_width": "100",
+                            "form_fields": [
+                              {
+                                "_id": "fd00001",
+                                "custom_id": "name",
+                                "field_type": "text",
+                                "field_label": "نام و نام خانوادگی",
+                                "required": "true",
+                                "placeholder": "نام و نام خانوادگی",
+                                "width": "50"
+                              },
+                              {
+                                "_id": "fd00002",
+                                "custom_id": "phone",
+                                "field_type": "tel",
+                                "field_label": "شماره تماس",
+                                "required": "true",
+                                "placeholder": "شماره تماس",
+                                "width": "50"
+                              },
+                              {
+                                "_id": "fd00003",
+                                "custom_id": "email",
+                                "field_type": "email",
+                                "field_label": "ایمیل (اختیاری)",
+                                "required": "",
+                                "placeholder": "نشانی ایمیل",
+                                "width": "50"
+                              },
+                              {
+                                "_id": "fd00004",
+                                "custom_id": "subject",
+                                "field_type": "select",
+                                "field_label": "موضوع درخواست",
+                                "required": "true",
+                                "field_options": "انتخاب موضوع|\nخرید و پشتیبانی محصولات نرم‌افزاری\nطراحی و توسعه وب‌سایت\nسئو و بهینه‌سازی\nبرنامه‌نویسی اختصاصی\nهمکاری و سایر موارد",
+                                "width": "50"
+                              },
+                              {
+                                "_id": "fd00005",
+                                "custom_id": "message",
+                                "field_type": "textarea",
+                                "field_label": "جزئیات درخواست",
+                                "required": "true",
+                                "placeholder": "درخواست خود را بنویسید",
+                                "rows": 6,
+                                "width": "100"
+                              }
+                            ],
+                            "submit_actions": [
+                              "email"
+                            ],
+                            "form_metadata": [],
+                            "email_to": "info@gilaclick.ir",
+                            "email_subject": "درخواست جدید از فرم تماس گیلاکلیک",
+                            "email_content": "[all-fields]",
+                            "email_reply_to": "email",
+                            "email_content_type": "html",
+                            "custom_messages": "yes",
+                            "success_message": "درخواست شما با موفقیت ارسال شد.",
+                            "error_message": "ارسال درخواست انجام نشد. اطلاعات را بررسی کنید یا از راه‌های دیگر با ما در تماس باشید.",
+                            "server_message": "ارسال درخواست انجام نشد. لطفاً بعداً دوباره تلاش کنید.",
+                            "server_error_message": "ارسال درخواست انجام نشد. لطفاً بعداً دوباره تلاش کنید.",
+                            "invalid_message": "اطلاعات فرم معتبر نیست.",
+                            "invalid_form_message": "اطلاعات فرم معتبر نیست.",
+                            "required_field_message": "این فیلد را کامل کنید."
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005f",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "راهنمای فرم بدون جاوااسکریپت",
+                            "_css_classes": "gct-nojs-widget",
+                            "html": "<noscript><style>.gct-page .gct-form-widget button[type=submit]{display:none!important}</style><p class=\"gct-nojs-message\">برای ارسال فرم جاوااسکریپت لازم است؛ می‌توانید از تلگرام یا واتساپ استفاده کنید.</p></noscript>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000068",
+              "elType": "container",
+              "settings": {
+                "_title": "ایمیل رسمی",
+                "content_width": "full",
+                "css_classes": "gct-email-section",
+                "html_tag": "section"
+              },
+              "elements": [
+                {
+                  "id": "0000067",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "ایمیل",
+                    "content_width": "full",
+                    "css_classes": "gct-wrap gct-email-inner"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000065",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "ایمیل رسمی",
+                        "content_width": "full",
+                        "css_classes": "gct-email-copy"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000063",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "آیکن ایمیل",
+                            "_css_classes": "gct-email-graphic",
+                            "html": "<div class=\"gct-email-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m4 7 8 6 8-6\"/></svg></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000064",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "برای مکاتبات رسمی می‌توانید از ایمیل گیلاکلیک استفاده کنید.",
+                            "_css_classes": "gct-email-text",
+                            "title": "برای مکاتبات رسمی می‌توانید از ایمیل گیلاکلیک استفاده کنید.",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000066",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "_title": "info@gilaclick.ir",
+                        "_css_classes": "gct-email-link",
+                        "text": "info@gilaclick.ir",
+                        "link": {
+                          "url": "mailto:info@gilaclick.ir",
+                          "is_external": false,
+                          "nofollow": false,
+                          "custom_attributes": ""
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff00",
+                        "button_background_hover_background": "classic",
+                        "button_background_hover_color": "#ffffff00",
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000006c",
+          "elType": "container",
+          "settings": {
+            "_title": "پاورقی",
+            "content_width": "full",
+            "css_classes": "gct-footer gct-dark",
+            "html_tag": "footer"
+          },
+          "elements": [
+            {
+              "id": "000006b",
+              "elType": "container",
+              "settings": {
+                "_title": "پاورقی",
+                "content_width": "full",
+                "css_classes": "gct-wrap gct-footer-inner"
+              },
+              "elements": [
+                {
+                  "id": "0000069",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "گیلاکلیک",
+                    "_css_classes": "gct-footer-brand",
+                    "title": "گیلاکلیک",
+                    "header_size": "p"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000006a",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "طراحی و توسعه راهکارهای دیجیتال",
+                    "_css_classes": "gct-footer-note",
+                    "title": "طراحی و توسعه راهکارهای دیجیتال",
+                    "header_size": "p"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000070",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "⚙️ رفتار و حرکت — حذف نشود",
+            "_css_classes": "gct-system",
+            "html": "<script>\n(() => {\n  'use strict';\n  const boot = () => document.querySelectorAll('.gct-page').forEach(init);\n  function init(root) {\n    if (root.dataset.gctInitialized) return;\n    root.dataset.gctInitialized = 'true';\n    root.setAttribute('lang','fa'); root.setAttribute('dir','rtl');\n    const reduced = matchMedia('(prefers-reduced-motion: reduce)');\n    const finePointer = matchMedia('(hover: hover) and (pointer: fine)');\n    const $ = (s, base = root) => base.querySelector(s);\n    const $$ = (s, base = root) => Array.from(base.querySelectorAll(s));\n    const header = $('.gct-header');\n    const nav = $('.gct-primary-nav');\n    const menu = $('.gct-menu .elementor-button');\n    const setOffset = () => {\n      const bar = document.getElementById('wpadminbar');\n      const bottom = bar ? Math.max(0, Math.round(bar.getBoundingClientRect().bottom)) : 0;\n      root.style.setProperty('--gct-admin-offset', `${bottom}px`);\n    };\n    let offsetFrame = 0;\n    const scheduleOffset = () => {\n      if (!offsetFrame) offsetFrame = requestAnimationFrame(() => { offsetFrame = 0; setOffset(); });\n    };\n    setOffset(); window.addEventListener('scroll', scheduleOffset, {passive:true});\n    window.addEventListener('resize', scheduleOffset, {passive:true});\n    if (nav && menu) {\n      nav.id = nav.id || 'gct-primary-nav'; nav.setAttribute('aria-label','منوی اصلی');\n      menu.setAttribute('role', 'button'); menu.setAttribute('aria-controls', nav.id); menu.setAttribute('aria-expanded', 'false');\n      const close = () => { nav.classList.remove('gct-nav-open'); menu.setAttribute('aria-expanded','false'); };\n      menu.addEventListener('click', event => { event.preventDefault(); const open=nav.classList.toggle('gct-nav-open'); menu.setAttribute('aria-expanded',String(open)); });\n      menu.addEventListener('keydown', event => { if(event.key === ' ') { event.preventDefault(); menu.click(); } });\n      nav.addEventListener('click', event => { if (event.target.closest('a')) close(); });\n      document.addEventListener('keydown', event => { if(event.key === 'Escape' && nav.classList.contains('gct-nav-open')) {close(); menu.focus();} });\n    }\n    root.addEventListener('click', event => {\n      const link = event.target.closest('a[href^=\"#\"]');\n      if (!link || link === menu) return;\n      const id = link.getAttribute('href').slice(1);\n      if (!id) return;\n      const target = document.getElementById(id);\n      if (!target || !root.contains(target)) return;\n      event.preventDefault(); setOffset();\n      const top = Math.max(0, window.scrollY + target.getBoundingClientRect().top - (header ? header.getBoundingClientRect().height : 0) - parseFloat(getComputedStyle(root).getPropertyValue('--gct-admin-offset') || 0) - 14);\n      window.scrollTo({top, behavior: reduced.matches ? 'instant' : 'smooth'});\n      if (history.replaceState) history.replaceState(null,'',`#${id}`);\n    });\n    if ('IntersectionObserver' in window) {\n      const reveal = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('gct-visible'); reveal.unobserve(entry.target); } }), {threshold:.09,rootMargin:'0px 0px -2% 0px'});\n      $$('.gct-reveal').forEach(el => reveal.observe(el));\n      const activeZones = new Set();\n      const updateZones = () => $$('.gct-motion-zone').forEach(el => el.classList.toggle('gct-playing', activeZones.has(el) && !document.hidden && !reduced.matches));\n      const observer = new IntersectionObserver(entries => { entries.forEach(entry => entry.isIntersecting ? activeZones.add(entry.target) : activeZones.delete(entry.target)); updateZones(); }, {threshold:.01});\n      $$('.gct-motion-zone').forEach(el => observer.observe(el));\n      document.addEventListener('visibilitychange',updateZones); reduced.addEventListener?.('change',updateZones);\n    } else $$('.gct-reveal').forEach(el => el.classList.add('gct-visible'));\n    root.classList.add('gct-ready');\n    const hero = $('.gct-hero'), art = $('.gct-art-stage');\n    if (hero && art) {\n      let frame=0, x=0, y=0;\n      hero.addEventListener('pointermove', e => {\n        if (!finePointer.matches || reduced.matches) return;\n        const rect=hero.getBoundingClientRect(); x=((e.clientX-rect.left)/rect.width-.5)*12; y=((e.clientY-rect.top)/rect.height-.5)*10;\n        if(!frame) frame=requestAnimationFrame(()=>{art.style.setProperty('--gct-px',`${x.toFixed(1)}px`);art.style.setProperty('--gct-py',`${y.toFixed(1)}px`);frame=0;});\n      },{passive:true});\n      hero.addEventListener('pointerleave',()=>{art.style.setProperty('--gct-px','0px');art.style.setProperty('--gct-py','0px');});\n    }\n    const faToLatin = value => value.replace(/[۰-۹٠-٩]/g,c => String(c.charCodeAt(0) - (c >= '۰' && c <= '۹' ? 1776 : 1632)));\n    $$('.gct-form-widget form').forEach(form => {\n      const phone = $('[name=\"form_fields[phone]\"]', form);\n      const name = $('[name=\"form_fields[name]\"]', form);\n      const email = $('[name=\"form_fields[email]\"]', form);\n      const message = $('[name=\"form_fields[message]\"]', form);\n      const subject = $('[name=\"form_fields[subject]\"]', form);\n      const fields = [name, phone, email, subject, message].filter(Boolean);\n      if(name) name.maxLength=120; if(phone) {phone.maxLength=32;phone.setAttribute('autocomplete','tel');phone.setAttribute('inputmode','tel');} if(email) email.maxLength=254; if(message) message.maxLength=5000;\n      function validate(field) {\n        field.setCustomValidity('');\n        if (field === phone) {\n          field.value=faToLatin(field.value).replace(/\\s+/g,'');\n          if (field.value && (!/^\\+?[0-9()\\-.]+$/.test(field.value) || (field.value.match(/\\d/g)||[]).length < 7 || (field.value.match(/\\d/g)||[]).length > 15)) field.setCustomValidity('شماره تماس معتبر وارد کنید.');\n        }\n        if ((field === name || field === message) && field.value && !field.value.trim()) field.setCustomValidity('این فیلد را کامل کنید.');\n        if (field.validity.valueMissing) field.setCustomValidity(field === subject ? 'موضوع درخواست را انتخاب کنید.' : 'این فیلد را کامل کنید.');\n        else if (field === email && field.validity.typeMismatch) field.setCustomValidity('نشانی ایمیل معتبر وارد کنید.');\n        field.setAttribute('aria-invalid', field.validity.valid ? 'false' : 'true');\n      }\n      fields.forEach(field => {field.addEventListener('input',()=>validate(field)); field.addEventListener('change',()=>validate(field)); field.addEventListener('invalid',()=>validate(field));});\n      if (!form.hasAttribute('data-gct-static')) {\n        // Elementor Pro handles submission; this only adds an accessible Persian progress message.\n        const notice=document.createElement('div'); notice.className='gct-status'; notice.setAttribute('role','status'); notice.setAttribute('aria-live','polite'); form.insertAdjacentElement('afterend',notice);\n        const watch=new MutationObserver(() => {\n          if(form.classList.contains('elementor-form-waiting')) {notice.dataset.state='sending';notice.textContent='در حال ارسال درخواست…';}\n          else {\n            notice.textContent='';\n            const error=form.querySelector('.elementor-message-danger:not(.elementor-form-help-inline)');\n            const success=form.querySelector('.elementor-message-success');\n            if(error) {\n              notice.dataset.state='error';\n              if(/^(error|timeout|parsererror|abort)$/i.test(error.textContent.trim())) error.textContent='وضعیت ارسال مشخص نیست؛ پیش از تلاش دوباره، از یکی از راه‌های ارتباطی پیگیری کنید.';\n            } else if(success) notice.dataset.state='success'; else delete notice.dataset.state;\n            // Elementor can strip the button markup after a network failure; restore its editable label structure.\n            const button=form.querySelector('button[type=submit]');\n            if(button && !button.querySelector('.elementor-button-text')) {\n              const wrap=document.createElement('span'), label=document.createElement('span');\n              wrap.className='elementor-button-content-wrapper'; label.className='elementor-button-text'; label.textContent='ارسال درخواست'; wrap.append(label); button.replaceChildren(wrap);\n            }\n          }\n        });\n        watch.observe(form,{attributes:true,attributeFilter:['class'],childList:true,subtree:true});\n        return;\n      }\n      const submit = $('[type=\"submit\"]',form), status=$('.gct-status',form);\n      if (submit) submit.disabled=false;\n      const say=(state,text)=>{status.dataset.state=state;status.textContent=text;};\n      let sending=false;\n      form.addEventListener('submit',async event => {\n        event.preventDefault(); if(sending) return;\n        fields.forEach(validate); if(!form.reportValidity()) return;\n        let url, publishedPage;\n        try {url=new URL(form.dataset.ajaxUrl || '/wp-admin/admin-ajax.php',location.href); publishedPage=new URL(form.dataset.formPage || '/contact-us/',location.href);} catch {say('error','نشانی اتصال فرم معتبر نیست.');return;}\n        if(url.origin!==location.origin || publishedPage.origin!==location.origin) {say('error','ارسال فرم فقط از همان دامنه سایت ممکن است.');return;}\n        sending=true;submit.disabled=true;form.setAttribute('aria-busy','true');say('sending','در حال ارسال درخواست…');\n        const controller=new AbortController(), timer=setTimeout(()=>controller.abort(),30000); let postStarted=false;\n        try {\n          // Look up the published Elementor form each time. IDs change on import;\n          // verifying the fields prevents accidentally posting to an older form.\n          const lookup=await fetch(publishedPage,{credentials:'same-origin',cache:'no-store',signal:controller.signal});\n          if(!lookup.ok) throw new Error('not_configured');\n          const doc=new DOMParser().parseFromString(await lookup.text(),'text/html');\n          const native=doc.querySelector('form#gct_contact_form.elementor-form');\n          const nativeField=id=>native?.querySelector(`[name=\"form_fields[${id}]\"]`);\n          const expected=['خرید و پشتیبانی محصولات نرم‌افزاری','طراحی و توسعه وب‌سایت','سئو و بهینه‌سازی','برنامه‌نویسی اختصاصی','همکاری و سایر موارد'];\n          const select=nativeField('subject');\n          const actual=select ? Array.from(select.options).map(option=>option.value).filter(Boolean) : [];\n          const post=native?.querySelector('[name=post_id]')?.value || '';\n          const id=native?.querySelector('[name=form_id]')?.value || '';\n          const validFields=['name','phone','subject','message'].every(key=>nativeField(key)?.required) && nativeField('email') && !nativeField('email').required;\n          if(!/^\\d+$/.test(post)||!/^[-_a-z0-9]+$/i.test(id)||!validFields||actual.length!==expected.length||!expected.every((v,i)=>v===actual[i])) throw new Error('not_configured');\n          const data=new FormData(form); data.set('post_id',post); data.set('form_id',id); data.set('queried_id',post); data.set('action','elementor_pro_forms_send_form'); data.set('referer_title',document.title); data.set('referrer',location.href);\n          postStarted=true; const response=await fetch(url,{method:'POST',body:data,credentials:'same-origin',signal:controller.signal});\n          let json; try {json=await response.json();} catch {throw new Error('invalid_response');}\n          if(!response.ok) throw new Error('http_error');\n          if(json.success !== true) {say('error','ارسال درخواست انجام نشد. اطلاعات را بررسی کنید یا از تلگرام و واتساپ با ما در تماس باشید.');return;}\n          form.reset();fields.forEach(field=>field.removeAttribute('aria-invalid'));say('success','درخواست شما با موفقیت ارسال شد.');\n        } catch(error) {\n          say('error',postStarted?'پاسخ معتبر از سرور دریافت نشد و وضعیت ارسال مشخص نیست. لطفاً پیش از تلاش دوباره از طریق تلگرام یا واتساپ پیگیری کنید.':error.message==='not_configured'?'فرم المنتور پرو در صفحه تنظیم‌شده پیدا نشد یا فیلدهای آن تغییر کرده‌اند. لطفاً از تلگرام یا واتساپ استفاده کنید.':'ارتباط با سامانه ارسال برقرار نشد. لطفاً دوباره تلاش کنید یا از راه‌های دیگر با ما در تماس باشید.');\n        } finally {clearTimeout(timer);sending=false;submit.disabled=false;form.removeAttribute('aria-busy');}\n      });\n    });\n  }\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();\n})();\n\n</script>"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
