@@ -1,0 +1,53 @@
+<svg viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="gf-hero-glow"><stop stop-color="#14875c" stop-opacity=".42"/><stop offset=".55" stop-color="#0b4435" stop-opacity=".16"/><stop offset="1" stop-color="#06271f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gf-hero-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#165c43"/><stop offset="1" stop-color="#082c23"/></linearGradient>
+    <linearGradient id="gf-hero-accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a3f451"/><stop offset="1" stop-color="#19c58b"/></linearGradient>
+  </defs>
+  <circle cx="360" cy="360" r="352" fill="url(#gf-hero-glow)"/>
+  <g fill="none" stroke="#47c18b" opacity=".45" stroke-width="1.2">
+    <path class="gf-trace" pathLength="1" d="M360 81V44h54l28-28"/>
+    <path class="gf-trace" pathLength="1" d="M81 360H35l-28-28"/>
+    <path class="gf-trace" pathLength="1" d="M639 360h43l29 29"/>
+    <path class="gf-trace" pathLength="1" d="M360 639v40l-28 28"/>
+    <path class="gf-trace" pathLength="1" d="M166 166l-37-37H81l-27-27"/>
+    <path class="gf-trace" pathLength="1" d="M554 166l38-38h44l28-28"/>
+    <path class="gf-trace" pathLength="1" d="M166 554l-37 37H80l-27 27"/>
+    <path class="gf-trace" pathLength="1" d="M554 554l37 37h49l27 27"/>
+  </g>
+  <g fill="#19c58b" opacity=".8"><circle cx="442" cy="16" r="3"/><circle cx="7" cy="332" r="3"/><circle cx="711" cy="389" r="3"/><circle cx="332" cy="707" r="3"/><circle cx="54" cy="102" r="3"/><circle cx="664" cy="100" r="3"/><circle cx="53" cy="618" r="3"/><circle cx="667" cy="618" r="3"/></g>
+  <g class="gf-orbit-cw" fill="none" stroke="#25c889" stroke-linecap="round">
+    <circle cx="360" cy="360" r="279" opacity=".23" stroke-width="1"/>
+    <circle cx="360" cy="360" r="268" opacity=".8" stroke-width="2" stroke-dasharray="180 35 8 34 100 65 24 55"/>
+    <circle cx="360" cy="92" r="4.5" fill="#a3f451" stroke="none"/>
+    <circle cx="360" cy="628" r="2.5" fill="#19c58b" stroke="none"/>
+  </g>
+  <g class="gf-orbit-ccw" fill="none" stroke="#70e8ae" stroke-linecap="round">
+    <circle cx="360" cy="360" r="228" opacity=".24" stroke-width="1" stroke-dasharray="3 10"/>
+    <circle cx="360" cy="360" r="213" opacity=".62" stroke-width="1.5" stroke-dasharray="76 22 155 30 16 55"/>
+    <circle cx="573" cy="360" r="4" fill="#a3f451" stroke="none"/>
+  </g>
+  <g fill="none" stroke="#8bdab2" opacity=".28" stroke-width="1">
+    <circle cx="360" cy="360" r="174"/>
+    <path d="M360 62v25M360 633v25M62 360h25M633 360h25M149 149l18 18M553 553l18 18M149 571l18-18M553 167l18-18"/>
+    <path d="M196 360h55M469 360h55M360 196v55M360 469v55"/>
+  </g>
+  <g fill="none" stroke="#19c58b" opacity=".56" stroke-width="1.4">
+    <path class="gf-trace" pathLength="1" d="M99 297h68l31 31h42"/>
+    <path class="gf-trace" pathLength="1" d="M621 423h-68l-31-31h-42"/>
+    <path class="gf-trace" pathLength="1" d="M297 99v68l31 31v42"/>
+    <path class="gf-trace" pathLength="1" d="M423 621v-68l-31-31v-42"/>
+  </g>
+  <g>
+    <path d="M270 250h150l50 50v150l-50 50H270l-50-50V300z" fill="#031d17" opacity=".5" transform="translate(8 10)"/>
+    <path d="M270 250h150l50 50v150l-50 50H270l-50-50V300z" fill="url(#gf-hero-panel)" stroke="#28bd87" stroke-opacity=".72" stroke-width="1.5"/>
+    <path d="M289 269h122l40 40v122l-40 40H289l-40-40V309z" fill="none" stroke="#81e6b2" stroke-opacity=".25"/>
+    <path d="M300 330a60 60 0 0 1 120 0c0 24-17 38-35 49-13 8-25 17-25 32" fill="none" stroke="url(#gf-hero-accent)" stroke-width="9" stroke-linecap="round"/>
+    <circle class="gf-pulse" cx="360" cy="435" r="6" fill="#a3f451"/>
+    <g stroke="#65dba3" stroke-opacity=".42" fill="none"><path d="M296 284h18M284 296v18M424 284h-18M436 296v18M296 466h18M284 454v-18M424 466h-18M436 454v-18"/></g>
+  </g>
+  <circle class="gf-signal" r="4" style="offset-path:path('M99 297 H167 L198 328 H240');--gf-delay:-2s" fill="#a3f451"/>
+  <circle class="gf-signal" r="3.5" style="offset-path:path('M621 423 H553 L522 392 H480');--gf-delay:-5s" fill="#a3f451"/>
+  <circle class="gf-signal" r="3" style="offset-path:path('M297 99 V167 L328 198 V240');--gf-delay:-1s" fill="#a3f451"/>
+  <circle class="gf-signal" r="3" style="offset-path:path('M423 621 V553 L392 522 V480');--gf-delay:-4s" fill="#a3f451"/>
+</svg>
