@@ -1,0 +1,45 @@
+/* Used only by the standalone preview. The Elementor product template includes no header or footer. */
+.gpd-page .ga-header { position: sticky; top: var(--gpd-admin-offset); z-index: 80; background: #06271f; padding: 14px 0 0; }
+.gpd-page .ga-header-inner { position: relative; display: flex; flex-direction: row; align-items: center; gap: 26px; min-height: 68px; padding: 10px 14px 10px 18px; background: #fff; border-radius: 11px; box-shadow: 0 12px 32px rgba(0, 0, 0, .08); }
+.gpd-page .ga-logo { flex: none; }
+.gpd-page.gpd-page .ga-header .ga-logo .elementor-button { position: relative; display: flex; align-items: center; min-height: 44px; padding: 0 48px 10px 0; border: 0; background: transparent; color: #06271f; font-size: 18px; font-weight: 900; line-height: 1.1; }
+.gpd-page .ga-logo .elementor-button::before { content: ''; position: absolute; right: 0; top: 3px; width: 37px; height: 37px; background: center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%2306271f' d='M9 1h22a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H9a8 8 0 0 1-8-8V8.2L8.2 1Z'/%3E%3Cpath fill='none' stroke='%23a3f451' stroke-linecap='round' stroke-width='2.4' d='M26.7 13.3A9.5 9.5 0 1 0 29.4 21.3H23.2'/%3E%3Ccircle cx='21' cy='21.3' r='2.4' fill='%2319c58b'/%3E%3C/svg%3E"); }
+.gpd-page .ga-logo .elementor-button::after { content: 'GILACLICK'; position: absolute; right: 48px; bottom: 3px; direction: ltr; color: #64756e; font: 700 8px/1 'peyda', Tahoma, sans-serif; letter-spacing: .22em; }
+.gpd-page .ga-primary-nav { flex: 1 1 auto; width: auto; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 4px; }
+.gpd-page.gpd-page .ga-header .ga-nav-link .elementor-button { position: relative; display: inline-flex; align-items: center; min-height: 42px; padding: 8px 11px; border: 0; border-radius: 5px; background: transparent; color: #172b25; font-size: 13.5px; font-weight: 700; line-height: 1.4; white-space: nowrap; }
+.gpd-page.gpd-page .ga-header .ga-nav-link .elementor-button:hover, .gpd-page.gpd-page .ga-header .ga-nav-link .elementor-button:focus-visible { background: #f0fbf6; color: #0b6047; }
+.gpd-page .ga-header-actions { display: flex; flex-direction: row; align-items: center; gap: 6px; flex: none; width: auto; }
+.gpd-page.gpd-page .ga-header .ga-icon-button .elementor-button { display: flex; align-items: center; justify-content: center; width: 43px; height: 43px; padding: 0; border: 1px solid rgba(6, 39, 31, .13); border-radius: 8px; background: #fff; color: #06271f; fill: #06271f; }
+.gpd-page.gpd-page .ga-header .ga-icon-button.ga-account .elementor-button { background: #06271f; color: #a3f451; fill: #a3f451; }
+.gpd-page.gpd-page .ga-header .ga-icon-button .elementor-button:hover, .gpd-page.gpd-page .ga-header .ga-icon-button .elementor-button:focus-visible { border-color: #19c58b; background: #eaf9ef; color: #0b4435; fill: #0b4435; }
+.gpd-page .ga-icon-button .elementor-button-content-wrapper, .gpd-page .ga-icon-button .elementor-button-icon { display: flex; align-items: center; justify-content: center; line-height: 1; }
+.gpd-page .ga-icon-button svg { width: 17px; height: 17px; fill: currentColor; }
+.gpd-page .ga-icon-button :is(.fa, .fas) { font-family: 'Font Awesome 5 Free' !important; font-weight: 900; }
+.gpd-page .ga-icon-button .far { font-family: 'Font Awesome 5 Free' !important; font-weight: 400; }
+.gpd-page .ga-icon-button .elementor-button-text { position: absolute !important; width: 1px !important; height: 1px !important; margin: -1px !important; padding: 0 !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
+.gpd-page .ga-menu-toggle { display: none; }
+.gpd-page .ga-footer { background: #06271f; color: #c5dbce; }
+.gpd-page .ga-footer-inner { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 18px; padding: 26px 0; }
+.gpd-page .ga-footer-brand { font-weight: 900; color: #fff; font-size: 17px; }
+.gpd-page .ga-footer-note { font-size: 12px; }
+
+@media (max-width: 1100px) {
+  .gpd-page .ga-header-inner { gap: 12px; }
+  .gpd-page.gpd-page .ga-header .ga-nav-link .elementor-button { padding-inline: 7px; font-size: 12.5px; }
+}
+@media (max-width: 900px) {
+  .gpd-page .ga-header-inner { justify-content: space-between; flex-wrap: wrap; }
+  .gpd-page.gpd-js .ga-menu-toggle { display: block; }
+  .gpd-page .ga-primary-nav { order: 3; flex: 1 0 100%; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 0 0; background: #fff; }
+  .gpd-page.gpd-js .ga-primary-nav { position: absolute; top: calc(100% + 8px); right: 0; left: 0; order: initial; flex: auto; padding: 10px; border: 1px solid rgba(11,68,53,.12); border-radius: 9px; box-shadow: 0 15px 30px rgba(6,39,31,.18); }
+  .gpd-page.gpd-page .ga-header .ga-nav-link .elementor-button { display: flex; justify-content: flex-start; width: 100%; min-height: 44px; padding-inline: 13px; font-size: 14px; }
+  .gpd-page:not(.gpd-js) .ga-header { position: relative; top: auto; }
+}
+@media (max-width: 720px) {
+  .gpd-page .ga-header { padding-top: 9px; }
+  .gpd-page .ga-header-inner { min-height: 63px; padding: 8px 10px; gap: 8px; }
+  .gpd-page.gpd-page .ga-header .ga-logo .elementor-button { font-size: 16px; }
+  .gpd-page.gpd-page .ga-header .ga-icon-button .elementor-button { width: 38px; height: 38px; }
+  .gpd-page .ga-footer-inner { align-items: flex-start; flex-direction: column; gap: 6px; }
+}
+@media (max-width: 359px) { .gpd-page.gpd-page .ga-header .ga-icon-button .elementor-button { width: 35px; } }
