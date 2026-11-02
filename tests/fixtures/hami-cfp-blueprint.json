@@ -1,0 +1,8 @@
+{
+  "steps": [
+    { "step": "activatePlugin", "pluginPath": "woocommerce/woocommerce.php" },
+    { "step": "activatePlugin", "pluginPath": "elementor/elementor.php" },
+    { "step": "activatePlugin", "pluginPath": "pro-elements/pro-elements.php" },
+    { "step": "runPHP", "code": "<?php require '/mnt/landgc/tests/fixtures/hami-cfp-wordpress-setup.php';" }
+  ]
+}
