@@ -1,0 +1,2539 @@
+{
+  "version": "0.4",
+  "title": "لندینگ اختصاصی افزونه تماس برای قیمت حامی",
+  "type": "product",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "c0000b6",
+      "elType": "container",
+      "isInner": true,
+      "isLocked": false,
+      "settings": {
+        "content_width": "full",
+        "css_classes": "hcf-page",
+        "_title": "لندینگ اختصاصی حامی — فقط محصول تماس برای قیمت",
+        "html_tag": "div"
+      },
+      "elements": [
+        {
+          "id": "c000001",
+          "elType": "widget",
+          "widgetType": "html",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "_css_classes": "hcf-system",
+            "_title": "⚙️ استایل و سازگاری ویرایشگر — حذف نشود",
+            "html": "<style>\n/* Product-specific landing. Loaded only with its Elementor product template. */\n.hcf-page {\n  --hcf-bg: #101318; --hcf-panel: #191e26; --hcf-panel-2: #222934;\n  --hcf-dark-green: #0b4435; --hcf-green: #19c58b; --hcf-lime: #a3f451;\n  --hcf-ink: #f4f7f5; --hcf-muted: #a5b0ac; --hcf-line: rgba(255,255,255,.08);\n  --hcf-width: 1240px; --hcf-gutter: clamp(20px, 4vw, 48px); --hcf-top: 0px;\n  --hcf-ease: cubic-bezier(.22, 1, .36, 1);\n  direction: rtl; text-align: right; isolation: isolate; position: relative;\n  background: var(--hcf-bg); color: var(--hcf-ink);\n  font: 400 15px/1.9 'peyda', Tahoma, sans-serif !important;\n}\n.hcf-page, .hcf-page *, .hcf-page *::before, .hcf-page *::after { box-sizing: border-box; }\n.hcf-page :is(h1,h2,h3,h4,h5,h6,p,ul,ol,figure) { margin: 0; }\n.hcf-page :is(h1,h2,h3,h4,h5,h6,p,a,button,input,select,textarea,label,table,.elementor-heading-title,.elementor-button) { font-family: 'peyda', Tahoma, sans-serif !important; }\n.hcf-page a { color: inherit; text-decoration: none; }\n.hcf-page a:focus-visible, .hcf-page button:focus-visible, .hcf-page input:focus-visible, .hcf-page select:focus-visible, .hcf-page textarea:focus-visible, .hcf-page summary:focus-visible { outline: 2px solid var(--hcf-lime); outline-offset: 3px; }\n.hcf-page [hidden] { display: none !important; }\n.hcf-page.e-con, .hcf-page .e-con {\n  --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px;\n  --gap: 0px; --row-gap: 0px; --column-gap: 0px; --content-width: 100%;\n  display: flex; flex-direction: column; flex-wrap: nowrap; min-width: 0; min-height: 0; max-width: none; margin: 0; padding: 0; gap: 0;\n}\n.hcf-page .elementor-widget { width: auto; min-width: 0; max-width: 100%; margin: 0; }\n.hcf-page .elementor-widget-container { margin: 0; padding: 0; }\n.hcf-page .elementor-heading-title { padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; }\n.hcf-page .elementor-widget-text-editor :is(p,ul,ol):last-child { margin-bottom: 0; }\n.hcf-page .hcf-system { display: none !important; }\n.hcf-page.hcf-page .hcf-wrap { width: min(var(--hcf-width), calc(100% - (var(--hcf-gutter) * 2))); max-width: var(--hcf-width); margin-inline: auto; }\n.hcf-page .hcf-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }\n.hcf-page :is(#hcf-buy, #hcf-features, #hcf-how, #hcf-gallery, #hcf-faq, #hcf-reviews, #hcf-specs, #hcf-compare, #hcf-related) { scroll-margin-top: calc(var(--hcf-top) + 24px); }\n\n/* Opening composition: real WooCommerce media is framed by restrained orbital lines. */\n.hcf-page.hcf-page .hcf-hero { position: relative; overflow: hidden; padding: clamp(50px, 6vw, 92px) 0 74px; background: radial-gradient(ellipse at 17% 46%, rgba(25,197,139,.105), transparent 36%), linear-gradient(180deg, #111a19 0%, #101318 94%); }\n.hcf-page .hcf-hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px); background-size: 62px 62px; mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 92%); pointer-events: none; }\n.hcf-page.hcf-page .hcf-hero-layout { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr); align-items: center; gap: clamp(36px, 5vw, 76px); }\n.hcf-page.hcf-page .hcf-hero-copy { align-items: flex-start; position: relative; z-index: 2; }\n.hcf-page .hcf-eyebrow { color: #9de8c7; font-size: 12px; font-weight: 800; letter-spacing: .01em; }\n.hcf-page .hcf-eyebrow .elementor-heading-title { display: flex; align-items: center; gap: 10px; }\n.hcf-page .hcf-eyebrow .elementor-heading-title::before { content: ''; display: block; width: 27px; height: 2px; background: var(--hcf-green); }\n.hcf-page .hcf-eyebrow span { color: #667b71; }\n.hcf-page .hcf-hero-meta { margin-top: 18px; }\n.hcf-page .hcf-hero-meta .product_meta { display: flex; flex-wrap: wrap; gap: 7px; color: #c6dacf; font-size: 10.5px; }\n.hcf-page .hcf-hero-meta .product_meta > span { display: inline-block; padding: 4px 9px; border: 1px solid rgba(162,222,183,.18); border-radius: 5px; background: rgba(89,171,119,.07); }\n.hcf-page .hcf-hero-meta a { color: #b8e7c7; }\n.hcf-page .hcf-hero-title { margin-top: 17px; color: var(--hcf-ink); font-size: clamp(34px, 3.4vw, 52px); font-weight: 900; line-height: 1.5; letter-spacing: -.035em; }\n.hcf-page .hcf-hero-title em { color: var(--hcf-lime); font-style: normal; }\n.hcf-page .hcf-hero-subtitle { margin-top: 17px; color: #d5e6dc; font-size: clamp(17px, 1.45vw, 20px); font-weight: 800; line-height: 1.8; }\n.hcf-page .hcf-hero-description { max-width: 510px; margin-top: 13px; color: var(--hcf-muted); font-size: 14px; line-height: 2.15; }\n.hcf-page.hcf-page .hcf-hero-benefits { display: flex; flex-flow: row wrap; gap: 9px 20px; margin-top: 27px; }\n.hcf-page .hcf-benefit { color: #c8d7ce; font-size: 12px; font-weight: 700; }\n.hcf-page .hcf-benefit .elementor-heading-title { display: flex; align-items: center; gap: 7px; white-space: normal; }\n.hcf-page .hcf-benefit .elementor-heading-title::before { content: '✓'; display: grid; place-items: center; width: 17px; height: 17px; border: 1px solid rgba(25,197,139,.5); border-radius: 50%; color: #86ddb1; font: 700 10px/1 Tahoma, sans-serif; }\n.hcf-page.hcf-page .hcf-actions { display: flex; flex-flow: row wrap; gap: 11px; margin-top: 32px; }\nbody .hcf-page .hcf-button .elementor-button { display: inline-flex; justify-content: center; align-items: center; min-height: 52px; padding: 13px 22px; border: 1px solid transparent; border-radius: 7px; font-size: 13px; font-weight: 900; line-height: 1.6; text-align: center; white-space: normal; box-shadow: none; transition: transform .25s var(--hcf-ease), background .25s var(--hcf-ease), border-color .25s var(--hcf-ease), color .25s var(--hcf-ease); }\nbody .hcf-page .hcf-primary .elementor-button { min-width: 152px; background: var(--hcf-lime); border-color: var(--hcf-lime); color: #10251a; }\nbody .hcf-page .hcf-primary .elementor-button:is(:hover,:focus-visible) { background: #c2ff86; border-color: #c2ff86; color: #10251a; transform: translateY(-2px); }\nbody .hcf-page .hcf-secondary .elementor-button { background: rgba(255,255,255,.035); border-color: rgba(255,255,255,.18); color: #e6f0ea; }\nbody .hcf-page .hcf-secondary .elementor-button:is(:hover,:focus-visible) { background: #20382d; border-color: #68b890; color: #fff; transform: translateY(-2px); }\n.hcf-page .hcf-hero-caption { margin-top: 17px; color: #9aa9a1; font-size: 11px; }\n.hcf-page.hcf-page .hcf-hero-visual { position: relative; justify-content: center; padding: 26px 13px; min-width: 0; }\n.hcf-page .hcf-hero-visual > .elementor-widget-html:first-child { position: absolute; inset: 0; pointer-events: none; }\n.hcf-page .hcf-orbit { position: absolute; width: 83%; aspect-ratio: 1; left: 50%; top: 50%; border: 1px solid rgba(49,199,137,.17); border-radius: 50%; transform: translate(-50%,-50%) rotate(0deg); pointer-events: none; animation: hcf-orbit 30s linear infinite paused; }\n.hcf-page .hcf-orbit-b { width: 105%; border-color: rgba(90,202,153,.08); animation-duration: 47s; animation-direction: reverse; }\n.hcf-page .hcf-orbit i { position: absolute; top: 12%; left: 15%; width: 7px; height: 7px; border-radius: 50%; background: #6fdb9d; box-shadow: 0 0 14px rgba(83,238,141,.7); }\n.hcf-page .hcf-orbit-b i { width: 4px; height: 4px; top: 70%; left: 3%; opacity: .65; }\n.hcf-page.hcf-orbit-running .hcf-orbit { animation-play-state: running; }\n@keyframes hcf-orbit { to { transform: translate(-50%,-50%) rotate(360deg); } }\n.hcf-page.hcf-page .hcf-stage { position: relative; z-index: 1; overflow: hidden; border: 1px solid rgba(204,255,220,.15); border-radius: 13px; background: #171e22; box-shadow: 0 30px 80px rgba(0,0,0,.3), 0 0 70px rgba(27,186,119,.075); }\n.hcf-page .hcf-stage-top, .hcf-page .hcf-stage-bottom, .hcf-page .hcf-screen-top { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 17px; color: #aebeb5; font-size: 11px; font-weight: 700; }\n.hcf-page .hcf-stage-top span[dir], .hcf-page .hcf-screen-top span[dir] { margin-inline-start: auto; color: #81918a; font: 600 9px/1.4 Arial,sans-serif !important; letter-spacing: .12em; }\n.hcf-page .hcf-stage-top i, .hcf-page .hcf-screen-top i { display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--hcf-green); box-shadow: 0 0 10px rgba(25,197,139,.6); }\n.hcf-page.hcf-page .hcf-woo-gallery { position: relative; overflow: hidden; min-width: 0; background: #f7f8f8; }\n.hcf-page .hcf-images, .hcf-page .hcf-images .elementor-widget-container, .hcf-page .hcf-images .woocommerce-product-gallery { width: 100% !important; max-width: 100% !important; margin: 0 !important; opacity: 1 !important; }\n.hcf-page .hcf-images .woocommerce-product-gallery__wrapper { margin: 0 !important; }\n.hcf-page .hcf-images .woocommerce-product-gallery__image { width: 100%; margin: 0; }\n.hcf-page .hcf-images .woocommerce-product-gallery__image a { display: block; }\n.hcf-page .hcf-images .woocommerce-product-gallery__image img:not(.zoomImg) { display: block; width: 100% !important; height: auto; aspect-ratio: 3/2; object-fit: contain; }\n.hcf-page .hcf-images .woocommerce-product-gallery__trigger { z-index: 4; }\n.hcf-page .hcf-images .flex-control-thumbs, .hcf-page .hcf-fallback-thumbs { display: flex; gap: 7px; margin: 0; padding: 9px; list-style: none; overflow-x: auto; background: #e9eeea; }\n.hcf-page .hcf-images .flex-control-thumbs li { flex: 0 0 56px; width: 56px !important; margin: 0; }\n.hcf-page .hcf-images .flex-control-thumbs img, .hcf-page .hcf-fallback-thumbs img { width: 56px; height: 45px; object-fit: cover; cursor: pointer; border: 1px solid #a8beb0; border-radius: 3px; }\n.hcf-page .hcf-fallback-thumbs button { padding: 0; border: 2px solid transparent; border-radius: 4px; background: transparent; cursor: pointer; }\n.hcf-page .hcf-fallback-thumbs button[aria-pressed=\"true\"] { border-color: #158d62; }\nbody .hcf-page .hcf-zoom { position: absolute; z-index: 5; left: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 5px; padding: 7px 11px; border: 1px solid #d4e0d8; border-radius: 5px; background: rgba(255,255,255,.95); color: #174033; font-size: 11px; font-weight: 800; line-height: 1.5; white-space: normal; cursor: pointer; }\n.hcf-page .hcf-stage-bottom { justify-content: space-between; min-height: 48px; color: #a5b4ab; }\n.hcf-page .hcf-stage-bottom span:last-child { color: #7b8c82; font-size: 10px; }\n\n/* Technical strip: only published requirements, attributed below. */\n.hcf-page.hcf-page .hcf-quick { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); position: relative; z-index: 3; overflow: hidden; margin-top: -1px; border: 1px solid var(--hcf-line); border-radius: 10px; background: #191e23; }\n.hcf-page.hcf-page .hcf-quick-item { padding: 22px 24px; border-inline-start: 1px solid var(--hcf-line); }\n.hcf-page .hcf-quick-item:nth-child(4) { border: 0; }\n.hcf-page .hcf-quick-label { color: #a5b0ac; font-size: 11px; }\n.hcf-page .hcf-quick-value { margin-top: 5px; color: #eff8f2; font-size: 14px; font-weight: 900; }\n.hcf-page .hcf-quick-source { grid-column: 1/-1; padding: 10px 24px; border-top: 1px solid var(--hcf-line); color: #a5b0ac; font-size: 10.5px; }\n.hcf-page .hcf-quick-source a, .hcf-page .hcf-spec-note a, .hcf-page .hcf-buy-help a, .hcf-page .hcf-tabs a { color: #89dbae; text-decoration: underline; text-underline-offset: 3px; }\n\n/* Main flow and controlled sticky purchase card. */\n.hcf-page.hcf-page .hcf-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(280px,320px); align-items: stretch; gap: clamp(36px, 5vw, 70px); padding-top: 70px; }\n.hcf-page.hcf-page .hcf-content, .hcf-page.hcf-page .hcf-aside { display: block; min-width: 0; }\n.hcf-page.hcf-page .hcf-buy { position: sticky; top: calc(var(--hcf-top) + 20px); overflow: hidden; padding: 25px; border: 1px solid rgba(142,202,166,.2); border-radius: 10px; background: linear-gradient(150deg, #1b2925, #191e26 65%); box-shadow: 0 18px 50px rgba(0,0,0,.18); }\n.hcf-page .hcf-buy-top { display: flex; align-items: center; gap: 10px; color: #b9dfc8; font-size: 12px; font-weight: 900; }\n.hcf-page .hcf-buy-top i { flex: 1; height: 1px; background: rgba(143,194,158,.15); }\n.hcf-page .hcf-buy-icon { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid rgba(25,197,139,.25); border-radius: 6px; background: rgba(25,197,139,.08); color: #9de9bc; font: 18px/1 Arial,sans-serif; }\n.hcf-page .hcf-buy-title { margin-top: 18px; color: #f4f7f5; font-size: 17px; font-weight: 900; line-height: 1.8; }\n.hcf-page .hcf-price-label { margin-top: 21px; color: #a9b8af; font-size: 11px; }\n.hcf-page .hcf-price .price { margin: 4px 0 0; color: #f4f7f5 !important; font-size: clamp(24px, 2vw, 30px); font-weight: 900; line-height: 1.6; }\n.hcf-page .hcf-price :is(ins, .amount) { color: #f4f7f5; text-decoration: none; }\n.hcf-page .hcf-price del { display: block; opacity: .75; color: #a5b0ac; font-size: 14px; font-weight: 500; }\n.hcf-page .hcf-price del .amount { color: #a5b0ac; }\n.hcf-page .hcf-price .woocommerce-Price-currencySymbol { color: #b8c9bf; font-size: 12px; }\n.hcf-page .hcf-snapshot { margin-top: 5px; color: #a9bbb0; font-size: 10px; line-height: 1.8; }\n.hcf-page .hcf-stock :is(.stock,p) { display: inline-flex; align-items: center; gap: 7px; margin: 10px 0 0; color: #9ce5b9 !important; font-size: 12px; font-weight: 800; }\n.hcf-page .hcf-stock .stock::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }\n.hcf-page .hcf-stock .out-of-stock { color: #ffb7ae !important; }\n/* The native add-to-cart form can repeat the separately displayed stock text. */\n.hcf-page .hcf-buy:has(.hcf-stock .stock) .hcf-add .stock { display: none; }\n.hcf-page .hcf-add { margin-top: 22px; }\n.hcf-page .hcf-add :is(.elementor-add-to-cart,.elementor-widget-container) { width: 100%; }\n.hcf-page .hcf-add form.cart { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch; margin: 0 !important; }\n.hcf-page .hcf-add .quantity { flex: 0 0 68px; width: 68px; margin: 0 !important; }\nbody .hcf-page .hcf-add input.qty { width: 100% !important; min-height: 51px; padding: 8px 4px; border: 1px solid #52665a; border-radius: 6px; background: #111a17; color: #fff; font-size: 14px; text-align: center; box-shadow: none; }\nbody .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button) { flex: 1 1 140px; min-height: 51px; padding: 12px 14px; border: 1px solid var(--hcf-lime); border-radius: 6px; background: var(--hcf-lime); color: #10251a; font-size: 12px; font-weight: 900; line-height: 1.6; text-align: center; white-space: normal; box-shadow: none; cursor: pointer; transition: background .22s var(--hcf-ease), transform .22s var(--hcf-ease); }\nbody .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button):is(:hover,:focus-visible) { background: #c2ff86; border-color: #c2ff86; color: #10251a; transform: translateY(-2px); }\nbody .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button):disabled { opacity: .55; cursor: not-allowed; transform: none; }\n.hcf-page .hcf-add table.variations, .hcf-page .hcf-add .single_variation_wrap { flex: 1 0 100%; width: 100%; }\n.hcf-page .hcf-add table.variations :is(th,td) { padding: 5px 0; color: #d8e8df; text-align: right; }\n.hcf-page .hcf-add select { width: 100%; min-height: 44px; padding: 7px; border: 1px solid #52665a; background: #17231e; color: #fff; }\n.hcf-page .hcf-add .single_variation { margin-bottom: 10px; }\n.hcf-page .hcf-add .woocommerce-variation-add-to-cart { display: flex; flex-wrap: wrap; gap: 8px; }\n.hcf-page .hcf-buy-help { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--hcf-line); color: #aebbb3; font-size: 11px; line-height: 2; }\n/* The template-only Elementor notices widget hides Woo notices until its script\n   moves them, including notices printed before this template by the theme.\n   This style is embedded only in this single-product template. */\nbody.single-product :is(.woocommerce-notices-wrapper,.woocommerce-message,.woocommerce-error,.woocommerce-info) { display: block !important; }\n.hcf-page .hcf-notices .woocommerce-notices-wrapper,\n.hcf-page .hcf-notices :is(.woocommerce-message,.woocommerce-error,.woocommerce-info) { display: block !important; }\n.hcf-page .hcf-notices .e-woocommerce-notices-wrapper-loading * { display: revert !important; }\n.hcf-page .hcf-notices :is(.woocommerce-message,.woocommerce-error,.woocommerce-info) { margin: 12px 0; padding: 12px; border: 1px solid #4a8161; border-radius: 5px; background: #1e392b; color: #f4f7f5; font-size: 12px; }\n.hcf-page .hcf-notices a { color: #c3ffb0; text-decoration: underline; }\n\n/* Distinct sections and an intentionally asymmetric feature grid. */\n.hcf-page.hcf-page .hcf-section { display: block; min-width: 0; margin-top: 92px; }\n.hcf-page .hcf-content > .hcf-section:first-child { margin-top: 0; }\n.hcf-page .hcf-kicker { color: #81d8a7; font-size: 11px; font-weight: 900; letter-spacing: .015em; }\n.hcf-page .hcf-kicker .elementor-heading-title { display: flex; align-items: center; gap: 10px; }\n.hcf-page .hcf-kicker .elementor-heading-title::before { content: ''; display: block; width: 22px; height: 2px; background: var(--hcf-green); }\n.hcf-page .hcf-section-title { margin-top: 13px; color: #f4f7f5; font-size: clamp(25px, 2.25vw, 32px); font-weight: 900; line-height: 1.65; letter-spacing: -.025em; }\n.hcf-page .hcf-section-lead { max-width: 760px; margin-top: 14px; color: #abb8b1; font-size: 14px; line-height: 2.2; }\n.hcf-page.hcf-page .hcf-feature-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 28px; }\n.hcf-page.hcf-page .hcf-feature { display: flex; align-items: flex-start; position: relative; overflow: hidden; min-width: 0; padding: 24px; border: 1px solid var(--hcf-line); border-radius: 9px; background: #191e26; transition: border-color .25s var(--hcf-ease), transform .25s var(--hcf-ease), background .25s var(--hcf-ease); }\n.hcf-page.hcf-page .hcf-feature:hover { border-color: rgba(76,206,142,.35); background: #1b2428; transform: translateY(-3px); }\n.hcf-page.hcf-page .hcf-feature-1 { grid-column: 1/-1; padding: 28px; background: linear-gradient(115deg,#18372a,#1c2925 58%,#191e26); }\n.hcf-page .hcf-feature-1::after { content: ''; position: absolute; left: -50px; bottom: -120px; width: 230px; height: 230px; border: 1px solid rgba(79,221,149,.16); border-radius: 50%; box-shadow: 0 0 0 32px rgba(69,207,136,.025), 0 0 0 64px rgba(69,207,136,.02); pointer-events: none; }\n.hcf-page .hcf-icon { display: grid; place-items: center; width: 41px; height: 41px; border: 1px solid rgba(25,197,139,.23); border-radius: 7px; background: rgba(25,197,139,.075); color: #8de2b4; }\n.hcf-page .hcf-icon svg { display: block; width: 22px; height: 22px; }\n.hcf-page .hcf-feature-title { position: relative; z-index: 1; margin-top: 17px; color: #eef6f0; font-size: 16px; font-weight: 900; line-height: 1.75; }\n.hcf-page .hcf-feature-text { position: relative; z-index: 1; margin-top: 8px; color: #abbab1; font-size: 12.5px; line-height: 2.1; }\n.hcf-page .hcf-feature-1 .hcf-feature-text { max-width: 590px; }\n.hcf-page .hcf-feature-note { position: relative; z-index: 1; margin-top: 18px; color: #a6dec0; font-size: 11px; font-weight: 700; }\n.hcf-page.hcf-page .hcf-steps { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; margin-top: 29px; border-top: 1px solid var(--hcf-line); }\n.hcf-page.hcf-page .hcf-step { display: flex; flex-direction: row; align-items: flex-start; gap: 15px; padding: 24px 0; border-bottom: 1px solid var(--hcf-line); }\n.hcf-page .hcf-step-number { display: grid; flex: 0 0 38px; place-items: center; width: 38px; height: 38px; border: 1px solid #395b4b; border-radius: 50%; color: #91e5b4; font-size: 12px; font-weight: 900; line-height: 1; }\n.hcf-page .hcf-step-title { color: #ecf4ee; font-size: 14px; font-weight: 900; line-height: 1.8; }\n.hcf-page .hcf-step-text { margin-top: 6px; color: #a5b0ac; font-size: 12px; line-height: 2; }\n.hcf-page.hcf-page .hcf-screen { overflow: hidden; margin-top: 28px; border: 1px solid rgba(255,255,255,.12); border-radius: 10px; background: #1a2125; }\n.hcf-page .hcf-screen-top { min-height: 48px; }\n.hcf-page .hcf-capture-image a, .hcf-page .hcf-capture-image img { display: block; width: 100%; }\n.hcf-page .hcf-capture-image a { background: #e8eae8; cursor: zoom-in; }\n.hcf-page .hcf-capture-image img { height: auto; aspect-ratio: 1000/669; object-fit: contain; transition: opacity .25s var(--hcf-ease); }\n.hcf-page .hcf-capture-image a:hover img { opacity: .92; }\n.hcf-page .hcf-screen-caption { padding: 13px 18px; color: #aebeb5; font-size: 11px; }\n\n/* Mobile comparison becomes readable stacked rows, not a squeezed desktop table. */\n.hcf-page .hcf-table { margin-top: 28px; overflow: hidden; border: 1px solid var(--hcf-line); border-radius: 9px; }\n.hcf-page .hcf-table table { width: 100%; margin: 0; border-collapse: collapse; table-layout: fixed; color: #c5d1c9; font-size: 12px; line-height: 1.9; }\n.hcf-page .hcf-table :is(th,td) { padding: 16px; border: 0; border-bottom: 1px solid var(--hcf-line); text-align: right; vertical-align: top; overflow-wrap: anywhere; }\n.hcf-page .hcf-table th { background: #202a28; color: #d4e9db; font-size: 11px; font-weight: 900; }\n.hcf-page .hcf-table td:first-child, .hcf-page .hcf-table th:first-child { width: 27%; color: #f0f7f2; font-weight: 800; }\n.hcf-page .hcf-table td:last-child { color: #a6e0bd; }\n.hcf-page .hcf-table tr:last-child td { border-bottom: 0; }\n.hcf-page.hcf-page .hcf-spec-list { margin-top: 25px; border-top: 1px solid var(--hcf-line); }\n.hcf-page.hcf-page .hcf-spec-row { display: grid; grid-template-columns: minmax(130px,.6fr) minmax(0,1fr); gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--hcf-line); }\n.hcf-page .hcf-spec-label { color: #a5b0ac; font-size: 12px; }\n.hcf-page .hcf-spec-value { color: #eaf3ed; font-size: 12px; font-weight: 800; }\n.hcf-page .hcf-spec-note { margin-top: 17px; color: #a5b0ac; font-size: 11px; line-height: 2; }\n.hcf-page .hcf-additional:not(:has(.shop_attributes tr)) { display: none; }\n.hcf-page .hcf-additional { margin-top: 18px; color: #dbe8df; font-size: 12px; }\n.hcf-page .hcf-additional :is(th,td) { padding: 10px; border: 1px solid var(--hcf-line); text-align: right; }\n.hcf-page .hcf-additional table { width: 100%; border-collapse: collapse; }\n\n/* FAQ remains fully visible and readable without JavaScript. */\n.hcf-page.hcf-page .hcf-faq-list { margin-top: 26px; border-top: 1px solid var(--hcf-line); }\n.hcf-page.hcf-page .hcf-faq-item { display: block; border-bottom: 1px solid var(--hcf-line); }\n.hcf-page .hcf-faq-question { color: #edf5ef; font-size: 14px; font-weight: 900; line-height: 1.9; }\n.hcf-page:not(.hcf-js) .hcf-faq-question { padding: 17px 0 8px; }\nbody .hcf-page button.hcf-faq-trigger { display: flex; justify-content: space-between; align-items: center; gap: 15px; width: 100%; min-height: 70px; padding: 16px 0; border: 0; background: transparent; color: #edf5ef; font-size: 14px; font-weight: 900; line-height: 1.9; text-align: right; white-space: normal; overflow-wrap: anywhere; cursor: pointer; box-shadow: none; }\nbody .hcf-page button.hcf-faq-trigger:is(:hover,:focus-visible) { background: transparent; color: #a6e8be; }\n.hcf-page .hcf-faq-trigger::after { content: '+'; display: grid; flex: 0 0 30px; place-items: center; width: 30px; height: 30px; border: 1px solid #425a4e; border-radius: 5px; color: #a3dfb7; font: 400 21px/1 Arial,sans-serif; transition: transform .25s var(--hcf-ease), background .25s var(--hcf-ease); }\n.hcf-page .hcf-faq-trigger[aria-expanded=\"true\"]::after { transform: rotate(45deg); background: #284638; }\n.hcf-page .hcf-faq-answer { color: #adbcb2; font-size: 12.5px; line-height: 2.15; }\n.hcf-page .hcf-faq-answer .elementor-widget-container, .hcf-page .hcf-faq-answer > :last-child { padding-bottom: 18px; }\n\n/* Native WooCommerce tabs, full original content, comments and third-party tabs. */\n.hcf-page .hcf-tabs { margin-top: 25px; color: #c2cec6; font-size: 13px; line-height: 2; overflow-wrap: anywhere; }\n.hcf-page .hcf-tabs ul.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none; }\n.hcf-page .hcf-tabs ul.tabs::before, .hcf-page .hcf-tabs ul.tabs li::before, .hcf-page .hcf-tabs ul.tabs li::after { display: none !important; }\nbody .hcf-page .hcf-tabs ul.tabs li { display: block; margin: 0; padding: 0; border: 0 !important; background: transparent !important; }\n.hcf-page .hcf-tabs ul.tabs li a { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border: 1px solid #3b4b42; border-radius: 5px; color: #d0ded5; font-size: 12px; font-weight: 800; text-decoration: none; }\nbody .hcf-page .hcf-tabs ul.tabs li a { color: #d0ded5 !important; }\nbody .hcf-page .hcf-tabs ul.tabs li.active a, body .hcf-page .hcf-tabs ul.tabs li a:is(:hover,:focus-visible) { border-color: #61c48a; background: #21392d; color: #effff4 !important; }\n.hcf-page .hcf-tabs :is(h2,h3,h4) { margin: 22px 0 12px; color: #f1f8f2; font-size: 17px; font-weight: 900; line-height: 1.8; }\n.hcf-page .hcf-tabs :is(p,ul,ol,blockquote,table) { margin: 0 0 15px; }\n.hcf-page .hcf-tabs :is(ul,ol) { padding-inline-start: 22px; }\n.hcf-page .hcf-tabs blockquote { padding: 12px 18px; border-inline-start: 3px solid #48c882; background: #1b2b24; }\n.hcf-page .hcf-tabs img { max-width: 100%; height: auto; }\n.hcf-page .hcf-tabs table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }\n.hcf-page .hcf-tabs :is(th,td) { min-width: 130px; padding: 10px; border: 1px solid var(--hcf-line); text-align: right; }\n.hcf-page .hcf-tabs :is(input:not([type=\"checkbox\"]),textarea,select) { max-width: 100%; padding: 10px 12px; border: 1px solid #50645a; border-radius: 5px; background: #141c19; color: #f4f7f5; }\n.hcf-page .hcf-tabs textarea { width: 100%; }\nbody .hcf-page .hcf-tabs input[type=\"submit\"] { border-color: #a3f451; background: #a3f451; color: #10251a; font-weight: 900; cursor: pointer; }\n.hcf-page .hcf-tabs .star-rating, .hcf-page .hcf-tabs p.stars a { color: #b9e682; }\n.hcf-page .hcf-tabs .woocommerce-review__published-date, .hcf-page .hcf-tabs .woocommerce-review__dash { color: #c3d1c7; }\n\n/* Actual related products are produced by WooCommerce. */\n.hcf-page.hcf-page .hcf-related { margin-top: 94px; padding-top: 44px; border-top: 1px solid var(--hcf-line); }\n.hcf-page .hcf-related-products { margin-top: 26px; }\n.hcf-page .hcf-related-products .related > h2 { display: none; }\n.hcf-page .hcf-related-products ul.products { display: grid !important; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; margin: 0 !important; padding: 0; list-style: none; }\n.hcf-page .hcf-related-products ul.products::before, .hcf-page .hcf-related-products ul.products::after { display: none; }\n.hcf-page .hcf-related-products li.product { float: none !important; width: auto !important; margin: 0 !important; padding: 12px !important; border: 1px solid var(--hcf-line); border-radius: 8px; background: #191e26; }\n.hcf-page .hcf-related-products li.product img { display: block; width: 100%; height: auto; aspect-ratio: 3/2; object-fit: cover; margin: 0 0 14px !important; border-radius: 4px; }\n.hcf-page .hcf-related-products .woocommerce-loop-product__title { margin: 0; padding: 0 !important; color: #f0f6f1; font-size: 13px !important; font-weight: 900; line-height: 1.8; }\n.hcf-page .hcf-related-products .price { display: block; margin-top: 7px; color: #b6dfc5 !important; font-size: 12px !important; }\nbody .hcf-page .hcf-related-products .button { display: inline-block; margin-top: 12px; padding: 8px 12px; border: 1px solid #436a52; border-radius: 5px; background: transparent; color: #b2ebc5; font-size: 11px; font-weight: 800; }\nbody .hcf-page .hcf-related-products .button:is(:hover,:focus-visible) { background: #274b38; color: #fff; }\n\n.hcf-page.hcf-page .hcf-final { position: relative; overflow: hidden; margin-top: 100px; padding: 70px 0; border-top: 1px solid rgba(106,199,145,.18); background: radial-gradient(ellipse at 22% 45%, rgba(25,197,139,.13), transparent 39%), #11211b; }\n.hcf-page.hcf-page .hcf-final-inner { display: grid; grid-template-columns: minmax(0,1fr) minmax(220px,.7fr); align-items: center; gap: 50px; }\n.hcf-page .hcf-final-title { margin-top: 15px; color: #f4f7f5; font-size: clamp(25px,2.6vw,37px); font-weight: 900; line-height: 1.7; }\n.hcf-page .hcf-final-text { max-width: 680px; margin-top: 14px; color: #b5c7bc; font-size: 14px; line-height: 2.2; }\n.hcf-page .hcf-final .hcf-button { margin-top: 25px; }\n.hcf-page .hcf-final-orbit { position: relative; width: min(280px,100%); aspect-ratio: 1; margin-inline: auto; border: 1px solid rgba(82,208,145,.19); border-radius: 50%; }\n.hcf-page .hcf-final-orbit::before, .hcf-page .hcf-final-orbit::after { content: ''; position: absolute; inset: 18%; border: 1px solid rgba(82,208,145,.2); border-radius: 50%; }\n.hcf-page .hcf-final-orbit::after { inset: 37%; background: rgba(25,197,139,.1); }\n.hcf-page .hcf-final-orbit i, .hcf-page .hcf-final-orbit b, .hcf-page .hcf-final-orbit span { position: absolute; width: 7px; height: 7px; border-radius: 50%; background: #88e2aa; box-shadow: 0 0 15px rgba(25,197,139,.7); }\n.hcf-page .hcf-final-orbit i { top: 13%; right: 15%; }.hcf-page .hcf-final-orbit b { top: 50%; left: 18%; width: 5px; height: 5px; }.hcf-page .hcf-final-orbit span { bottom: 12%; right: 40%; width: 4px; height: 4px; }\n\n.hcf-page .hcf-lightbox { width: min(1100px,calc(100% - 32px)); max-width: none; max-height: calc(100% - 32px); padding: 0; border: 1px solid #486555; border-radius: 9px; background: #121b17; color: #f4f7f5; }\n.hcf-page .hcf-lightbox::backdrop { background: rgba(0,0,0,.86); }\n.hcf-page .hcf-lightbox-bar, .hcf-page .hcf-lightbox-controls { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; font-size: 12px; }\n.hcf-page .hcf-lightbox img { display: block; width: 100%; max-height: 72vh; object-fit: contain; background: #f1f3f1; }\nbody .hcf-page .hcf-lightbox button { padding: 8px 12px; border: 1px solid #4a6757; border-radius: 4px; background: #20372a; color: #f4f7f5; font-size: 12px; cursor: pointer; }\nbody .hcf-page .hcf-lightbox button:hover { background: #315841; }\n.hcf-page.hcf-motion .hcf-reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s var(--hcf-ease) var(--hcf-delay,0ms), transform .55s var(--hcf-ease) var(--hcf-delay,0ms), border-color .25s var(--hcf-ease), background .25s var(--hcf-ease); }\n.hcf-page.hcf-motion .hcf-reveal.hcf-visible { opacity: 1; transform: translateY(0); }\n.hcf-page.hcf-motion .hcf-feature.hcf-visible:hover { transform: translateY(-3px); }\n\n@media (max-width: 1000px) {\n  .hcf-page.hcf-page .hcf-hero-layout { gap: 30px; }\n  .hcf-page.hcf-page .hcf-layout { grid-template-columns: minmax(0,1fr) minmax(260px,290px); gap: 28px; }\n  .hcf-page.hcf-page .hcf-buy { padding: 20px; }\n  .hcf-page .hcf-related-products ul.products { grid-template-columns: repeat(2,minmax(0,1fr)); }\n}\n@media (max-width: 760px) {\n  .hcf-page { --hcf-gutter: 20px; }\n  .hcf-page.hcf-page .hcf-hero { padding: 50px 0 35px; }\n  .hcf-page.hcf-page .hcf-hero-layout { grid-template-columns: minmax(0,1fr); gap: 24px; }\n  .hcf-page .hcf-hero-title { max-width: 560px; font-size: clamp(32px,8vw,42px); }\n  .hcf-page .hcf-hero-subtitle { font-size: 16px; }\n  .hcf-page.hcf-page .hcf-hero-visual { max-width: 600px; width: 100%; margin-inline: auto; padding: 22px 10px; }\n  .hcf-page .hcf-orbit { animation-duration: 45s; }\n  .hcf-page .hcf-orbit-b { animation: none; }\n  .hcf-page.hcf-page .hcf-quick { grid-template-columns: repeat(2,minmax(0,1fr)); }\n  .hcf-page.hcf-page .hcf-quick-item { padding: 17px; border-bottom: 1px solid var(--hcf-line); }\n  .hcf-page .hcf-quick-item:nth-child(even) { border-inline-start: 0; }\n  .hcf-page .hcf-quick-item:nth-child(3), .hcf-page .hcf-quick-item:nth-child(4) { border-bottom: 0; }\n  .hcf-page .hcf-quick-source { padding: 10px 17px; }\n  .hcf-page.hcf-page .hcf-layout { display: flex; flex-direction: column; gap: 0; padding-top: 36px; }\n  .hcf-page.hcf-page .hcf-aside { order: -1; margin-bottom: 60px; }\n  .hcf-page.hcf-page .hcf-buy { position: static; max-width: 600px; padding: 23px; }\n  .hcf-page.hcf-page .hcf-section { margin-top: 70px; }\n  .hcf-page .hcf-content > .hcf-section:first-child { margin-top: 0; }\n  .hcf-page .hcf-section-title { font-size: clamp(23px,6vw,29px); }\n  .hcf-page.hcf-page .hcf-final { margin-top: 70px; padding: 54px 0; }\n  .hcf-page.hcf-page .hcf-final-inner { grid-template-columns: minmax(0,1fr); gap: 25px; }\n  .hcf-page .hcf-final-orbit { width: 170px; }\n  .hcf-page.hcf-motion .hcf-reveal { transform: translateY(9px); transition-duration: .4s; }\n  .hcf-page.hcf-motion .hcf-reveal.hcf-visible { transform: translateY(0); }\n}\n@media (max-width: 520px) {\n  .hcf-page.hcf-page .hcf-feature-grid, .hcf-page.hcf-page .hcf-steps { grid-template-columns: minmax(0,1fr); }\n  .hcf-page.hcf-page .hcf-feature-1 { grid-column: auto; }\n  .hcf-page.hcf-page .hcf-feature, .hcf-page.hcf-page .hcf-feature-1 { padding: 21px; }\n  .hcf-page .hcf-table table, .hcf-page .hcf-table tbody, .hcf-page .hcf-table tr, .hcf-page .hcf-table td { display: block; width: 100% !important; }\n  .hcf-page .hcf-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }\n  .hcf-page .hcf-table tr { padding: 10px 14px; border-bottom: 1px solid var(--hcf-line); }\n  .hcf-page .hcf-table tr:last-child { border-bottom: 0; }\n  .hcf-page .hcf-table td { display: grid; grid-template-columns: minmax(85px,.42fr) minmax(0,1fr); gap: 10px; padding: 7px 0; border: 0; }\n  .hcf-page .hcf-table td::before { content: attr(data-label); color: #a5b0ac; font-size: 10px; font-weight: 700; }\n  .hcf-page .hcf-table td:first-child { color: #f0f7f2; }\n  .hcf-page .hcf-related-products ul.products { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; }\n  .hcf-page .hcf-related-products li.product { padding: 9px !important; }\n}\n@media (max-width: 359px) {\n  .hcf-page { --hcf-gutter: 16px; }\n  .hcf-page.hcf-page .hcf-actions { flex-direction: column; align-items: stretch; width: 100%; }\n  .hcf-page .hcf-actions .elementor-button { width: 100%; }\n  .hcf-page .hcf-hero-title { font-size: 30px; }\n}\n@media (max-height: 650px) { .hcf-page.hcf-page .hcf-buy { position: static; } }\n@media (prefers-reduced-motion: reduce) {\n  .hcf-page *, .hcf-page *::before, .hcf-page *::after { animation: none !important; scroll-behavior: auto !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }\n  .hcf-page.hcf-motion .hcf-reveal { opacity: 1; transform: none; }\n}\n\n</style><script>\n/* Elementor's Product Images widget can call Woo's gallery before Woo's footer\n * script has registered it in the editor iframe. This editor-only temporary\n * no-op is replaced by WooCommerce's real method at DOM ready; Woo then\n * initializes its own galleries normally. It is never installed on the live\n * product page. */\n(function () {\n  'use strict';\n  if (!/(?:\\?|&)elementor-preview=/.test(window.location.search) &&\n      !document.body.classList.contains('elementor-editor-active')) return;\n  var $ = window.jQuery;\n  if (!$ || !$.fn || $.fn.wc_product_gallery) return;\n  var temporary = function () { return this; };\n  $.fn.wc_product_gallery = temporary;\n  window.addEventListener('load', function () {\n    if ($.fn.wc_product_gallery === temporary) delete $.fn.wc_product_gallery;\n  }, { once: true });\n}());\n\n</script>"
+          },
+          "elements": []
+        },
+        {
+          "id": "c0000b4",
+          "elType": "container",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "content_width": "full",
+            "css_classes": "hcf-main",
+            "_title": "محتوای لندینگ اختصاصی",
+            "html_tag": "div",
+            "_element_id": "hcf-main"
+          },
+          "elements": [
+            {
+              "id": "c000019",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "hcf-hero",
+                "_title": "معرفی افزونه حامی",
+                "html_tag": "section"
+              },
+              "elements": [
+                {
+                  "id": "c000018",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-wrap hcf-hero-layout",
+                    "_title": "چیدمان معرفی",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c00000f",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-hero-copy",
+                        "_title": "معرفی و مسیر خرید",
+                        "html_tag": "div"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000002",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-eyebrow",
+                            "_title": "برچسب معرفی",
+                            "title": "راهکار فروشگاهی حامی <span> / </span> افزونه ووکامرس",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000003",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-meta",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-hero-meta",
+                            "_title": "دسته و شناسه محصول ووکامرس",
+                            "category_caption_single": "دسته:",
+                            "category_caption_plural": "دسته‌ها:"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000004",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-hero-title",
+                            "_title": "عنوان اصلی",
+                            "title": "افزونه تماس برای قیمت <em>حامی</em>",
+                            "header_size": "h1",
+                            "typography_typography": "custom",
+                            "typography_font_family": "peyda"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000005",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-hero-subtitle",
+                            "_title": "زیرعنوان",
+                            "title": "مدیریت هوشمند استعلام قیمت و درخواست خرید در ووکامرس",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000006",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-hero-description",
+                            "_title": "توضیح معرفی",
+                            "editor": "<p>برای محصولاتی که قیمت ثابتی ندارند، مسیر استعلام مشخصی بسازید و تغییر قیمت‌ها را از یک پیشخوان مدیریت کنید.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00000a",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-hero-benefits",
+                            "_title": "مزیت‌های کوتاه",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c000007",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-benefit",
+                                "_title": "مزیت اول",
+                                "title": "استعلام در مسیر دلخواه",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c000008",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-benefit",
+                                "_title": "مزیت دوم",
+                                "title": "مدیریت گروهی قیمت",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c000009",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-benefit",
+                                "_title": "مزیت سوم",
+                                "title": "پیش‌نمایش و بازگردانی",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "c00000d",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-actions",
+                            "_title": "دکمه‌های معرفی",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c00000b",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-button hcf-primary",
+                                "_title": "رفتن به خرید",
+                                "text": "خرید افزونه",
+                                "link": {
+                                  "url": "#hcf-buy",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c00000c",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-button hcf-secondary",
+                                "_title": "رفتن به امکانات",
+                                "text": "آشنایی با امکانات",
+                                "link": {
+                                  "url": "#hcf-features",
+                                  "is_external": false,
+                                  "nofollow": false,
+                                  "custom_attributes": ""
+                                },
+                                "selected_icon": {
+                                  "value": "",
+                                  "library": ""
+                                }
+                              },
+                              "elements": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "c00000e",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-hero-caption",
+                            "_title": "توضیح خرید",
+                            "title": "قیمت و خرید افزونه از فروشگاه ووکامرس گیلاکلیک",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c000017",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-hero-visual",
+                        "_title": "تصاویر واقعی محصول",
+                        "html_tag": "div"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000010",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "",
+                            "_title": "مدار تزئینی",
+                            "html": "<div class=\"hcf-orbit hcf-orbit-a\" aria-hidden=\"true\"><i></i></div><div class=\"hcf-orbit hcf-orbit-b\" aria-hidden=\"true\"><i></i></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000016",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-stage",
+                            "_title": "قاب تصویر محصول",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c000011",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "",
+                                "_title": "سربرگ قاب تصویر",
+                                "html": "<div class=\"hcf-stage-top\"><span>تصویر محصول</span><span dir=\"ltr\">HAMI / CALL FOR PRICE</span><i aria-hidden=\"true\"></i></div>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c000014",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-woo-gallery",
+                                "_title": "گالری ووکامرس",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000012",
+                                  "elType": "widget",
+                                  "widgetType": "woocommerce-product-images",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-images",
+                                    "_title": "تصاویر واقعی محصول ووکامرس"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000013",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "بزرگ‌نمایی تصویر",
+                                    "html": "<button class=\"hcf-zoom\" type=\"button\" hidden><span aria-hidden=\"true\">＋</span> بزرگ‌نمایی</button>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000015",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "",
+                                "_title": "توضیح تصویر",
+                                "html": "<div class=\"hcf-stage-bottom\"><span>حامی، برای فروشگاه‌های ووکامرسی</span><span>تصاویر محصول</span></div>"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c000027",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "hcf-wrap hcf-quick",
+                "_title": "اطلاعات سریع محصول",
+                "html_tag": "div"
+              },
+              "elements": [
+                {
+                  "id": "c00001c",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-quick-item",
+                    "_title": "نوع محصول",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c00001a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-label",
+                        "_title": "عنوان",
+                        "title": "نوع محصول",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c00001b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-value",
+                        "_title": "مقدار",
+                        "title": "افزونه وردپرس",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c00001f",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-quick-item",
+                    "_title": "وردپرس",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c00001d",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-label",
+                        "_title": "عنوان",
+                        "title": "وردپرس",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c00001e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-value",
+                        "_title": "مقدار",
+                        "title": "۵.۸ و بالاتر",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c000022",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-quick-item",
+                    "_title": "PHP",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c000020",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-label",
+                        "_title": "عنوان",
+                        "title": "PHP",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c000021",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-value",
+                        "_title": "مقدار",
+                        "title": "۷.۴ و بالاتر",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c000025",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-quick-item",
+                    "_title": "ووکامرس",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c000023",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-label",
+                        "_title": "عنوان",
+                        "title": "ووکامرس",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c000024",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "hcf-quick-value",
+                        "_title": "مقدار",
+                        "title": "۵.۰ و بالاتر",
+                        "header_size": "p"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c000026",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "_css_classes": "hcf-quick-source",
+                    "_title": "منبع مشخصات فنی",
+                    "editor": "<p>حداقل نسخه‌ها طبق <a href=\"https://hojre24shop.ir/HamiSCFP/\">معرفی فنی حامی</a>؛ سازگاری نسخه فعلی را پیش از نصب بررسی کنید.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "c0000a6",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "hcf-wrap hcf-layout",
+                "_title": "محتوا و خرید",
+                "html_tag": "div"
+              },
+              "elements": [
+                {
+                  "id": "c0000a5",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-content",
+                    "_title": "محتوای اختصاصی محصول",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c000041",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-features",
+                        "_title": "معرفی و امکانات",
+                        "html_tag": "section",
+                        "_element_id": "hcf-features"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000028",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب بخش امکانات",
+                            "title": "برای قیمت‌هایی که ثابت نمی‌مانند",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000029",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان معرفی",
+                            "title": "مدیریت حرفه‌ای درخواست‌های قیمت در ووکامرس",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00002a",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-lead",
+                            "_title": "متن معرفی",
+                            "editor": "<p>افزونه Hami Call For Price راهکاری برای مدیریت محصولات نیازمند استعلام قیمت در فروشگاه‌های ووکامرسی است. مشتری را از صفحه محصول به مسیر تماس انتخابی شما هدایت می‌کند و ابزار ویرایش قیمت‌ها را در پیشخوان فروشگاه قرار می‌دهد.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000040",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-feature-grid",
+                            "_title": "قابلیت‌های افزونه",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c00002f",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-feature hcf-feature-1 hcf-reveal",
+                                "_title": "هر استعلام، یک مسیر روشن",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00002b",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "نشان قابلیت",
+                                    "html": "<span class=\"hcf-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 5.5h16v11H9l-5 3v-14Z\"/><path d=\"M8 9h8M8 12.5h5\"/></svg></span>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00002c",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-title",
+                                    "_title": "عنوان قابلیت",
+                                    "title": "هر استعلام، یک مسیر روشن",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00002d",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-text",
+                                    "_title": "توضیح قابلیت",
+                                    "editor": "<p>دکمه استعلام را به تماس تلفنی، ایتا، بله، سروش پلاس، واتساپ یا تلگرام متصل کنید. در واتساپ اطلاعات محصول می‌تواند در پیام آماده شود.</p>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00002e",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-note",
+                                    "_title": "مسیرهای ارتباطی",
+                                    "title": "تلفن · ایتا · بله · سروش · واتساپ · تلگرام",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000033",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-feature hcf-feature-2 hcf-reveal",
+                                "_title": "ویرایش سریع قیمت‌ها",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000030",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "نشان قابلیت",
+                                    "html": "<span class=\"hcf-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"14\" rx=\"2\"/><path d=\"M4 10h16M10 10v9M14 13h3M14 16h3\"/></svg></span>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000031",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-title",
+                                    "_title": "عنوان قابلیت",
+                                    "title": "ویرایش سریع قیمت‌ها",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000032",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-text",
+                                    "_title": "توضیح قابلیت",
+                                    "editor": "<p>محصولات و قیمت‌ها را در یک جدول در پیشخوان ببینید و پیش از ذخیره، تغییرات را بررسی کنید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000037",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-feature hcf-feature-3 hcf-reveal",
+                                "_title": "تغییر گروهی، با امکان بازگشت",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000034",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "نشان قابلیت",
+                                    "html": "<span class=\"hcf-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 7h14M5 17h14M9 4v6M15 14v6\"/><circle cx=\"9\" cy=\"7\" r=\"2\"/><circle cx=\"15\" cy=\"17\" r=\"2\"/></svg></span>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000035",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-title",
+                                    "_title": "عنوان قابلیت",
+                                    "title": "تغییر گروهی، با امکان بازگشت",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000036",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-text",
+                                    "_title": "توضیح قابلیت",
+                                    "editor": "<p>قیمت محصولات یک دسته را درصدی تغییر دهید، نتیجه را پیش‌نمایش کنید و در صورت نیاز تغییر را بازگردانید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00003b",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-feature hcf-feature-4 hcf-reveal",
+                                "_title": "مسیر جایگزین تماس",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000038",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "نشان قابلیت",
+                                    "html": "<span class=\"hcf-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"5\" cy=\"6\" r=\"2\"/><circle cx=\"19\" cy=\"18\" r=\"2\"/><path d=\"M7 6h7a4 4 0 0 1 0 8H9a3 3 0 0 0-3 3v1h11\"/></svg></span>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000039",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-title",
+                                    "_title": "عنوان قابلیت",
+                                    "title": "مسیر جایگزین تماس",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00003a",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-text",
+                                    "_title": "توضیح قابلیت",
+                                    "editor": "<p>طبق توضیحات محصول، اگر آدرس پیام‌رسان ناقص باشد، دکمه می‌تواند به تماس تلفنی برگردد.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00003f",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-feature hcf-feature-5 hcf-reveal",
+                                "_title": "کنترل نمایش قیمت و خرید",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00003c",
+                                  "elType": "widget",
+                                  "widgetType": "html",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "",
+                                    "_title": "نشان قابلیت",
+                                    "html": "<span class=\"hcf-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 3 7 3v5c0 4.8-2.9 7.9-7 10-4.1-2.1-7-5.2-7-10V6l7-3Z\"/><path d=\"m9 12 2 2 4-4\"/></svg></span>"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00003d",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-title",
+                                    "_title": "عنوان قابلیت",
+                                    "title": "کنترل نمایش قیمت و خرید",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00003e",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-feature-text",
+                                    "_title": "توضیح قابلیت",
+                                    "editor": "<p>برای محصولات انتخابی، مسیر خرید معمول بسته و خروجی‌های مرتبط با قیمت و داده‌های ساختاریافته مدیریت می‌شوند.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c00005a",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-process",
+                        "_title": "نحوه عملکرد",
+                        "html_tag": "section",
+                        "_element_id": "hcf-how"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000042",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب نحوه عملکرد",
+                            "title": "مسیر استعلام",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000043",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان نحوه عملکرد",
+                            "title": "از انتخاب محصول تا گفت‌وگو با مشتری",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000044",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-lead",
+                            "_title": "توضیح نحوه عملکرد",
+                            "editor": "<p>مسیر ارتباط را مشخص کنید تا مشتری بداند برای دریافت قیمت از کجا شروع کند.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000059",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-steps",
+                            "_title": "مراحل عملکرد",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c000049",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-step hcf-reveal",
+                                "_title": "مرحله ۱",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000045",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-step-number",
+                                    "_title": "شماره مرحله",
+                                    "title": "۰۱",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000048",
+                                  "elType": "container",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "content_width": "full",
+                                    "css_classes": "hcf-step-copy",
+                                    "_title": "محتوای مرحله",
+                                    "html_tag": "div"
+                                  },
+                                  "elements": [
+                                    {
+                                      "id": "c000046",
+                                      "elType": "widget",
+                                      "widgetType": "heading",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-title",
+                                        "_title": "عنوان مرحله",
+                                        "title": "محصول را انتخاب کنید",
+                                        "header_size": "h3"
+                                      },
+                                      "elements": []
+                                    },
+                                    {
+                                      "id": "c000047",
+                                      "elType": "widget",
+                                      "widgetType": "text-editor",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-text",
+                                        "_title": "توضیح مرحله",
+                                        "editor": "<p>رفتار استعلام را برای محصول یا دسته دلخواه تنظیم کنید.</p>"
+                                      },
+                                      "elements": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00004e",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-step hcf-reveal",
+                                "_title": "مرحله ۲",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00004a",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-step-number",
+                                    "_title": "شماره مرحله",
+                                    "title": "۰۲",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00004d",
+                                  "elType": "container",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "content_width": "full",
+                                    "css_classes": "hcf-step-copy",
+                                    "_title": "محتوای مرحله",
+                                    "html_tag": "div"
+                                  },
+                                  "elements": [
+                                    {
+                                      "id": "c00004b",
+                                      "elType": "widget",
+                                      "widgetType": "heading",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-title",
+                                        "_title": "عنوان مرحله",
+                                        "title": "مسیر ارتباط را مشخص کنید",
+                                        "header_size": "h3"
+                                      },
+                                      "elements": []
+                                    },
+                                    {
+                                      "id": "c00004c",
+                                      "elType": "widget",
+                                      "widgetType": "text-editor",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-text",
+                                        "_title": "توضیح مرحله",
+                                        "editor": "<p>تماس تلفنی یا یکی از پیام‌رسان‌های پشتیبانی‌شده را انتخاب کنید.</p>"
+                                      },
+                                      "elements": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000053",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-step hcf-reveal",
+                                "_title": "مرحله ۳",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00004f",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-step-number",
+                                    "_title": "شماره مرحله",
+                                    "title": "۰۳",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000052",
+                                  "elType": "container",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "content_width": "full",
+                                    "css_classes": "hcf-step-copy",
+                                    "_title": "محتوای مرحله",
+                                    "html_tag": "div"
+                                  },
+                                  "elements": [
+                                    {
+                                      "id": "c000050",
+                                      "elType": "widget",
+                                      "widgetType": "heading",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-title",
+                                        "_title": "عنوان مرحله",
+                                        "title": "مشتری استعلام می‌گیرد",
+                                        "header_size": "h3"
+                                      },
+                                      "elements": []
+                                    },
+                                    {
+                                      "id": "c000051",
+                                      "elType": "widget",
+                                      "widgetType": "text-editor",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-text",
+                                        "_title": "توضیح مرحله",
+                                        "editor": "<p>در صفحه محصول انتخاب‌شده، به جای خرید معمول، دکمه استعلام نمایش داده می‌شود.</p>"
+                                      },
+                                      "elements": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000058",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-step hcf-reveal",
+                                "_title": "مرحله ۴",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000054",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-step-number",
+                                    "_title": "شماره مرحله",
+                                    "title": "۰۴",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000057",
+                                  "elType": "container",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "content_width": "full",
+                                    "css_classes": "hcf-step-copy",
+                                    "_title": "محتوای مرحله",
+                                    "html_tag": "div"
+                                  },
+                                  "elements": [
+                                    {
+                                      "id": "c000055",
+                                      "elType": "widget",
+                                      "widgetType": "heading",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-title",
+                                        "_title": "عنوان مرحله",
+                                        "title": "گفت‌وگو را پیگیری کنید",
+                                        "header_size": "h3"
+                                      },
+                                      "elements": []
+                                    },
+                                    {
+                                      "id": "c000056",
+                                      "elType": "widget",
+                                      "widgetType": "text-editor",
+                                      "isInner": true,
+                                      "isLocked": false,
+                                      "settings": {
+                                        "_css_classes": "hcf-step-text",
+                                        "_title": "توضیح مرحله",
+                                        "editor": "<p>درخواست از مسیر انتخابی به شما می‌رسد و می‌توانید در همان مسیر پاسخ دهید.</p>"
+                                      },
+                                      "elements": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c000062",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-capture",
+                        "_title": "پیش‌نمایش محیط افزونه",
+                        "html_tag": "section",
+                        "_element_id": "hcf-gallery"
+                      },
+                      "elements": [
+                        {
+                          "id": "c00005b",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب گالری",
+                            "title": "نگاهی نزدیک‌تر",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00005c",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان گالری",
+                            "title": "تنظیمات حامی، در یک نگاه",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00005d",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-lead",
+                            "_title": "توضیح گالری",
+                            "editor": "<p>نمای واقعی بخش تنظیم روش استعلام در پیشخوان افزونه. برای مشاهده جزئیات، تصویر را بزرگ کنید.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000061",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-screen hcf-reveal",
+                            "_title": "تصویر تنظیمات واقعی افزونه",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c00005e",
+                              "elType": "widget",
+                              "widgetType": "html",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "",
+                                "_title": "نوار قاب تصویر",
+                                "html": "<div class=\"hcf-screen-top\"><span>پیش‌نمایش تنظیمات</span><span dir=\"ltr\">HAMI / SETTINGS</span><i aria-hidden=\"true\"></i></div>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c00005f",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-capture-image",
+                                "_title": "تصویر واقعی تنظیمات؛ قابل ویرایش در المنتور",
+                                "editor": "<a href=\"https://gilaclick.ir/wp-content/uploads/2026/09/تنظیم-روش-استعلام-قیمت-در-پیام‌رسان‌های-ایرانی-و-خارجی-افزونه-ووکامرس.webp\" aria-label=\"بزرگ‌نمایی تصویر تنظیمات حامی\" data-elementor-open-lightbox=\"no\"><img src=\"https://gilaclick.ir/wp-content/uploads/2026/09/تنظیم-روش-استعلام-قیمت-در-پیام‌رسان‌های-ایرانی-و-خارجی-افزونه-ووکامرس.webp\" srcset=\"https://gilaclick.ir/wp-content/uploads/2026/09/تنظیم-روش-استعلام-قیمت-در-پیام‌رسان‌های-ایرانی-و-خارجی-افزونه-ووکامرس-768x514.webp 768w, https://gilaclick.ir/wp-content/uploads/2026/09/تنظیم-روش-استعلام-قیمت-در-پیام‌رسان‌های-ایرانی-و-خارجی-افزونه-ووکامرس.webp 1000w\" sizes=\"(max-width: 760px) 90vw, 800px\" alt=\"تنظیم روش استعلام قیمت در افزونه تماس برای قیمت\" width=\"1000\" height=\"669\" loading=\"lazy\" decoding=\"async\"></a>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "c000060",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "_css_classes": "hcf-screen-caption",
+                                "_title": "راهنمای تصویر",
+                                "title": "تنظیم مسیر استعلام و پیش‌نمایش دکمه",
+                                "header_size": "p"
+                              },
+                              "elements": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c000067",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-comparison",
+                        "_title": "مقایسه روش‌ها",
+                        "html_tag": "section",
+                        "_element_id": "hcf-compare"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000063",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب مقایسه",
+                            "title": "یک تصویر روشن",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000064",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان مقایسه",
+                            "title": "چه چیزی ساده‌تر می‌شود؟",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000065",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-lead",
+                            "_title": "توضیح مقایسه",
+                            "editor": "<p>روش معمول هر فروشگاه به تنظیمات و ابزارهای آن بستگی دارد؛ این جدول مسیرهایی را که حامی برای این کارها فراهم می‌کند نشان می‌دهد.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000066",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-table",
+                            "_title": "جدول مقایسه قابل ویرایش",
+                            "editor": "<table><thead><tr><th scope=\"col\">کار</th><th scope=\"col\">روش معمول فروشگاه</th><th scope=\"col\">با افزونه حامی</th></tr></thead><tbody>\n<tr><td data-label=\"کار\">مسیر استعلام</td><td data-label=\"روش معمول\">وابسته به ابزار و روش ارتباطی تعریف‌شده</td><td data-label=\"با حامی\">انتخاب تماس یا پیام‌رسان برای دکمه استعلام</td></tr>\n<tr><td data-label=\"کار\">ویرایش قیمت</td><td data-label=\"روش معمول\">ویرایش در بخش محصولات ووکامرس</td><td data-label=\"با حامی\">جدول یکپارچه قیمت‌ها در پیشخوان</td></tr>\n<tr><td data-label=\"کار\">تغییر گروهی</td><td data-label=\"روش معمول\">وابسته به ابزارهای در دسترس فروشگاه</td><td data-label=\"با حامی\">تغییر درصدی دسته با پیش‌نمایش و بازگردانی</td></tr>\n<tr><td data-label=\"کار\">خرید محصولات استعلامی</td><td data-label=\"روش معمول\">وابسته به تنظیمات محصول و فروشگاه</td><td data-label=\"با حامی\">بستن خرید معمول برای محصولات انتخاب‌شده</td></tr>\n</tbody></table>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c00007c",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-specs",
+                        "_title": "مشخصات فنی",
+                        "html_tag": "section",
+                        "_element_id": "hcf-specs"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000068",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب مشخصات",
+                            "title": "پیش از نصب",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000069",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان مشخصات",
+                            "title": "مشخصات فنی محصول",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000079",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-spec-list",
+                            "_title": "مشخصات تأییدشده",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c00006c",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-spec-row",
+                                "_title": "نام محصول",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00006a",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-label",
+                                    "_title": "عنوان مشخصات",
+                                    "title": "نام محصول",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00006b",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-value",
+                                    "_title": "مقدار مشخصات",
+                                    "title": "افزونه تماس برای قیمت حامی",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00006f",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-spec-row",
+                                "_title": "نوع محصول",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00006d",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-label",
+                                    "_title": "عنوان مشخصات",
+                                    "title": "نوع محصول",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00006e",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-value",
+                                    "_title": "مقدار مشخصات",
+                                    "title": "افزونه وردپرس و ووکامرس",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000072",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-spec-row",
+                                "_title": "حداقل وردپرس",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000070",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-label",
+                                    "_title": "عنوان مشخصات",
+                                    "title": "حداقل وردپرس",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000071",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-value",
+                                    "_title": "مقدار مشخصات",
+                                    "title": "۵.۸",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000075",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-spec-row",
+                                "_title": "حداقل PHP",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000073",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-label",
+                                    "_title": "عنوان مشخصات",
+                                    "title": "حداقل PHP",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000074",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-value",
+                                    "_title": "مقدار مشخصات",
+                                    "title": "۷.۴",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000078",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-spec-row",
+                                "_title": "ووکامرس",
+                                "html_tag": "div"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000076",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-label",
+                                    "_title": "عنوان مشخصات",
+                                    "title": "ووکامرس",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000077",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-spec-value",
+                                    "_title": "مقدار مشخصات",
+                                    "title": "۵.۰ و بالاتر",
+                                    "header_size": "p"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "c00007a",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-additional-information",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-additional",
+                            "_title": "ویژگی‌های واقعی ووکامرس، در صورت وجود"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00007b",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-spec-note",
+                            "_title": "منبع و شرایط فنی",
+                            "editor": "<p>حداقل نسخه‌ها بر اساس <a href=\"https://hojre24shop.ir/HamiSCFP/\">صفحه معرفی فنی حامی</a> هستند. نسخه فعلی افزونه و شرایط لایسنس در داده عمومی محصول ثبت نشده‌اند؛ پیش از خرید یا نصب با <a href=\"https://gilaclick.ir/contact-us/\">گیلاکلیک</a> بررسی کنید.</p>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c000095",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-faq",
+                        "_title": "سوالات متداول محصول",
+                        "html_tag": "section",
+                        "_element_id": "hcf-faq"
+                      },
+                      "elements": [
+                        {
+                          "id": "c00007d",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب پرسش‌ها",
+                            "title": "پیش از خرید",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00007e",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان پرسش‌ها",
+                            "title": "پرسش‌هایی که ممکن است داشته باشید",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000094",
+                          "elType": "container",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "content_width": "full",
+                            "css_classes": "hcf-faq-list",
+                            "_title": "فهرست پرسش‌ها",
+                            "html_tag": "div"
+                          },
+                          "elements": [
+                            {
+                              "id": "c000081",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 1",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00007f",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "آیا «تماس برای قیمت» یعنی خود افزونه رایگان است؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000080",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>خیر. تماس برای قیمت نام قابلیت افزونه برای محصولات فروشگاه شماست. قیمت خرید خود افزونه در کادر خرید از ووکامرس نمایش داده می‌شود.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000084",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 2",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000082",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "آیا می‌توان فقط برای چند محصول خاص دکمه تماس گذاشت؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000083",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>بله؛ شما می‌توانید قابلیت تماس برای قیمت را برای یک دسته‌بندی کامل یا به‌صورت اختصاصی برای هر محصول (Override) روشن یا خاموش کنید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000087",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 3",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000085",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "افزونه را چطور نصب و فعال کنم؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000086",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>پس از تهیه و دریافت فایل افزونه، آن را از بخش افزونه‌ها در پیشخوان وردپرس نصب و فعال کنید. برای جزئیات دریافت و راه‌اندازی می‌توانید با پشتیبانی گیلاکلیک تماس بگیرید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00008a",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 4",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000088",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "برای اجرای افزونه به چه نسخه‌هایی نیاز است؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000089",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>در صفحه معرفی فنی حامی، وردپرس ۵.۸ به بالا، ووکامرس ۵.۰ به بالا و PHP ۷.۴ به بالا ذکر شده است. پیش از نصب، سازگاری نسخه فعلی را با پشتیبانی بررسی کنید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c00008d",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 5",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00008b",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "عملیات گروهی روی هاست‌های ضعیف چگونه انجام می‌شود؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00008c",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>در توضیحات محصول آمده است که عملیات به‌صورت تکه‌تکه انجام می‌شود تا مصرف منابع سرور کنترل شود.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000090",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 6",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c00008e",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "آیا ظاهر دکمه با قالب سایت من هماهنگ می‌شود؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c00008f",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>بله؛ می‌توانید رنگ، گردی گوشه‌ها، آیکون و متن دکمه را در تنظیمات سفارشی‌سازی کنید یا اجازه دهید استایل قالب شما حفظ شود.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "c000093",
+                              "elType": "container",
+                              "isInner": true,
+                              "isLocked": false,
+                              "settings": {
+                                "content_width": "full",
+                                "css_classes": "hcf-faq-item",
+                                "_title": "پرسش 7",
+                                "html_tag": "article"
+                              },
+                              "elements": [
+                                {
+                                  "id": "c000091",
+                                  "elType": "widget",
+                                  "widgetType": "heading",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-question",
+                                    "_title": "پرسش",
+                                    "title": "شرایط پشتیبانی و به‌روزرسانی چیست؟",
+                                    "header_size": "h3"
+                                  },
+                                  "elements": []
+                                },
+                                {
+                                  "id": "c000092",
+                                  "elType": "widget",
+                                  "widgetType": "text-editor",
+                                  "isInner": true,
+                                  "isLocked": false,
+                                  "settings": {
+                                    "_css_classes": "hcf-faq-answer",
+                                    "_title": "پاسخ",
+                                    "editor": "<p>برای اطلاع از شرایط فعلی پشتیبانی، دریافت و به‌روزرسانی این افزونه پیش از خرید با گیلاکلیک تماس بگیرید.</p>"
+                                  },
+                                  "elements": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c00009a",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-section hcf-reviews",
+                        "_title": "دیدگاه‌ها و اطلاعات اصلی ووکامرس",
+                        "html_tag": "section",
+                        "_element_id": "hcf-reviews"
+                      },
+                      "elements": [
+                        {
+                          "id": "c000096",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-kicker",
+                            "_title": "برچسب دیدگاه‌ها",
+                            "title": "تجربه و جزئیات",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000097",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-title",
+                            "_title": "عنوان دیدگاه‌ها",
+                            "title": "دیدگاه‌ها و اطلاعات محصول",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000098",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-section-lead",
+                            "_title": "راهنمای دیدگاه‌ها",
+                            "editor": "<p>دیدگاه‌ها، امتیازها و فرم ثبت نظر بر اساس تنظیمات واقعی فروشگاه نمایش داده می‌شوند.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c000099",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-data-tabs",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-tabs",
+                            "_title": "تب‌ها، توضیحات کامل و دیدگاه‌های واقعی ووکامرس"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c0000a4",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-aside",
+                    "_title": "باکس خرید واقعی ووکامرس",
+                    "html_tag": "aside",
+                    "_attributes": "aria-label|تهیه افزونه"
+                  },
+                  "elements": [
+                    {
+                      "id": "c0000a3",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-buy",
+                        "_title": "قیمت و فرم خرید",
+                        "html_tag": "div",
+                        "_element_id": "hcf-buy"
+                      },
+                      "elements": [
+                        {
+                          "id": "c00009b",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "",
+                            "_title": "عنوان خرید",
+                            "html": "<div class=\"hcf-buy-top\"><span class=\"hcf-buy-icon\" aria-hidden=\"true\">↗</span><span>تهیه افزونه</span><i></i></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00009c",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-buy-title",
+                            "_title": "نام افزونه در باکس خرید",
+                            "title": "افزونه تماس برای قیمت حامی",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00009d",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-price-label",
+                            "_title": "برچسب قیمت",
+                            "title": "قیمت محصول",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00009e",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-price",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-price",
+                            "_title": "قیمت واقعی و تخفیف ووکامرس"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c00009f",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-stock",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-stock",
+                            "_title": "موجودی واقعی ووکامرس"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000a0",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-notices",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-notices",
+                            "_title": "پیام‌های واقعی ووکامرس"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000a1",
+                          "elType": "widget",
+                          "widgetType": "woocommerce-product-add-to-cart",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-add",
+                            "_title": "فرم واقعی خرید و تعداد ووکامرس"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000a2",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-buy-help",
+                            "_title": "راهنمای دریافت و پشتیبانی",
+                            "editor": "<p>برای جزئیات دریافت، پشتیبانی و به‌روزرسانی <a href=\"https://gilaclick.ir/contact-us/\">با گیلاکلیک در تماس باشید</a>.</p>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c0000aa",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "hcf-wrap hcf-related hcf-section",
+                "_title": "محصولات مرتبط ووکامرس",
+                "html_tag": "section",
+                "_element_id": "hcf-related"
+              },
+              "elements": [
+                {
+                  "id": "c0000a7",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "_css_classes": "hcf-kicker",
+                    "_title": "برچسب محصولات مرتبط",
+                    "title": "بیشتر در فروشگاه",
+                    "header_size": "p"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c0000a8",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "_css_classes": "hcf-section-title",
+                    "_title": "عنوان محصولات مرتبط",
+                    "title": "محصولات مرتبط",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c0000a9",
+                  "elType": "widget",
+                  "widgetType": "woocommerce-product-related",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "_css_classes": "hcf-related-products",
+                    "_title": "محصولات مرتبط واقعی ووکامرس",
+                    "posts_per_page": 4,
+                    "columns": 4
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "c0000b2",
+              "elType": "container",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "content_width": "full",
+                "css_classes": "hcf-final",
+                "_title": "دعوت پایانی به خرید",
+                "html_tag": "section"
+              },
+              "elements": [
+                {
+                  "id": "c0000b1",
+                  "elType": "container",
+                  "isInner": true,
+                  "isLocked": false,
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "hcf-wrap hcf-final-inner",
+                    "_title": "چیدمان دعوت پایانی",
+                    "html_tag": "div"
+                  },
+                  "elements": [
+                    {
+                      "id": "c0000af",
+                      "elType": "container",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "content_width": "full",
+                        "css_classes": "hcf-final-copy hcf-reveal",
+                        "_title": "متن دعوت پایانی",
+                        "html_tag": "div"
+                      },
+                      "elements": [
+                        {
+                          "id": "c0000ab",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-eyebrow",
+                            "_title": "برچسب دعوت",
+                            "title": "یک مسیر روشن برای استعلام",
+                            "header_size": "p"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000ac",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-final-title",
+                            "_title": "عنوان دعوت",
+                            "title": "مدیریت استعلام قیمت فروشگاهت رو ساده‌تر کن",
+                            "header_size": "h2"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000ad",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-final-text",
+                            "_title": "متن دعوت",
+                            "editor": "<p>با افزونه Hami Call For Price، مسیر استعلام مشتریان و ویرایش قیمت محصولات ووکامرس را ساده‌تر مدیریت کن.</p>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "c0000ae",
+                          "elType": "widget",
+                          "widgetType": "button",
+                          "isInner": true,
+                          "isLocked": false,
+                          "settings": {
+                            "_css_classes": "hcf-button hcf-primary",
+                            "_title": "خرید افزونه",
+                            "text": "خرید افزونه",
+                            "link": {
+                              "url": "#hcf-buy",
+                              "is_external": false,
+                              "nofollow": false,
+                              "custom_attributes": ""
+                            },
+                            "selected_icon": {
+                              "value": "",
+                              "library": ""
+                            }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c0000b0",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": true,
+                      "isLocked": false,
+                      "settings": {
+                        "_css_classes": "",
+                        "_title": "مدار پایانی تزئینی",
+                        "html": "<div class=\"hcf-final-orbit\" aria-hidden=\"true\"><i></i><b></b><span></span></div>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c0000b3",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": true,
+              "isLocked": false,
+              "settings": {
+                "_css_classes": "",
+                "_title": "بزرگ‌نمایی تصاویر",
+                "html": "<dialog class=\"hcf-lightbox\" aria-label=\"بزرگ‌نمایی تصاویر محصول\"><div class=\"hcf-lightbox-bar\"><span>تصاویر محصول</span><button type=\"button\" data-hcf-close aria-label=\"بستن بزرگ‌نمایی\">بستن ×</button></div><img alt=\"\"><div class=\"hcf-lightbox-controls\"><button type=\"button\" data-hcf-prev>تصویر قبلی</button><button type=\"button\" data-hcf-next>تصویر بعدی</button></div></dialog>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "c0000b5",
+          "elType": "widget",
+          "widgetType": "html",
+          "isInner": true,
+          "isLocked": false,
+          "settings": {
+            "_css_classes": "hcf-system",
+            "_title": "⚙️ تعامل، گالری و حرکت — حذف نشود",
+            "html": "<script>\n/* Lightweight progressive enhancement. WooCommerce remains responsible for commerce and reviews. */\n(function () {\n  'use strict';\n\n  function ready(fn) {\n    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn, { once: true });\n    else fn();\n  }\n  function upgradePreviewImages(root) {\n    function upgrade(img) {\n      var original = img.getAttribute('data-hcf-original');\n      if (!original) return;\n      var probe = new Image();\n      probe.onload = function () { img.src = original; };\n      probe.src = original;\n    }\n    var observer = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {\n      entries.forEach(function (entry) {\n        if (!entry.isIntersecting) return;\n        observer.unobserve(entry.target);\n        upgrade(entry.target);\n      });\n    }, { rootMargin: '300px 0px' }) : null;\n    root.querySelectorAll('img[data-hcf-original]').forEach(function (img) {\n      if (img.loading === 'lazy' && observer) observer.observe(img);\n      else upgrade(img);\n    });\n  }\n  function headerOffset(root) {\n    var last = -1;\n    function update() {\n      var admin = document.getElementById('wpadminbar');\n      var bottom = admin && getComputedStyle(admin).position !== 'absolute' ? Math.max(0, admin.getBoundingClientRect().bottom) : 0;\n      document.querySelectorAll('.ga-header, .elementor-location-header, .site-header, #masthead, .gch-header, [data-hcf-fixed-header]').forEach(function (header) {\n        var style = getComputedStyle(header);\n        var rect = header.getBoundingClientRect();\n        if ((style.position === 'sticky' || style.position === 'fixed') && rect.height && rect.top <= bottom + 3 && rect.bottom > bottom) bottom = rect.bottom;\n      });\n      var next = Math.ceil(bottom);\n      if (next !== last) { last = next; root.style.setProperty('--hcf-top', next + 'px'); }\n    }\n    var pending = false;\n    function schedule() {\n      if (pending) return;\n      pending = true;\n      requestAnimationFrame(function () { pending = false; update(); });\n    }\n    window.addEventListener('scroll', schedule, { passive: true });\n    window.addEventListener('resize', schedule, { passive: true });\n    if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);\n    if ('ResizeObserver' in window) {\n      var observer = new ResizeObserver(schedule);\n      document.querySelectorAll('.ga-header, .elementor-location-header, .site-header, #masthead, .gch-header, #wpadminbar, [data-hcf-fixed-header]').forEach(function (el) { observer.observe(el); });\n    }\n    update();\n  }\n  function setupAnchors(root, reduced) {\n    root.addEventListener('click', function (event) {\n      var link = event.target.closest('a[href^=\"#hcf-\"]');\n      if (!link || !root.contains(link)) return;\n      var target = root.querySelector(link.getAttribute('href'));\n      if (!target) return;\n      event.preventDefault();\n      target.scrollIntoView({ behavior: reduced.matches ? 'auto' : 'smooth', block: 'start' });\n      if (history.replaceState) history.replaceState(null, '', link.getAttribute('href'));\n    });\n  }\n  function setupFaq(root, reduced) {\n    root.querySelectorAll('.hcf-faq-item').forEach(function (item, index) {\n      var title = item.querySelector('.hcf-faq-question .elementor-heading-title');\n      var answer = item.querySelector('.hcf-faq-answer');\n      if (!title || !answer || title.querySelector('button')) return;\n      var button = document.createElement('button');\n      button.type = 'button';\n      button.className = 'hcf-faq-trigger';\n      while (title.firstChild) button.appendChild(title.firstChild);\n      title.appendChild(button);\n      answer.id = answer.id || 'hcf-answer-' + (index + 1);\n      button.setAttribute('aria-controls', answer.id);\n      button.setAttribute('aria-expanded', 'false');\n      answer.hidden = true;\n      var animation = null;\n      var targetOpen = false;\n      button.addEventListener('click', function () {\n        var startHeight = answer.hidden ? 0 : answer.getBoundingClientRect().height;\n        var startOpacity = answer.hidden ? 0 : parseFloat(getComputedStyle(answer).opacity);\n        if (animation) { animation.onfinish = animation.oncancel = null; animation.cancel(); animation = null; }\n        targetOpen = !targetOpen;\n        button.setAttribute('aria-expanded', String(targetOpen));\n        if (targetOpen) answer.hidden = false;\n        if (reduced.matches || typeof answer.animate !== 'function') {\n          answer.hidden = !targetOpen;\n          answer.style.overflow = '';\n          return;\n        }\n        var height = answer.scrollHeight;\n        answer.style.overflow = 'hidden';\n        animation = answer.animate([{ height: startHeight + 'px', opacity: startOpacity }, { height: (targetOpen ? height : 0) + 'px', opacity: targetOpen ? 1 : 0 }], { duration: 260, easing: 'cubic-bezier(.22,1,.36,1)' });\n        animation.onfinish = function () { answer.hidden = !targetOpen; answer.style.overflow = ''; animation = null; };\n        animation.oncancel = function () { answer.style.overflow = ''; animation = null; };\n      });\n    });\n  }\n  function setupTabs(root) {\n    var tabs = root.querySelector('.hcf-tabs .woocommerce-tabs, .hcf-tabs .wc-tabs-wrapper');\n    if (!tabs) return;\n    var links = Array.from(tabs.querySelectorAll('ul.tabs > li > a'));\n    var panels = links.map(function (link) {\n      var id = (link.getAttribute('href') || '').split('#')[1];\n      var panel = id && document.getElementById(id);\n      return panel && tabs.contains(panel) ? panel : null;\n    });\n    if (!links.length || panels.some(function (panel) { return !panel; })) return;\n    var list = tabs.querySelector('ul.tabs');\n    var nativeWoo = !!(window.jQuery && typeof window.wc_single_product_params !== 'undefined');\n    list.setAttribute('role', 'tablist');\n    links.forEach(function (link, index) {\n      var holder = link.parentElement;\n      link.id = link.id || (holder.id || 'hcf-tab-' + (index + 1)) + '-link';\n      holder.setAttribute('role', 'presentation');\n      holder.removeAttribute('aria-controls');\n      link.setAttribute('role', 'tab');\n      link.setAttribute('aria-controls', panels[index].id);\n      panels[index].setAttribute('role', 'tabpanel');\n      panels[index].setAttribute('aria-labelledby', link.id);\n    });\n    function sync(index) {\n      links.forEach(function (link, i) {\n        var active = i === index;\n        // Woo uses the parent list item's selected state. The actual focusable\n        // tab is the link, so keep its ARIA in sync without changing Woo's UI.\n        if (link.parentElement.hasAttribute('aria-selected')) link.parentElement.removeAttribute('aria-selected');\n        link.setAttribute('aria-selected', String(active));\n        link.setAttribute('tabindex', active ? '0' : '-1');\n        if (!nativeWoo) {\n          link.parentElement.classList.toggle('active', active);\n          panels[i].hidden = !active;\n        }\n      });\n    }\n    function activeIndex() {\n      var active = links.findIndex(function (link) { return link.parentElement.classList.contains('active'); });\n      return Math.max(0, active);\n    }\n    function select(index, focus) {\n      if (nativeWoo) links[index].click();\n      sync(index);\n      if (focus) links[index].focus();\n    }\n    links.forEach(function (link, index) {\n      if (!nativeWoo) link.addEventListener('click', function (event) { event.preventDefault(); select(index, false); });\n      link.addEventListener('keydown', function (event) {\n        var next = index;\n        if (event.key === 'ArrowLeft') next = (index + 1) % links.length;\n        else if (event.key === 'ArrowRight') next = (index - 1 + links.length) % links.length;\n        else if (event.key === 'Home') next = 0;\n        else if (event.key === 'End') next = links.length - 1;\n        else return;\n        event.preventDefault(); select(next, true);\n      });\n    });\n    if (nativeWoo) {\n      if ('MutationObserver' in window) {\n        var observer = new MutationObserver(function () { sync(activeIndex()); });\n        links.forEach(function (link) { observer.observe(link.parentElement, { attributes: true, attributeFilter: ['class', 'aria-selected'] }); });\n      }\n      sync(activeIndex());\n    } else {\n      var selected = links.findIndex(function (link) { return link.getAttribute('href') === location.hash; });\n      if (selected < 0 && /(?:reviews|comment-)/.test(location.hash)) selected = links.findIndex(function (link) { return link.closest('.reviews_tab'); });\n      sync(Math.max(0, selected));\n    }\n  }\n  function setupGallery(root) {\n    var gallery = root.querySelector('.hcf-woo-gallery');\n    var zoom = root.querySelector('.hcf-zoom');\n    var capture = root.querySelector('.hcf-capture-image');\n    var dialog = root.querySelector('.hcf-lightbox');\n    if (!gallery || !zoom || !dialog) return;\n    var slides = Array.from(gallery.querySelectorAll('.woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image'));\n    // Some existing media have no alt text. Give otherwise unnamed Woo image\n    // links a usable name without overwriting media-library descriptions.\n    slides.forEach(function (slide, index) {\n      var link = slide.querySelector('a');\n      var img = link && link.querySelector('img');\n      if (link && !link.getAttribute('aria-label') && !link.getAttribute('aria-labelledby') &&\n          !link.textContent.trim() && (!img || !img.getAttribute('alt'))) {\n        link.setAttribute('aria-label', 'بزرگ‌نمایی تصویر ' + (index + 1) + ' محصول');\n      }\n    });\n    var nativeSlider = typeof window.wc_single_product_params !== 'undefined' && window.wc_single_product_params.flexslider_enabled;\n    if (slides.length > 1 && !nativeSlider) {\n      var thumbs = document.createElement('div');\n      thumbs.className = 'hcf-fallback-thumbs';\n      thumbs.setAttribute('aria-label', 'انتخاب تصویر محصول');\n      var buttons = slides.map(function (slide, index) {\n        var button = document.createElement('button');\n        var image = slide.querySelector('img:not(.zoomImg)');\n        var thumb = document.createElement('img');\n        button.type = 'button';\n        button.setAttribute('aria-label', 'تصویر ' + (index + 1) + ' از ' + slides.length);\n        thumb.src = slide.getAttribute('data-thumb') || (image && (image.currentSrc || image.src)) || '';\n        thumb.alt = '';\n        button.appendChild(thumb);\n        button.addEventListener('click', function () { select(index); });\n        thumbs.appendChild(button);\n        return button;\n      });\n      function select(index) {\n        slides.forEach(function (slide, i) { slide.hidden = i !== index; slide.classList.toggle('hcf-active-image', i === index); });\n        buttons.forEach(function (button, i) { button.setAttribute('aria-pressed', String(i === index)); });\n      }\n      gallery.appendChild(thumbs);\n      select(0);\n    } else if (nativeSlider && slides.length > 1) {\n      // Woo thumbnails are images; make the native controls operable by keyboard.\n      var observer;\n      function enableThumbs() {\n        var images = gallery.querySelectorAll('.flex-control-thumbs img');\n        images.forEach(function (image, index) {\n          if (image.dataset.hcfKeyboard) return;\n          image.dataset.hcfKeyboard = '1'; image.tabIndex = 0; image.setAttribute('role', 'button');\n          image.setAttribute('aria-label', 'مشاهده تصویر ' + (index + 1) + ' از ' + images.length);\n          image.addEventListener('keydown', function (event) { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); image.click(); } });\n        });\n        if (images.length && observer) observer.disconnect();\n      }\n      if ('MutationObserver' in window) { observer = new MutationObserver(enableThumbs); observer.observe(gallery, { childList: true, subtree: true }); }\n      enableThumbs();\n      window.addEventListener('load', enableThumbs, { once: true });\n      if (observer) setTimeout(function () { observer.disconnect(); }, 10000);\n    }\n    function photo(img) {\n      if (!img) return null;\n      var anchor = img.closest('a');\n      var src = (anchor && anchor.getAttribute('href')) || img.getAttribute('data-large_image') || img.currentSrc || img.src;\n      // Standalone preview falls back to the genuine screenshot crop when offline.\n      if (img.hasAttribute('data-hcf-original') && img.currentSrc && img.currentSrc.indexOf('data:') === 0) src = img.currentSrc;\n      if (!src || /woocommerce-placeholder/i.test(src)) return null;\n      return { src: src, alt: img.alt || '' };\n    }\n    function items() {\n      var result = [];\n      gallery.querySelectorAll('.woocommerce-product-gallery__image img:not(.zoomImg)').forEach(function (img) {\n        var p = photo(img); if (p && !result.some(function (entry) { return entry.src === p.src; })) result.push(p);\n      });\n      var extra = capture && photo(capture.querySelector('img'));\n      if (extra && !result.some(function (entry) { return entry.src === extra.src; })) result.push(extra);\n      return result;\n    }\n    if (gallery.querySelector('.woocommerce-product-gallery__image img:not(.zoomImg)')) zoom.hidden = false;\n    var image = dialog.querySelector('img');\n    var close = dialog.querySelector('[data-hcf-close]');\n    var previous = dialog.querySelector('[data-hcf-prev]');\n    var next = dialog.querySelector('[data-hcf-next]');\n    var list = [];\n    var index = 0;\n    var opener = null;\n    function render() {\n      if (!list.length) return;\n      index = (index + list.length) % list.length;\n      image.src = list[index].src; image.alt = list[index].alt;\n      previous.hidden = next.hidden = list.length < 2;\n    }\n    function open(at, trigger) {\n      list = items();\n      if (!list.length) return false;\n      index = Math.max(0, Math.min(at, list.length - 1)); opener = trigger; render();\n      if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open', '');\n      close.focus(); return true;\n    }\n    zoom.addEventListener('click', function () {\n      var active = gallery.querySelector('.flex-active-slide img:not(.zoomImg), .hcf-active-image img:not(.zoomImg)');\n      var activePhoto = photo(active);\n      var current = items();\n      open(activePhoto ? Math.max(0, current.findIndex(function (p) { return p.src === activePhoto.src; })) : 0, zoom);\n    });\n    if (capture) capture.addEventListener('click', function (event) {\n      var link = event.target.closest('a');\n      var p = photo(capture.querySelector('img'));\n      if (!link || !p) return;\n      var index = items().findIndex(function (entry) { return entry.src === p.src; });\n      if (index >= 0 && open(index, link)) event.preventDefault();\n    });\n    function finish() {\n      if (typeof dialog.close === 'function' && dialog.open) dialog.close(); else dialog.removeAttribute('open');\n      if (opener) opener.focus();\n    }\n    close.addEventListener('click', finish);\n    previous.addEventListener('click', function () { index--; render(); });\n    next.addEventListener('click', function () { index++; render(); });\n    dialog.addEventListener('click', function (event) { if (event.target === dialog) finish(); });\n    dialog.addEventListener('cancel', function () { setTimeout(function () { if (opener) opener.focus(); }, 0); });\n    dialog.addEventListener('keydown', function (event) {\n      if (event.key === 'ArrowRight' && list.length > 1) { event.preventDefault(); previous.click(); }\n      if (event.key === 'ArrowLeft' && list.length > 1) { event.preventDefault(); next.click(); }\n      if (event.key === 'Escape' && typeof dialog.close !== 'function') { event.preventDefault(); finish(); }\n    });\n  }\n  function motion(root, reduced) {\n    if (reduced.matches || !('IntersectionObserver' in window)) return;\n    var elements = root.querySelectorAll('.hcf-reveal');\n    var reveal = new IntersectionObserver(function (entries, observer) {\n      entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('hcf-visible'); observer.unobserve(entry.target); } });\n    }, { rootMargin: '0px 0px -4% 0px', threshold: .03 });\n    elements.forEach(function (el, index) { el.style.setProperty('--hcf-delay', (index % 3 * 75) + 'ms'); reveal.observe(el); });\n    root.classList.add('hcf-motion');\n    var hero = root.querySelector('.hcf-hero-visual');\n    if (hero) {\n      var orbit = new IntersectionObserver(function (entries) { root.classList.toggle('hcf-orbit-running', entries[0].isIntersecting); }, { threshold: .01 });\n      orbit.observe(hero);\n    }\n    if (reduced.addEventListener) reduced.addEventListener('change', function () { if (reduced.matches) root.classList.remove('hcf-motion', 'hcf-orbit-running'); });\n  }\n  function init(root) {\n    if (root.dataset.hcfReady || document.body.classList.contains('elementor-editor-active') || document.body.classList.contains('elementor-editor-preview') || /(?:\\?|&)elementor-preview=/.test(location.search)) return;\n    root.dataset.hcfReady = '1';\n    var main = root.querySelector('.hcf-main');\n    if (main && !main.matches('main,[role=\"main\"]') && !document.querySelector('main,[role=\"main\"]')) main.setAttribute('role', 'main');\n    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');\n    upgradePreviewImages(root);\n    headerOffset(root);\n    setupAnchors(root, reduced);\n    setupFaq(root, reduced);\n    setupTabs(root);\n    setupGallery(root);\n    var additional = root.querySelector('.hcf-additional');\n    if (additional && !additional.querySelector('.shop_attributes tr')) additional.hidden = true;\n    var related = root.querySelector('.hcf-related');\n    if (related && !related.querySelector('li.product')) related.hidden = true;\n    root.classList.add('hcf-js');\n    motion(root, reduced);\n  }\n  ready(function () { document.querySelectorAll('.hcf-page').forEach(init); });\n}());\n\n</script>"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
