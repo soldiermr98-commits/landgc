@@ -11,9 +11,56 @@ const data = JSON.parse(fs.readFileSync(path.join(root, 'assets/data/faq-fa.json
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
 
+// Approximate the site's Full Width configuration using the actual exported
+// global header, the Hello Elementor button reset, and an empty FAQ header as
+// observed on the published page. This is not a substitute for a WP import.
+function esc(value) {
+  return String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function attributes(value, separator) {
+  return (value || '').split(separator).map((entry) => {
+    const i = entry.indexOf('|');
+    return i > 0 ? ` ${esc(entry.slice(0, i).trim())}="${esc(entry.slice(i + 1).trim())}"` : '';
+  }).join('');
+}
+function linkAttributes(link) {
+  if (!link) return '';
+  return (link.url ? ` href="${esc(link.url)}"` : '') + (link.is_external ? ' target="_blank"' : '') +
+    (link.nofollow ? ' rel="nofollow"' : '') + attributes(link.custom_attributes, ',');
+}
+function renderHeader(element) {
+  const s = element.settings, type = element.widgetType;
+  const classes = s.css_classes || s._css_classes || '';
+  const open = `<div class="elementor-element elementor-element-${esc(element.id)} ${esc(classes)}${type ? ` elementor-widget elementor-widget-${type}` : ' e-con'}" data-id="${esc(element.id)}" data-element_type="${type ? 'widget' : 'container'}"${attributes(s._attributes, '\n')}>`;
+  let inner;
+  if (type === 'html') inner = s.html;
+  else if (type === 'heading') inner = `<span class="elementor-heading-title">${esc(s.title)}</span>`;
+  else if (type === 'button') inner = `<a class="elementor-button"${linkAttributes(s.link)}><span class="elementor-button-text">${esc(s.text)}</span></a>`;
+  else if (type === 'icon') {
+    const isLink = s.link && s.link.url;
+    inner = `<${isLink ? 'a' : 'span'} class="elementor-icon"${isLink ? linkAttributes(s.link) : ''}><i class="${esc(s.selected_icon?.value || '')}"></i></${isLink ? 'a' : 'span'}>`;
+  } else inner = (element.elements || []).map(renderHeader).join('');
+  return open + (type ? `<div class="elementor-widget-container">${inner}</div>` : inner) + '</div>';
+}
+function siteFixture() {
+  const header = JSON.parse(fs.readFileSync(path.join(root, 'gilaclick header.json'), 'utf8'));
+  const contents = header.content.map(renderHeader).join('');
+  const reset = `<style>[type="button"],[type="submit"],button{white-space:nowrap}
+    @font-face{font-family:peyda;font-weight:100 900;src:url('/assets/fonts/vazirmatn-arabic-wght-normal.woff2')}</style>`;
+  const widget = `<button id="other-launcher" type="button" style="position:fixed;bottom:8px;left:8px;z-index:9999" onclick="document.getElementById('other-panel').hidden=false">چت</button><div id="other-panel" hidden>پنل مستقل سایت</div>`;
+  return fs.readFileSync(path.join(root, 'gilaclick-faq.html'), 'utf8')
+    .replace('</head>', reset + '</head>')
+    .replace('<body style="margin:0">', `<body class="hello-elementor-default" style="margin:0"><div class="elementor" data-elementor-type="header">${contents}</div>${widget}`)
+    .replace('<script>\n/* FAQ-only progressive enhancement.', `<script>document.querySelector('.gf-page .ga-header').replaceChildren()</script>\n<script>\n/* FAQ-only progressive enhancement.`);
+}
+
 (async () => {
   const server = http.createServer((req, res) => {
     const url = new URL(req.url, 'http://127.0.0.1');
+    if (url.pathname === '/site') {
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      return res.end(siteFixture());
+    }
     const filename = url.pathname === '/' ? 'gilaclick-faq.html' : decodeURIComponent(url.pathname).replace(/^\/+/, '');
     const file = path.resolve(root, filename);
     if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); return res.end(); }
@@ -34,11 +81,11 @@ let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
   const errors = [];
   async function open(width = 390, options = {}) {
     const page = await browser.newPage();
-    await page.setViewport({ width, height: 900 });
+    await page.setViewport({ width, height: options.height || 900, isMobile: !!options.mobile, hasTouch: !!options.mobile });
     if (options.reduced) await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
     if (options.noJs) await page.setJavaScriptEnabled(false);
     page.on('pageerror', (e) => errors.push(e.message));
-    await page.goto(origin, { waitUntil: 'networkidle0' });
+    await page.goto(origin + (options.site ? '/site' : ''), { waitUntil: 'networkidle0' });
     if (!options.noJs) await page.waitForSelector('.gf-page.gf-js');
     return page;
   }
@@ -134,6 +181,80 @@ let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
     const admin = await page.evaluate(() => ({ bar: document.getElementById('wpadminbar').getBoundingClientRect().bottom, headerTop: document.querySelector('.ga-header').getBoundingClientRect().top, headerBottom: document.querySelector('.ga-header').getBoundingClientRect().bottom, tabsTop: document.querySelector('.gf-controls').getBoundingClientRect().top }));
     assert.ok(admin.headerTop >= admin.bar - 1 && admin.tabsTop >= admin.headerBottom - 1, JSON.stringify(admin));
     console.log('PASS mobile header, Escape focus and WordPress admin-bar offset'); await page.close();
+
+    // Actual mobile emulation matters: when the layout overflows, Chromium
+    // can report innerWidth > device width and silently zoom the entire page.
+    page = await open(390, { site: true, mobile: true, height: 844, reduced: true });
+    await page.waitForSelector('[data-gch-header][data-gch-ready]');
+    for (const width of [320, 360, 375, 390, 414, 480, 600, 720, 768, 900]) {
+      await page.setViewport({ width, height: 844, isMobile: true, hasTouch: true });
+      await delay(80);
+      const mobile = await page.evaluate(() => ({
+        viewport: document.documentElement.clientWidth,
+        scroll: document.documentElement.scrollWidth,
+        inner: innerWidth,
+        scale: visualViewport.scale,
+        overflowing: [...document.querySelectorAll('.gf-accordion-trigger')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.id),
+        nowrap: [...document.querySelectorAll('.gf-accordion-trigger')].filter((e) => getComputedStyle(e).whiteSpace !== 'normal').map((e) => e.id),
+      }));
+      assert.equal(mobile.viewport, width, `viewport mismatch at ${width}: ${JSON.stringify(mobile)}`);
+      assert.ok(mobile.scroll <= width + 1 && mobile.inner <= width + 1 && Math.abs(mobile.scale - 1) < 0.01,
+        `mobile overflow or automatic zoom at ${width}: ${JSON.stringify(mobile)}`);
+      assert.deepEqual(mobile.overflowing, [], `unwrapped questions at ${width}`);
+      assert.deepEqual(mobile.nowrap, [], `theme nowrap escaped the FAQ reset at ${width}`);
+    }
+    await page.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
+    await page.$eval('#gf-questions', (e) => e.scrollIntoView({ behavior: 'instant' }));
+    await page.waitForFunction(() => document.querySelector('.gf-controls').getBoundingClientRect().top >=
+      document.querySelector('[data-gch-header]').getBoundingClientRect().bottom - 1, { timeout: 3000 });
+    let siteMetrics = await page.evaluate(() => ({
+      headerBottom: document.querySelector('[data-gch-header]').getBoundingClientRect().bottom,
+      controlsTop: document.querySelector('.gf-controls').getBoundingClientRect().top,
+      controlsBottom: document.querySelector('.gf-controls').getBoundingClientRect().bottom,
+    }));
+    assert.ok(siteMetrics.controlsTop >= siteMetrics.headerBottom - 1, `site header covers mobile controls: ${JSON.stringify(siteMetrics)}`);
+    await page.click('.gf-tabs [data-gf-filter="seo"]'); await delay(120);
+    siteMetrics.groupTop = await page.$eval('#gf-group-seo', (e) => e.getBoundingClientRect().top);
+    assert.ok(siteMetrics.groupTop >= siteMetrics.controlsBottom - 1, `sticky controls covered selected group: ${JSON.stringify(siteMetrics)}`);
+    await page.click('#gf-question-17');
+    assert.equal(await page.$eval('#gf-answer-17', (e) => e.hidden), false);
+    await page.focus('#gf-question-17'); await page.keyboard.press('Space');
+    assert.equal(await page.$eval('#gf-answer-17', (e) => e.hidden), true);
+    // The real header drawer must still work and independent floating widgets
+    // must not be suppressed as a workaround for the reported white panel.
+    await page.click('[data-gch-header] [data-menu-open]');
+    assert.equal(await page.$eval('[data-gch-drawer]', (e) => e.hidden), false);
+    await page.keyboard.press('Escape');
+    await page.waitForFunction(() => document.querySelector('[data-gch-drawer]').hidden);
+    await page.$eval('#other-launcher', (e) => e.click());
+    assert.equal(await page.$eval('#other-panel', (e) => e.hidden), false);
+    await page.evaluate(() => scrollBy(0, 200)); await delay(100);
+    assert.equal(await page.$eval('#other-panel', (e) => e.hidden), false);
+    console.log('PASS mobile Hello reset, 10 real-device widths, site header, filters, keyboard and independent widgets');
+
+    await page.setViewport({ width: 390, height: 550, isMobile: true, hasTouch: true }); await delay(150);
+    assert.equal(await page.$eval('.gf-controls', (e) => getComputedStyle(e).position), 'relative');
+    assert.equal(await page.$eval('.gf-page', (e) => getComputedStyle(e).getPropertyValue('--gf-controls-height').trim()), '0px');
+    await page.evaluate(() => {
+      const bar = document.createElement('div'); bar.id = 'wpadminbar';
+      bar.style.cssText = 'position:fixed;top:0;left:0;right:0;height:46px;z-index:99999';
+      document.body.classList.add('admin-bar'); document.body.prepend(bar);
+    });
+    await page.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
+    await page.evaluate(() => scrollBy(0, 10));
+    await page.waitForFunction(() => document.querySelector('[data-gch-header]').getBoundingClientRect().top >=
+      document.getElementById('wpadminbar').getBoundingClientRect().bottom - 1 &&
+      document.querySelector('.gf-controls').getBoundingClientRect().top >=
+      document.querySelector('[data-gch-header]').getBoundingClientRect().bottom - 1, { timeout: 3000 });
+    siteMetrics = await page.evaluate(() => ({
+      adminBottom: document.getElementById('wpadminbar').getBoundingClientRect().bottom,
+      headerTop: document.querySelector('[data-gch-header]').getBoundingClientRect().top,
+      headerBottom: document.querySelector('[data-gch-header]').getBoundingClientRect().bottom,
+      controlsTop: document.querySelector('.gf-controls').getBoundingClientRect().top,
+    }));
+    assert.ok(siteMetrics.headerTop >= siteMetrics.adminBottom - 1 && siteMetrics.controlsTop >= siteMetrics.headerBottom - 1,
+      `WordPress admin or site header covers controls: ${JSON.stringify(siteMetrics)}`);
+    console.log('PASS short viewport and WordPress admin bar with the site-wide header'); await page.close();
 
     page = await open(390, { reduced: true });
     assert.equal(await page.$eval('.gf-page', (e) => e.classList.contains('gf-motion')), false);
