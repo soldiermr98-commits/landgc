@@ -62,6 +62,13 @@ async function control(action = 'info') {
     assert.equal(await page.$eval('.hcf-page', e => e.dataset.hcfReady), '1');
     assert.ok(await page.$('.hcf-price .amount'));
     assert.ok(await page.$('.hcf-add form.cart'));
+    assert.equal(await page.$eval('.hcf-add button.single_add_to_cart_button', e => e.innerText.trim()), 'خرید افزونه');
+    assert.equal(await page.$eval('.hcf-add .quantity', e => getComputedStyle(e).display), 'none');
+    assert.equal(await page.$eval('.hcf-add input[name="quantity"]', e => e.value), '1');
+    assert.equal(await page.evaluate(() => {
+      const related = document.querySelector('#hcf-related'), reviews = document.querySelector('#hcf-reviews');
+      return !!(related.compareDocumentPosition(reviews) & Node.DOCUMENT_POSITION_FOLLOWING) && !reviews.closest('.hcf-layout');
+    }), true);
     assert.equal(await page.$$eval('.hcf-feature', a => a.length), 5);
     assert.equal(await page.$$eval('.hcf-faq-trigger', a => a.length), 7);
     assert.ok(await page.$('.hcf-related li.product'));
@@ -145,11 +152,10 @@ async function control(action = 'info') {
     // Playground's SQLite cannot execute Woo's stock-reservation SQL; this local
     // order uses an unmanaged-stock virtual fixture while preserving real checkout.
     await control('virtual'); await goto(page, product);
-    await page.$eval('.hcf-add input.qty', e => { e.value = 2; });
     await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 60000 }), page.click('.hcf-add .single_add_to_cart_button')]);
     assert.ok((await page.$eval('.hcf-notices', e => e.innerText)).length > 0);
     const cart = await page.evaluate(async () => (await fetch('/wp-json/wc/store/v1/cart')).json());
-    assert.ok(cart.items.some(item => item.id === fixture.ids.product && item.quantity === 2));
+    assert.ok(cart.items.some(item => item.id === fixture.ids.product && item.quantity === 1));
     const beforeOrders = (await control()).orders;
     await goto(page, local(fixture.checkout));
     for (const [id, value] of Object.entries({ billing_first_name: 'Test', billing_last_name: 'Buyer', billing_address_1: '123 Test Ave', billing_city: 'Atlanta', billing_postcode: '30301', billing_phone: '4045550100', billing_email: 'buyer@example.invalid' })) {
@@ -174,7 +180,7 @@ async function control(action = 'info') {
     const orderData = await control();
     assert.equal(orderData.orders, beforeOrders + 1);
     assert.ok(orderData.orderStates.some(order => order.status === 'processing' && order.items === 1));
-    console.log('PASS quantity, real cart, checkout and local test order (no live transaction)');
+    console.log('PASS one-item real cart, checkout and local test order (no live transaction)');
     await page.close();
 
     await control('reset');
@@ -182,8 +188,12 @@ async function control(action = 'info') {
     assert.equal(await page.$$eval('.hcf-faq-answer', a => a.filter(e => getComputedStyle(e).display !== 'none').length), 7);
     assert.ok(await page.$$eval('.wc-tab', a => a.every(e => getComputedStyle(e).display !== 'none')));
     assert.ok(await page.$('.hcf-add form.cart'));
+    assert.equal(await page.$eval('.hcf-add button.single_add_to_cart_button', e => e.innerText.trim()), 'خرید افزونه');
+    assert.equal(await page.$eval('.hcf-add .quantity', e => getComputedStyle(e).display), 'none');
     await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 60000 }), page.click('.hcf-add .single_add_to_cart_button')]);
     assert.ok(await page.$$eval('.woocommerce-message', a => a.some(e => getComputedStyle(e).display !== 'none' && e.getBoundingClientRect().height > 0)));
+    const cartNoJs = await page.evaluate(async () => (await fetch('/wp-json/wc/store/v1/cart')).json());
+    assert.ok(cartNoJs.items.some(item => item.id === fixture.ids.product && item.quantity === 1));
     console.log('PASS JavaScript-disabled content, real cart form and Woo notice');
     await page.close();
 

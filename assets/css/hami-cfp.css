@@ -117,8 +117,9 @@ body .hcf-page .hcf-zoom { position: absolute; z-index: 5; left: 12px; bottom: 1
 .hcf-page .hcf-add { margin-top: 22px; }
 .hcf-page .hcf-add :is(.elementor-add-to-cart,.elementor-widget-container) { width: 100%; }
 .hcf-page .hcf-add form.cart { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch; margin: 0 !important; }
-.hcf-page .hcf-add .quantity { flex: 0 0 68px; width: 68px; margin: 0 !important; }
-body .hcf-page .hcf-add input.qty { width: 100% !important; min-height: 51px; padding: 8px 4px; border: 1px solid #52665a; border-radius: 6px; background: #111a17; color: #fff; font-size: 14px; text-align: center; box-shadow: none; }
+/* Keep WooCommerce's default/minimum quantity in the submitted form, without
+   presenting a quantity selector for this specific product. */
+body .hcf-page .hcf-add form.cart .quantity { display: none !important; }
 body .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button) { flex: 1 1 140px; min-height: 51px; padding: 12px 14px; border: 1px solid var(--hcf-lime); border-radius: 6px; background: var(--hcf-lime); color: #10251a; font-size: 12px; font-weight: 900; line-height: 1.6; text-align: center; white-space: normal; box-shadow: none; cursor: pointer; transition: background .22s var(--hcf-ease), transform .22s var(--hcf-ease); }
 body .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button):is(:hover,:focus-visible) { background: #c2ff86; border-color: #c2ff86; color: #10251a; transform: translateY(-2px); }
 body .hcf-page .hcf-add :is(button.single_add_to_cart_button,a.single_add_to_cart_button):disabled { opacity: .55; cursor: not-allowed; transform: none; }
@@ -200,7 +201,8 @@ body .hcf-page button.hcf-faq-trigger:is(:hover,:focus-visible) { background: tr
 .hcf-page .hcf-faq-answer { color: #adbcb2; font-size: 12.5px; line-height: 2.15; }
 .hcf-page .hcf-faq-answer .elementor-widget-container, .hcf-page .hcf-faq-answer > :last-child { padding-bottom: 18px; }
 
-/* Native WooCommerce tabs, full original content, comments and third-party tabs. */
+/* Full-width reviews and WooCommerce tabs at the bottom of the product page. */
+.hcf-page.hcf-page .hcf-reviews { padding-top: 44px; border-top: 1px solid var(--hcf-line); }
 .hcf-page .hcf-tabs { margin-top: 25px; color: #c2cec6; font-size: 13px; line-height: 2; overflow-wrap: anywhere; }
 .hcf-page .hcf-tabs ul.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none; }
 .hcf-page .hcf-tabs ul.tabs::before, .hcf-page .hcf-tabs ul.tabs li::before, .hcf-page .hcf-tabs ul.tabs li::after { display: none !important; }

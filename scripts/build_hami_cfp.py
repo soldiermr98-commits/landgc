@@ -232,7 +232,7 @@ faq_section = container('سوالات متداول محصول', 'hcf-section hcf
     container('فهرست پرسش‌ها', 'hcf-faq-list', [faq(item, i) for i, item in enumerate(DATA['faq'], 1)]),
 ], tag='section', element_id='hcf-faq')
 
-reviews = container('دیدگاه‌ها و اطلاعات اصلی ووکامرس', 'hcf-section hcf-reviews', [
+reviews = container('دیدگاه‌ها و اطلاعات اصلی ووکامرس', 'hcf-wrap hcf-section hcf-reviews', [
     heading('برچسب دیدگاه‌ها', 'تجربه و جزئیات', 'hcf-kicker'),
     heading('عنوان دیدگاه‌ها', 'دیدگاه‌ها و اطلاعات محصول', 'hcf-section-title', 'h2'),
     rich('راهنمای دیدگاه‌ها', '<p>دیدگاه‌ها، امتیازها و فرم ثبت نظر بر اساس تنظیمات واقعی فروشگاه نمایش داده می‌شوند.</p>', 'hcf-section-lead'),
@@ -247,14 +247,20 @@ purchase = container('باکس خرید واقعی ووکامرس', 'hcf-aside',
         widget('woocommerce-product-price', 'قیمت واقعی و تخفیف ووکامرس', 'hcf-price'),
         widget('woocommerce-product-stock', 'موجودی واقعی ووکامرس', 'hcf-stock'),
         widget('woocommerce-notices', 'پیام‌های واقعی ووکامرس', 'hcf-notices'),
-        widget('woocommerce-product-add-to-cart', 'فرم واقعی خرید و تعداد ووکامرس', 'hcf-add'),
+        # Elementor's native Custom Add To Cart widget uses the real Woo form
+        # with show_quantity=yes; scoped CSS hides only the quantity control.
+        # Its editable text is rendered server-side, including without JS.
+        # Inactive element cache keeps stock and purchase eligibility live.
+        widget('wc-add-to-cart', 'فرم خرید واقعی ووکامرس', 'hcf-add',
+               text='خرید افزونه', show_quantity='yes', quantity=1, layout='',
+               selected_icon={'value': '', 'library': ''}, _element_cache='yes'),
         rich('راهنمای دریافت و پشتیبانی', '<p>برای جزئیات دریافت، پشتیبانی و به‌روزرسانی <a href="https://gilaclick.ir/contact-us/">با گیلاکلیک در تماس باشید</a>.</p>', 'hcf-buy-help'),
     ], element_id='hcf-buy'),
 ], tag='aside')
 purchase['settings']['_attributes'] = 'aria-label|تهیه افزونه'
 
 layout = container('محتوا و خرید', 'hcf-wrap hcf-layout', [
-    container('محتوای اختصاصی محصول', 'hcf-content', [features, process, capture, comparison, specs, faq_section, reviews]),
+    container('محتوای اختصاصی محصول', 'hcf-content', [features, process, capture, comparison, specs, faq_section]),
     purchase,
 ])
 
@@ -277,7 +283,7 @@ final = container('دعوت پایانی به خرید', 'hcf-final', [
 ], tag='section')
 
 lightbox = raw('بزرگ‌نمایی تصاویر', '<dialog class="hcf-lightbox" aria-label="بزرگ‌نمایی تصاویر محصول"><div class="hcf-lightbox-bar"><span>تصاویر محصول</span><button type="button" data-hcf-close aria-label="بستن بزرگ‌نمایی">بستن ×</button></div><img alt=""><div class="hcf-lightbox-controls"><button type="button" data-hcf-prev>تصویر قبلی</button><button type="button" data-hcf-next>تصویر بعدی</button></div></dialog>')
-main = container('محتوای لندینگ اختصاصی', 'hcf-main', [hero, quickbar, layout, related, final, lightbox], element_id='hcf-main')
+main = container('محتوای لندینگ اختصاصی', 'hcf-main', [hero, quickbar, layout, related, reviews, final, lightbox], element_id='hcf-main')
 runtime = raw('⚙️ تعامل، گالری و حرکت — حذف نشود', '<script>\n' + JS + '\n</script>', 'hcf-system')
 root = container('لندینگ اختصاصی حامی — فقط محصول تماس برای قیمت', 'hcf-page', [style, main, runtime])
 template = {'version': '0.4', 'title': 'لندینگ اختصاصی افزونه تماس برای قیمت حامی', 'type': 'product', 'page_settings': {}, 'content': [root]}
@@ -313,10 +319,10 @@ def render(el):
         inner = '<p class="stock in-stock">موجود</p>'
     elif kind == 'woocommerce-notices':
         inner = ''
-    elif kind == 'woocommerce-product-add-to-cart':
-        inner = ('<div class="elementor-add-to-cart elementor-product-simple"><form class="cart" action="' + esc(SAMPLE['source']) + '" method="post">'
+    elif kind == 'wc-add-to-cart':
+        inner = ('<form class="cart" action="' + esc(SAMPLE['source']) + '" method="post">'
                  '<div class="quantity"><label class="hcf-sr-only" for="hcf-sample-qty">تعداد محصول</label><input id="hcf-sample-qty" class="input-text qty text" type="number" name="quantity" value="1" min="1" step="1" inputmode="numeric"></div>'
-                 '<button class="single_add_to_cart_button button alt" type="submit" name="add-to-cart" value="' + str(SAMPLE['id']) + '">افزودن به سبد خرید</button></form></div>')
+                 '<button class="single_add_to_cart_button elementor-button button alt" type="submit" name="add-to-cart" value="' + str(SAMPLE['id']) + '"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">' + esc(settings['text']) + '</span></span></button></form>')
     elif kind == 'woocommerce-product-additional-information':
         inner = ''
     elif kind == 'woocommerce-product-data-tabs':

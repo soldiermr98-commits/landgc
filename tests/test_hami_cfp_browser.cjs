@@ -63,8 +63,15 @@ let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
     assert.equal(await page.$$eval('.hcf-faq-trigger', els => els.length), 7);
     assert.ok((await page.$eval('.hcf-snapshot', e => e.textContent)).includes(data.observed_on_fa));
     assert.equal(await page.$eval('.hcf-add form.cart', e => e.action), sample.source);
+    assert.equal(await page.$eval('.hcf-add button.single_add_to_cart_button', e => e.innerText.trim()), 'خرید افزونه');
+    assert.equal(await page.$eval('.hcf-add .quantity', e => getComputedStyle(e).display), 'none');
+    assert.equal(await page.$eval('.hcf-add input[name="quantity"]', e => e.value), '1');
+    assert.equal(await page.evaluate(() => {
+      const related = document.querySelector('#hcf-related'), reviews = document.querySelector('#hcf-reviews');
+      return !!(related.compareDocumentPosition(reviews) & Node.DOCUMENT_POSITION_FOLLOWING) && !reviews.closest('.hcf-layout');
+    }), true);
     assert.equal(await page.$eval('.hcf-capture-image a', e => e.getAttribute('aria-label')), 'بزرگ‌نمایی تصویر تنظیمات حامی');
-    console.log('PASS dated real-product preview, content, actual purchase destination');
+    console.log('PASS dated preview, single-item purchase button, bottom reviews and real destination');
 
     await page.focus('.hcf-faq-trigger');
     await page.keyboard.press('Enter');
@@ -116,6 +123,9 @@ let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
     assert.equal(await page.$eval('.hcf-capture-image a', e => e.getAttribute('href')), sample.screenshot);
     assert.equal(await page.$eval('.hcf-zoom', e => e.hidden), true);
     assert.equal(await page.$eval('.hcf-add form.cart', e => e.action), sample.source);
+    assert.equal(await page.$eval('.hcf-add button.single_add_to_cart_button', e => e.innerText.trim()), 'خرید افزونه');
+    assert.equal(await page.$eval('.hcf-add .quantity', e => getComputedStyle(e).display), 'none');
+    assert.equal(await page.$eval('.hcf-add input[name="quantity"]', e => e.value), '1');
     assert.equal(await page.$eval('.ga-primary-nav', e => getComputedStyle(e).display !== 'none'), true);
     console.log('PASS readable content, links and purchase form with JavaScript disabled');
     await page.close();
@@ -160,6 +170,9 @@ let axe; try { axe = require('axe-core'); } catch (_) { /* optional */ }
       assert.ok(!dimensions.scale || Math.abs(dimensions.scale - 1) < .01, `${width}: ${JSON.stringify(dimensions)}`);
       const invalid = await page.$$eval('.hcf-faq-trigger', els => els.some(e => e.scrollWidth > e.clientWidth + 1));
       assert.equal(invalid, false, `${width}: FAQ question overflow`);
+      assert.equal(await page.$eval('.hcf-add .quantity', e => getComputedStyle(e).display), 'none', `${width}: quantity should not be visible`);
+      const purchase = await page.$eval('.hcf-add form.cart', e => ({ form: e.getBoundingClientRect().width, button: e.querySelector('button.single_add_to_cart_button').getBoundingClientRect().width }));
+      assert.ok(purchase.button >= purchase.form - 1, `${width}: purchase button should use the available row`);
       await page.close();
     }
     console.log('PASS 17 viewport widths, theme nowrap reset and no horizontal overflow');

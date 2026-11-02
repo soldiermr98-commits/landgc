@@ -43,7 +43,7 @@ class HamiContentTest(unittest.TestCase):
         self.assertEqual(self.template['page_settings'], {})  # Display conditions must be set manually.
         widgets = [item.get('widgetType') for item in self.elements]
         for widget in ('woocommerce-product-images', 'woocommerce-product-price',
-                       'woocommerce-product-stock', 'woocommerce-product-add-to-cart',
+                       'woocommerce-product-stock', 'wc-add-to-cart',
                        'woocommerce-notices', 'woocommerce-product-meta',
                        'woocommerce-product-additional-information',
                        'woocommerce-product-data-tabs', 'woocommerce-product-related'):
@@ -57,6 +57,16 @@ class HamiContentTest(unittest.TestCase):
         self.assertNotIn('<footer class=', raw)
         self.assertNotIn('۱٬۴۸۰٬۰۰۰', raw)  # The selling price comes from WooCommerce.
         self.assertNotIn('woocommerce-review__author', raw)
+        purchase = next(item for item in self.elements if item.get('widgetType') == 'wc-add-to-cart')
+        self.assertEqual(purchase['settings']['text'], 'خرید افزونه')
+        self.assertEqual(purchase['settings']['show_quantity'], 'yes')  # Native Woo form, not AJAX-only.
+        self.assertEqual(purchase['settings']['_element_cache'], 'yes')  # Elementor's "Inactive" element cache.
+        self.assertNotIn('product_id', purchase['settings'])  # Use the current product.
+        main = next(item for item in self.elements if item.get('settings', {}).get('_element_id') == 'hcf-main')
+        children = [item.get('settings', {}).get('_element_id') for item in main['elements']]
+        self.assertLess(children.index('hcf-related'), children.index('hcf-reviews'))
+        content = next(item for item in self.elements if item.get('settings', {}).get('css_classes') == 'hcf-content')
+        self.assertFalse(any(item.get('settings', {}).get('_element_id') == 'hcf-reviews' for item in walk(content['elements'])))
 
     def test_editable_content_and_real_media(self):
         by_class = {item.get('settings', {}).get('_css_classes'): item
@@ -87,6 +97,9 @@ class HamiContentTest(unittest.TestCase):
         self.assertEqual(len(forms), 1)
         self.assertEqual(forms[0]['action'], self.sample['source'])
         self.assertEqual(forms[0]['method'], 'post')
+        self.assertIn('<span class="elementor-button-text">خرید افزونه</span></span></button></form>', self.html)
+        self.assertLess(self.html.index('id="hcf-related"'), self.html.index('id="hcf-reviews"'))
+        self.assertLess(self.html.index('id="hcf-reviews"'), self.html.index('<section class="e-con e-con-full hcf-final">'))
         self.assertIn(self.copy['observed_on_fa'], self.html)
         self.assertIn(self.sample['related']['url'], self.html)
         self.assertIn('data-hcf-original="' + self.sample['cover'] + '"', self.html)
@@ -112,6 +125,7 @@ class HamiContentTest(unittest.TestCase):
             self.assertNotIn('HCFPreviewFallback', output)
         self.assertIn('peyda', css.lower())
         self.assertIn('prefers-reduced-motion', css)
+        self.assertRegex(css, r'\.hcf-add form\.cart \.quantity\s*\{\s*display:\s*none\s*!important')
         self.assertIn('prefers-reduced-motion', js)
         self.assertRegex(css, r'(?m)^\.hcf-page')
         before = (self.html, (ROOT / 'gilaclick-hami-call-for-price-elementor.json').read_text())
