@@ -109,12 +109,37 @@
       if (small.addEventListener) small.addEventListener('change', syncMenu); else small.addListener(syncMenu);
     }
 
+    // A page imported with Elementor Full Width may use the site's own fixed
+    // header instead of the optional FAQ header. Account for either on mobile;
+    // never change or hide the site's header, drawer or third-party widgets.
+    var externalHeaders = Array.prototype.slice.call(document.querySelectorAll(
+      '[data-gch-header], [data-gf-fixed-header], .elementor-location-header, #masthead, .site-header'
+    )).filter(function (candidate) { return !root.contains(candidate); });
     function updateMetrics() {
       var bar = document.getElementById('wpadminbar');
       var admin = bar ? Math.max(0, Math.round(bar.getBoundingClientRect().bottom)) : 0;
-      var headerHeight = header && getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height : 0;
-      var controlHeight = controls ? controls.getBoundingClientRect().height : 0;
+      // Update our own sticky header's top before measuring its rectangle.
       root.style.setProperty('--gf-admin-offset', admin + 'px');
+      var headerHeight = header && getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height : 0;
+      if (small.matches) {
+        var top = admin;
+        var candidates = externalHeaders.slice();
+        // The editor may leave an empty header container after its contents
+        // have been removed in favour of the site-wide header.
+        if (header && (header.children.length || header.textContent.trim())) candidates.push(header);
+        candidates.map(function (candidate) {
+          return { element: candidate, rect: candidate.getBoundingClientRect(), style: getComputedStyle(candidate) };
+        }).sort(function (a, b) { return a.rect.top - b.rect.top; }).forEach(function (candidate) {
+          var rect = candidate.rect, style = candidate.style;
+          if ((style.position === 'sticky' || style.position === 'fixed') &&
+              style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0 &&
+              rect.height <= Math.min(window.innerHeight / 2, 240) && rect.top <= top + 32 && rect.bottom > top) {
+            top = rect.bottom;
+          }
+        });
+        headerHeight = Math.max(0, top - admin);
+      }
+      var controlHeight = controls && getComputedStyle(controls).position === 'sticky' ? controls.getBoundingClientRect().height : 0;
       root.style.setProperty('--gf-header-height', Math.ceil(headerHeight) + 'px');
       root.style.setProperty('--gf-controls-height', Math.ceil(controlHeight) + 'px');
     }
@@ -122,6 +147,7 @@
       var ro = new ResizeObserver(updateMetrics);
       if (header) ro.observe(header);
       if (controls) ro.observe(controls);
+      externalHeaders.forEach(function (candidate) { ro.observe(candidate); });
     }
     var metricsScheduled = false;
     function scheduleMetrics() {
